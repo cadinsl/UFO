@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3670716362196169361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3670716362196169455}
+  - component: {fileID: 3670716362196169454}
+  m_Layer: 0
+  m_Name: AngelDoll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3670716362196169455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670716362196169361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3670716362196169454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670716362196169361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f486faffee1f6ca48b9b9f6a5aaee938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Angel
+  stats:
+    characterName: Angel
+    hp: 0
+    maxHp: 100
+    mana: 100
+    maxMana: 100
+    speed: 40
+    strenght: 4
+    defense: 105
+    intelligence: 2
+    luck: 1
+    xp: 5989900
+  status: 5
+  inventory: {fileID: 8826828283371143933, guid: 9ad2a3f460bf58748bcfa5ce6cbcafc7, type: 3}
+  magicSkills: {fileID: 7972567101244904996, guid: abbfdf3388fc79b4ba8bb7cd40662c84, type: 3}
+  weapon: {fileID: 8979087687176905773, guid: 2f3c846487312b744b439460642f6507, type: 3}
+  modelPrefab: {fileID: 0}
