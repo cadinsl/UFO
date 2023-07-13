@@ -23,6 +23,7 @@ public class ItemGroundAdventure : MonoBehaviour
 
     public void EndDialog(){
         _characterBrainAdventure.EndTalk();
+        Destroy(this.gameObject);
     }
 
     public void DisplayDialog(UnityAction action)
