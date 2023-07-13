@@ -1663,8 +1663,8 @@ RectTransform:
   - {fileID: 1469473240}
   - {fileID: 1475184118}
   - {fileID: 1869106223}
-  - {fileID: 1162395663}
   - {fileID: 1850912736}
+  - {fileID: 1162395663}
   - {fileID: 5274328700152749890}
   - {fileID: 1997083976}
   - {fileID: 1228798124}
@@ -2462,6 +2462,10 @@ PrefabInstance:
       propertyPath: decisionPanel
       value: 
       objectReference: {fileID: 871416525}
+    - target: {fileID: 7207437591486620161, guid: ca864de8ffd2ad243afedc5e41aa3f75, type: 3}
+      propertyPath: bagManagerPanel
+      value: 
+      objectReference: {fileID: 1850912735}
     - target: {fileID: 7207437591486620161, guid: ca864de8ffd2ad243afedc5e41aa3f75, type: 3}
       propertyPath: targetManagerPrefab
       value: 
@@ -3305,9 +3309,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 272071235}
     m_Modifications:
+    - target: {fileID: 144067568431762454, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
+      propertyPath: targetManagerPanel
+      value: 
+      objectReference: {fileID: 1162395664}
+    - target: {fileID: 144067568431762454, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
+      propertyPath: targetManagerPrefab
+      value: 
+      objectReference: {fileID: 1162395664}
     - target: {fileID: 1455149303300275637, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
       propertyPath: m_Name
-      value: Bag Manager
+      value: Bag Panel
       objectReference: {fileID: 0}
     - target: {fileID: 1455149303300275637, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
       propertyPath: m_IsActive
@@ -3379,11 +3391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3518162392721574205, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -107
+      value: -107.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3518162392721574205, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -20
+      value: -19.999985
       objectReference: {fileID: 0}
     - target: {fileID: 3518162392721574205, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5367,6 +5379,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2081591864}
     - target: {fileID: 7207437591486620161, guid: ca864de8ffd2ad243afedc5e41aa3f75, type: 3}
+      propertyPath: bagManagerPanel
+      value: 
+      objectReference: {fileID: 1850912735}
+    - target: {fileID: 7207437591486620161, guid: ca864de8ffd2ad243afedc5e41aa3f75, type: 3}
       propertyPath: targetManagerPrefab
       value: 
       objectReference: {fileID: 1162395664}
@@ -6844,7 +6860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 573448304529759508, guid: cd22f41714135ef4a91394f2ee03f472, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -127.8
+      value: -53.8
       objectReference: {fileID: 0}
     - target: {fileID: 1891673605888914551, guid: cd22f41714135ef4a91394f2ee03f472, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7000,11 +7016,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5272868279974539264, guid: cd22f41714135ef4a91394f2ee03f472, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 95.8999
+      value: 95.9
       objectReference: {fileID: 0}
     - target: {fileID: 5272868279974539264, guid: cd22f41714135ef4a91394f2ee03f472, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -53.80005
+      value: -53.8
       objectReference: {fileID: 0}
     - target: {fileID: 6156525719001561459, guid: cd22f41714135ef4a91394f2ee03f472, type: 3}
       propertyPath: m_fontSize

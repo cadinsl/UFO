@@ -78,6 +78,7 @@ public class CharacterFightController : MonoBehaviour
 
     public void Attack(CharacterDecision characterDecision, AttackItem item, UnityAction<CharacterDecisionResult> _getResultBackMethod)
     {
+        characterDecision.from.doll.inventory.removeItem(item);
         CharacterDecisionResult characterDecisionResult =  new CharacterDecisionResult(characterDecision, true, characterDecision.target.GetHit(item.damage));
         getResultBackMethod = _getResultBackMethod;
         getResultBackMethod(characterDecisionResult);

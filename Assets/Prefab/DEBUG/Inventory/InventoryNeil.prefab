@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1995764283315819566
+--- !u!1 &5159798193808602963
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,57 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1995764283315819600}
-  - component: {fileID: 1995764283315819601}
+  - component: {fileID: 1802075089079977935}
+  - component: {fileID: 8826828283371143933}
   m_Layer: 0
-  m_Name: NeilDoll
+  m_Name: InventoryNeil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1995764283315819600
+--- !u!4 &1802075089079977935
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995764283315819566}
+  m_GameObject: {fileID: 5159798193808602963}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 797.7167, y: 296.1791, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1995764283315819601
+--- !u!114 &8826828283371143933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995764283315819566}
+  m_GameObject: {fileID: 5159798193808602963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f486faffee1f6ca48b9b9f6a5aaee938, type: 3}
+  m_Script: {fileID: 11500000, guid: f98c175751644d04797016e56d49f50f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Neil
-  stats:
-    characterName: Neil
-    hp: 100
-    maxHp: 100
-    mana: 100
-    maxMana: 100
-    speed: 40
-    strenght: 4
-    defense: 5
-    intelligence: 2
-    luck: 1
-    xp: 853700
-  status: 0
-  inventory: {fileID: 8826828283371143933, guid: 80e7d4f438dfb2e469204b1d97139cf0, type: 3}
-  magicSkills: {fileID: 0}
-  weapon: {fileID: 8979087687176905773, guid: 2f3c846487312b744b439460642f6507, type: 3}
-  modelPrefab: {fileID: 0}
+  maxCapacity: 5
+  items: []

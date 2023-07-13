@@ -14,7 +14,7 @@ public class BagPanelController : MonoBehaviour
 
     public GameObject buttonPrefab;
 
-    public GameObject targetManagerPrefab;
+    public GameObject targetManagerPanel;
 
 
     public void Setup(CharacterFightController _character, PlayerDecisionController _decisionController, List<CharacterFightController> _enemyParty)
@@ -26,6 +26,7 @@ public class BagPanelController : MonoBehaviour
 
     public void Display()
     {
+        resetButtons();
         displayItems();
     }
 
@@ -57,7 +58,7 @@ public class BagPanelController : MonoBehaviour
     public void GoBack()
     {
         decisionController.SetActive();
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 
     public void ChosenItem(int i)
@@ -66,11 +67,19 @@ public class BagPanelController : MonoBehaviour
         CharacterDecision decision = new CharacterDecision(character, Decision.Bag, character.doll.inventory.items[i]);
         //decisionController.InputDecision(decision);
         //Destroy(this.gameObject);
-        GameObject targetManagerInstance = Instantiate(targetManagerPrefab);
-        TargetController targetController = targetManagerInstance.GetComponent<TargetController>();
+        targetManagerPanel.SetActive(true);
+        TargetController targetController = targetManagerPanel.GetComponent<TargetController>();
         targetController.Setup(enemyParty, decisionController, decision);
         targetController.optionalBagPanel = this.gameObject;
         targetController.Display();
+        this.gameObject.SetActive(false);
+    }
+
+    private void resetButtons(){
+        Transform panel = this.transform.GetChild(0);
+        for(int i = 0; i < 6; i++){
+            panel.GetChild(i).gameObject.SetActive(false);
+        }
     }
 
     /*public void SetTarget(CharacterController target)

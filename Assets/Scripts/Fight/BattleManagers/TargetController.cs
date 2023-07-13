@@ -54,10 +54,7 @@ public class TargetController : MonoBehaviour
         CharacterFightController target = enemyParty[index];
         characterDecision.target = target;
         playerDecisionController.InputDecision(characterDecision);
-        if(optionalBagPanel != null)
-        {
-            Destroy(optionalBagPanel);
-        }
+        playerDecisionController.SetActive();
         GoBack();
     }
 
