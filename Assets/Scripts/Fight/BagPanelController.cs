@@ -26,10 +26,6 @@ public class BagPanelController : MonoBehaviour
 
     public void Display()
     {
-        GameObject canvas = GameObject.Find("Canvas");
-        this.transform.SetParent(canvas.transform);
-        this.transform.localPosition = Vector3.zero;
-        bagPanel.SetActive(true);
         displayItems();
     }
 

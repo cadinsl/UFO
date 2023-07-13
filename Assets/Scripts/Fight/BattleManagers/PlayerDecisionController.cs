@@ -17,7 +17,7 @@ public class PlayerDecisionController : MonoBehaviour
     private bool decisionMade = false;
     private CharacterDecision finalDecision;
 
-    public GameObject bagManagerPrefab;
+    public GameObject bagManagerPanel;
 
     public GameObject targetManagerPrefab;
 
@@ -81,8 +81,8 @@ public class PlayerDecisionController : MonoBehaviour
     {
         if(active)
         {
-            GameObject bagManagerInstance = Instantiate(bagManagerPrefab);
-            BagPanelController bagPanelController = bagManagerInstance.GetComponent<BagPanelController>();
+            bagManagerPanel.SetActive(true);
+            BagPanelController bagPanelController = bagManagerPanel.GetComponent<BagPanelController>();
             bagPanelController.Setup(character, this, enemyParty);
             bagPanelController.Display();
             active = false;
