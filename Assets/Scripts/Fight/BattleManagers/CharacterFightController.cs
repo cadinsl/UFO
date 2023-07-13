@@ -93,6 +93,15 @@ public class CharacterFightController : MonoBehaviour
         
     }
 
+    public void Heal(CharacterDecision characterDecision, HealSpell spell, UnityAction<CharacterDecisionResult> _getResultBackMethod)
+    {
+        this.doll.stats.mana -= spell.mana;
+        CharacterDecisionResult characterDecisionResult = new CharacterDecisionResult(characterDecision, true, characterDecision.target.doll.Heal(spell.heal));
+        getResultBackMethod = _getResultBackMethod;
+        getResultBackMethod(characterDecisionResult);
+        
+    }
+
     public void applyBoost(Buff buff)
     {
         switch(buff.type){

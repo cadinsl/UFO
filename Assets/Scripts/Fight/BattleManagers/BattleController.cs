@@ -134,6 +134,7 @@ public class BattleController : MonoBehaviour
 
     public void ActOnDecision(CharacterDecision characterDecision)
     {
+        Debug.Log("Got to act on decision");
         //CharacterDecisionResult result = null;
         switch(characterDecision.decision)
         {
@@ -152,6 +153,10 @@ public class BattleController : MonoBehaviour
                 if(spell is DamageSpell)
                 {
                     characterDecision.from.Attack(characterDecision, (DamageSpell)spell, DisplayDecisionResult);
+                }
+                else if(spell is HealSpell)
+                {
+                    characterDecision.from.Heal(characterDecision, (HealSpell) spell, DisplayDecisionResult);
                 }
             break;
             case Decision.Guard:

@@ -11,20 +11,23 @@ public class MagicPanelController : MonoBehaviour
 
     [HideInInspector] public List<CharacterFightController> enemyParty;
 
+    [HideInInspector] public List<CharacterFightController> playerParty;
+
     public GameObject magicPanel;
 
     public GameObject buttonPrefab;
 
-    public GameObject targetManagerPrefab;
+    public GameObject targetManagerPanel;
 
     List<IMagicObserver> observers = new List<IMagicObserver>();
 
 
-    public void Setup(CharacterFightController _character, PlayerDecisionController _decisionController, List<CharacterFightController> _enemyParty)
+    public void Setup(CharacterFightController _character, PlayerDecisionController _decisionController, List<CharacterFightController> _enemyParty, List<CharacterFightController> _playerParty)
     {
         character = _character;
         decisionController = _decisionController;
         enemyParty = _enemyParty;
+        playerParty = _playerParty;
 
         //setup observers
         MasterBattleController masterBattleController =   GameObject.Find("Master Manager").GetComponent<MasterBattleController>();
@@ -33,10 +36,7 @@ public class MagicPanelController : MonoBehaviour
 
     public void Display()
     {
-        GameObject canvas = GameObject.Find("Canvas");
-        this.transform.SetParent(canvas.transform);
-        this.transform.localPosition = Vector3.zero;
-        magicPanel.SetActive(true);
+        resetButtons();
         displayItems();
     }
 
@@ -81,25 +81,41 @@ public class MagicPanelController : MonoBehaviour
     public void GoBack()
     {
         decisionController.SetActive();
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 
     public void ChosenSpell(int i)
     {
+        this.gameObject.SetActive(false);
         if(character.doll.stats.mana < character.doll.magicSkills.spells[i].mana)
         {
             NotifyObserversNoMana(character.doll.magicSkills.spells[i].name);
             return;
         }
-        
         CharacterDecision decision = new CharacterDecision(character, Decision.Magic, character.doll.magicSkills.spells[i]);
         //decisionController.InputDecision(decision);
         //Destroy(this.gameObject);
-        GameObject targetManagerInstance = Instantiate(targetManagerPrefab);
-        TargetController targetController = targetManagerInstance.GetComponent<TargetController>();
-        targetController.Setup(enemyParty, decisionController, decision);
-        targetController.optionalBagPanel = this.gameObject;
-        targetController.Display();
+        if(character.doll.magicSkills.spells[i] is DamageSpell){
+            targetManagerPanel.SetActive(true);
+            TargetController targetController = targetManagerPanel.GetComponent<TargetController>();
+            targetController.Setup(enemyParty, decisionController, decision);
+            targetController.optionalBagPanel = this.gameObject;
+            targetController.Display();
+        }
+        else if(character.doll.magicSkills.spells[i] is HealSpell){
+            targetManagerPanel.SetActive(true);
+            TargetController targetController = targetManagerPanel.GetComponent<TargetController>();
+            targetController.Setup(playerParty, decisionController, decision);
+            targetController.optionalBagPanel = this.gameObject;
+            targetController.Display();
+        }
+    }
+
+    private void resetButtons(){
+        Transform panel = this.transform.GetChild(0);
+        for(int i = 0; i < 6; i++){
+            panel.GetChild(i).gameObject.SetActive(false);
+        }
     }
 
     /*public void SetTarget(CharacterController target)

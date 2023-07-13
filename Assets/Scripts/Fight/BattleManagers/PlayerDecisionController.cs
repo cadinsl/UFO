@@ -10,6 +10,9 @@ public class PlayerDecisionController : MonoBehaviour
     [HideInInspector] public CharacterFightController character;
 
     [HideInInspector] public List<CharacterFightController> enemyParty;
+
+    [HideInInspector] public List<CharacterFightController> playerParty;
+
     public GameObject decisionPanel;
     public GameObject namePanel;
     private TurnController turnManager;
@@ -21,17 +24,18 @@ public class PlayerDecisionController : MonoBehaviour
 
     public GameObject targetManagerPrefab;
 
-    public GameObject magicManagerPrefab;
+    public GameObject magicManagerPanel;
 
     private bool active = true;
     #endregion
 
 
-    public void Setup(CharacterFightController _character, TurnController _turnManager, List<CharacterFightController>  _enemyParty)
+    public void Setup(CharacterFightController _character, TurnController _turnManager, List<CharacterFightController>  _enemyParty, List<CharacterFightController>  _playerParty)
     {
         character = _character;
         turnManager = _turnManager;
         enemyParty = _enemyParty;
+        playerParty = _playerParty;
         GameObject canvas = GameObject.Find("Canvas");
         decisionPanel.transform.SetParent(canvas.transform);
         RectTransform rectTransform = (RectTransform)decisionPanel.transform;
@@ -93,9 +97,9 @@ public class PlayerDecisionController : MonoBehaviour
     {
         if(active)
         {
-            GameObject magicManagerInstance = Instantiate(magicManagerPrefab);
-            MagicPanelController magicPanelController = magicManagerInstance.GetComponent<MagicPanelController>();
-            magicPanelController.Setup(character, this, enemyParty);
+            magicManagerPanel.SetActive(true);
+            MagicPanelController magicPanelController = magicManagerPanel.GetComponent<MagicPanelController>();
+            magicPanelController.Setup(character, this, enemyParty, playerParty);
             magicPanelController.Display();
             active = false;
         }

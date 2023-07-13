@@ -26,6 +26,7 @@ public class TargetController : MonoBehaviour
 
     public void Display()
     {
+        resetButtons();
         displayButtons();
     }
 
@@ -47,7 +48,13 @@ public class TargetController : MonoBehaviour
 
                     button.gameObject.SetActive(true);
                 }
+    }
+
+    private void resetButtons(){
+        for(int i = 0; i < 3; i++){
+            this.transform.GetChild(i).gameObject.SetActive(false);
         }
+    }
 
     public void ChosenEnemy(int index)
     {

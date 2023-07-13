@@ -18,13 +18,15 @@ public class CharacterDoll : MonoBehaviour
 
     public GameObject modelPrefab;
 
-    public void Heal(int heal)
+    public int Heal(int heal)
     {
+        int beforeHeal = stats.hp;
         stats.hp += heal;
         if(stats.hp > stats.maxHp)
         {
             stats.hp = stats.maxHp;
         }
+        return stats.hp - beforeHeal;
     }
 
     public CharacterDoll Copy()

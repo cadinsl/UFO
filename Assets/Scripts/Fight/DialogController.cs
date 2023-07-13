@@ -101,6 +101,9 @@ public class DialogController : MonoBehaviour
                 {
                     texts.Add(characterDecision.from.name+ " casted " + characterDecision.decisionObject.name + " on " + characterDecision.target.name);
                 }
+                else if(characterDecision.decisionObject is HealSpell){
+                    texts.Add(characterDecision.from.name+ " casted " + characterDecision.decisionObject.name + " on " + characterDecision.target.name);
+                }
             break;
             case Decision.Guard:
                 texts.Add(characterDecision.from.name + " is guarding");
@@ -158,6 +161,10 @@ public class DialogController : MonoBehaviour
                     if(result.characterDecision.decisionObject is DamageSpell)
                     {
                         dialogTexts.Add("It deals " + result.points + " in Damage");
+                    }
+                    else if(result.characterDecision.decisionObject is HealSpell)
+                    {
+                        dialogTexts.Add("It heals " + result.points+ "!");
                     }
                 }
                 else

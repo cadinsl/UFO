@@ -42,7 +42,7 @@ public class TurnController : MonoBehaviour
     {
         playerDecisionController[partyIndex].SetActive(true);
         PlayerDecisionController characterDecisionController = playerDecisionController[partyIndex].GetComponent<PlayerDecisionController>();
-        characterDecisionController.Setup(character, this, enemyParty);
+        characterDecisionController.Setup(character, this, enemyParty, playerParty);
     }
 
     public void decisionMade(CharacterDecision turn)
@@ -79,6 +79,7 @@ public class TurnController : MonoBehaviour
     private void sendDecisions()
     {
         battleController.getAllDecision(charactersDecision, enemiesDecision);
+        Debug.Log("Got to send decisions");
     }
 
     //Fixes bug of last character decision not disappearing after turn finished.
