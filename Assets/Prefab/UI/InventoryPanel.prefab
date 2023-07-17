@@ -38,11 +38,11 @@ RectTransform:
   - {fileID: 1290451444674299584}
   - {fileID: 5804993148243163129}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 306.61664, y: 16.679108}
+  m_AnchoredPosition: {x: 306.6167, y: 16.679077}
   m_SizeDelta: {x: 300, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6923947279389207071
@@ -151,8 +151,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Go Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
+  m_sharedMaterial: {fileID: -8124573646982526819, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -176,10 +176,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 21.6
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -357,6 +357,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3909268146012716895}
     m_Modifications:
     - target: {fileID: 1290451444581201780, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
@@ -447,6 +448,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 26.85
       objectReference: {fileID: 0}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6632623204243951011, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
       propertyPath: m_Name
       value: Default Item Button (3)
@@ -456,6 +465,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
 --- !u!224 &1290451444564580307 stripped
 RectTransform:
@@ -467,6 +479,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3909268146012716895}
     m_Modifications:
     - target: {fileID: 1290451444581201780, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
@@ -557,6 +570,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 26.85
       objectReference: {fileID: 0}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6632623204243951011, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
       propertyPath: m_Name
       value: Default Item Button (5)
@@ -566,6 +587,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
 --- !u!224 &1290451444674299584 stripped
 RectTransform:
@@ -577,6 +601,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3909268146012716895}
     m_Modifications:
     - target: {fileID: 1290451444581201780, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
@@ -667,6 +692,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 26.85
       objectReference: {fileID: 0}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6632623204243951011, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
       propertyPath: m_Name
       value: Default Item Button
@@ -676,6 +709,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
 --- !u!224 &1290451444446343792 stripped
 RectTransform:
@@ -687,6 +723,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3909268146012716895}
     m_Modifications:
     - target: {fileID: 1290451444581201780, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
@@ -777,6 +814,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 26.85
       objectReference: {fileID: 0}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6632623204243951011, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
       propertyPath: m_Name
       value: Default Item Button (2)
@@ -786,6 +831,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
 --- !u!224 &1290451444089965244 stripped
 RectTransform:
@@ -797,6 +845,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3909268146012716895}
     m_Modifications:
     - target: {fileID: 1290451444581201780, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
@@ -887,6 +936,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 26.85
       objectReference: {fileID: 0}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6632623204243951011, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
       propertyPath: m_Name
       value: Default Item Button (4)
@@ -896,6 +953,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
 --- !u!224 &1290451444253682462 stripped
 RectTransform:
@@ -907,6 +967,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3909268146012716895}
     m_Modifications:
     - target: {fileID: 1290451444581201780, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
@@ -997,6 +1058,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 26.85
       objectReference: {fileID: 0}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
+    - target: {fileID: 5305525865962592909, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6632623204243951011, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
       propertyPath: m_Name
       value: Default Item Button (1)
@@ -1006,6 +1075,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd0b8c3c0d47834e806496aba8f86c2, type: 3}
 --- !u!224 &1290451443146736442 stripped
 RectTransform:
