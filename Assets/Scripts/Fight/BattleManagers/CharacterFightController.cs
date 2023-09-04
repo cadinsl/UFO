@@ -125,7 +125,8 @@ public class CharacterFightController : MonoBehaviour
     public int GetHit(int damage)
     {
         doll.stats.hp -= damage;
-        fightAnimation.GetHit();
+        if(fightAnimation != null)
+            fightAnimation.GetHit();
         if(doll.stats.hp <= 0){
             doll.stats.hp = 0;
             die();

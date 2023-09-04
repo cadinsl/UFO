@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class PlayerDecisionController : MonoBehaviour
@@ -42,6 +44,7 @@ public class PlayerDecisionController : MonoBehaviour
         rectTransform.anchoredPosition = Vector3.zero;
         decisionPanel.SetActive(true);
         decisionMade = false;
+        updateEventSystem(decisionPanel.transform.GetChild(1).gameObject);
         UpdateNamePanel();
     }
     //We get decision turn it to turn manager and destroy this object.
@@ -77,6 +80,7 @@ public class PlayerDecisionController : MonoBehaviour
             targetManagerPrefab.SetActive(true);
             TargetController targetController = targetManagerPrefab.GetComponent<TargetController>();
             targetController.Setup(enemyParty, this, turn);
+            updateEventSystem(targetController.transform.GetChild(0).gameObject);
             targetController.Display();
         }
     }
@@ -88,6 +92,7 @@ public class PlayerDecisionController : MonoBehaviour
             bagManagerPanel.SetActive(true);
             BagPanelController bagPanelController = bagManagerPanel.GetComponent<BagPanelController>();
             bagPanelController.Setup(character, this, enemyParty);
+            updateEventSystem(bagPanelController.transform.GetChild(0).gameObject);
             bagPanelController.Display();
             active = false;
         }
@@ -100,6 +105,7 @@ public class PlayerDecisionController : MonoBehaviour
             magicManagerPanel.SetActive(true);
             MagicPanelController magicPanelController = magicManagerPanel.GetComponent<MagicPanelController>();
             magicPanelController.Setup(character, this, enemyParty, playerParty);
+            updateEventSystem(magicPanelController.transform.GetChild(0).gameObject);
             magicPanelController.Display();
             active = false;
         }
@@ -138,6 +144,13 @@ public class PlayerDecisionController : MonoBehaviour
     private void UpdateNamePanel()
     {
         namePanel.GetComponent<TextMeshProUGUI>().SetText(character.doll.name);
+    }
+
+    private void updateEventSystem(GameObject target)
+    {
+        var eventSystem = EventSystem.current;
+        eventSystem.SetSelectedGameObject(null);
+        eventSystem.SetSelectedGameObject(target);
     }
 
     /*private IEnumerator waitForDecision()

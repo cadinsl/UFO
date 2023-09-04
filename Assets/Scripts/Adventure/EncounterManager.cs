@@ -55,4 +55,16 @@ public class EncounterManager : MonoBehaviour
         translator.StartEncounter(dolls.ToArray(), regionMonsterProvider.GetMonsterForEncounter());
     }
 
+    public void startPlannedEncounter(CharacterDoll[] enemies)
+    {
+        Instantiate(encounterTranslator);
+        EncouterTranslator translator = encounterTranslator.GetComponent<EncouterTranslator>();
+        List<CharacterDoll> dolls = new List<CharacterDoll>();
+        CharacterAdventureController[] playerParty = AdventureManager.Instance.playerParty;
+        foreach (CharacterAdventureController adventureController in playerParty)
+        {
+            dolls.Add(adventureController.doll);
+        }
+        translator.StartEncounter(dolls.ToArray(), enemies);
+    }
 }

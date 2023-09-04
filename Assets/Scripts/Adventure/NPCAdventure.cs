@@ -6,6 +6,7 @@ public class NPCAdventure : MonoBehaviour
 {
     public Animator controller;
     private NPCDialog npcDialog;
+    public bool allowLookAtCharacter;
 
     private CharacterBrainAdventure _characterBrainAdventure;
     void Start()
@@ -15,14 +16,24 @@ public class NPCAdventure : MonoBehaviour
     public void AnswerPlayer(CharacterBrainAdventure characterBrainAdventure)
     {
         _characterBrainAdventure = characterBrainAdventure;
-        controller.SetBool("Talking", true );
-        lookAtCharacter(characterBrainAdventure);
-        npcDialog.DisplayDialog(EndDialog);
+        if(controller != null)
+            controller.SetBool("Talking", true );
+        if(allowLookAtCharacter)
+            lookAtCharacter(characterBrainAdventure);
+        if (npcDialog is NPCFightDialog)
+        {
+            ((NPCFightDialog)npcDialog).DisplayDialog(EndDialog);
+        }
+        else
+        {
+            npcDialog.DisplayDialog(EndDialog);
+        }
     }
 
     public void EndDialog(){
         _characterBrainAdventure.EndTalk();
-        controller.SetBool("Talking", false);
+        if (controller != null)
+            controller.SetBool("Talking", false);
     }
 
     private void OnTriggerEnter(Collider other)

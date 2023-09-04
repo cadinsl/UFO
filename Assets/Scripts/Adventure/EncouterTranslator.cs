@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class EncouterTranslator : MonoBehaviour
 {
 
     public static EncouterTranslator Instance { get; private set;}
+    public UnityEvent postFightEvent;
 
     private CharacterDoll[] playerParty;
     private CharacterDoll[] enemyParty;
@@ -56,6 +58,8 @@ public class EncouterTranslator : MonoBehaviour
     {
         AdventureManager.Instance.ActivateAdventure();
         Destroy(this.gameObject);
+        postFightEvent.Invoke();
+        postFightEvent.RemoveAllListeners();
     }
 
 
