@@ -149,8 +149,12 @@ public class PlayerDecisionController : MonoBehaviour
     private void updateEventSystem(GameObject target)
     {
         var eventSystem = EventSystem.current;
-        eventSystem.SetSelectedGameObject(null);
-        eventSystem.SetSelectedGameObject(target);
+        if (!eventSystem.alreadySelecting)
+        {
+            // eventSystem.SetSelectedGameObject(target);
+            target.GetComponent<Button>().Select();
+            target.GetComponent<Button>().OnSelect(null);
+        }
     }
 
     /*private IEnumerator waitForDecision()

@@ -9,20 +9,15 @@ public class PlayerSing : MonoBehaviour{
 
     public AudioSource source;
 
-    // Update is called once per frame
-    void Update()
+    public void Sing()
     {
-        if(Input.GetButtonDown("Sing"))
-        {
-            GameObject soundInstance = Instantiate(soundPrefab, mouthPosition.position, mouthPosition.rotation);
-            ParticleSystem singParticles = soundInstance.GetComponent<ParticleSystem>();
-            singParticles.Emit(1);
-            singParticles.Play();
-            addRandomNoteToAudioSource();
-            source.Play();
-        }
+        GameObject soundInstance = Instantiate(soundPrefab, mouthPosition.position, mouthPosition.rotation);
+        ParticleSystem singParticles = soundInstance.GetComponent<ParticleSystem>();
+        singParticles.Emit(1);
+        singParticles.Play();
+        addRandomNoteToAudioSource();
+        source.Play();
     }
-
     private void addRandomNoteToAudioSource(){
         int randomIndex =  Random.Range(0, notes.Length);
         source.clip = notes[randomIndex];

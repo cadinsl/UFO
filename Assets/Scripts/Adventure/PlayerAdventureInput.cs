@@ -13,11 +13,13 @@ public class PlayerAdventureInput : MonoBehaviour
     public bool canTalkToNPC = false;
 
     public bool canPickupItem = false;
+    private PlayerSing playerSing;
 
     private NPCAdventure npcInArea;
     void Start()
     {
         pausedGame.AddListener(AdventureManager.Instance.PauseGame);
+        playerSing = this.GetComponent<PlayerSing>();
     }
     // Update is called once per frame
     void Update()
@@ -34,6 +36,11 @@ public class PlayerAdventureInput : MonoBehaviour
             }
             else if(canPickupItem && Input.GetButton("Action")){
                 characterBrain.PickUpItem();
+            }
+            else if(Input.GetButtonDown("Sing"))
+            {
+                if (playerSing != null)
+                    playerSing.Sing();
             }
         }
     }
