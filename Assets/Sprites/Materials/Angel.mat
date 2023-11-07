@@ -21,6 +21,7 @@ Material:
   - _DIFFMODEL_VERTEX
   - _DRAWDIST_ON
   - _SPECMODEL_GOURAUD
+  - _UNLIT_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
