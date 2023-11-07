@@ -54,4 +54,9 @@ public class PlayerAdventureInput : MonoBehaviour
     {
         enableInput = true;
     }
+
+    public bool isInputEnabled()
+    {
+        return enableInput;
+    }
 }
