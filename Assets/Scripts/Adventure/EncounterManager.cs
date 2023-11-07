@@ -47,6 +47,8 @@ public class EncounterManager : MonoBehaviour
         Instantiate(encounterTranslator);
         EncouterTranslator translator = encounterTranslator.GetComponent<EncouterTranslator>();
         List<CharacterDoll> dolls = new List<CharacterDoll>();
+        //#TODO IMPLEMENT IT WITHOUT BEING DEPENDANT ON ANGEL
+        player.GetComponent<CharacterBrainAdventure>().DesactivatePlayer();
         CharacterAdventureController[] playerParty = AdventureManager.Instance.playerParty;
         foreach(CharacterAdventureController adventureController in playerParty)
         {

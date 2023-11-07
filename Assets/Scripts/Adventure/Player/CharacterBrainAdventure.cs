@@ -59,6 +59,7 @@ public class CharacterBrainAdventure : MonoBehaviour
 
     public void StopMovement()
     {
+        characterMovement.StopMovement();
         characterMovement.enabled = false;
     }
 
