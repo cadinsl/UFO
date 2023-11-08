@@ -7,6 +7,5 @@ public class PlayerAdventureCallEvent : MonoBehaviour
     public void CallEvent(string s)
     {
         AkSoundEngine.PostEvent(s, gameObject);
-        Debug.Log("EVENT");
     }
 }

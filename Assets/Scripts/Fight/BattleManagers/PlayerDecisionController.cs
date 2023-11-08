@@ -125,11 +125,13 @@ public class PlayerDecisionController : MonoBehaviour
 
     public void SetActive()
     {
+        //decisionPanel.interactable = true;
         active = true;
     }
 
     public void SetInactive()
     {
+        //decisionPanel.interactable = false;
         active = false;
     }
 
