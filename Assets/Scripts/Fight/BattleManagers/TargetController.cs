@@ -16,12 +16,17 @@ public class TargetController : MonoBehaviour
 
     public GameObject targetPanel;
 
+    private GameObject decisionPanel;
+
+    private Panel panel;
+
 
     public void Setup(List<CharacterFightController> _enemyParty, PlayerDecisionController _playerDecisionController, CharacterDecision _characterDecision)
     {
         enemyParty = _enemyParty;
         playerDecisionController = _playerDecisionController;
         characterDecision = _characterDecision;
+        panel = GetComponent<Panel>();
     }
 
     public void Display()
@@ -61,12 +66,28 @@ public class TargetController : MonoBehaviour
         CharacterFightController target = enemyParty[index];
         characterDecision.target = target;
         playerDecisionController.InputDecision(characterDecision);
-        playerDecisionController.SetActive();
-        GoBack();
+        this.gameObject.SetActive(false);
     }
 
     public void GoBack()
     {
         this.gameObject.SetActive(false);
+        decisionPanel.GetComponent<Panel>().SetActive();
     }
+
+    public void SetDecisionPanel(GameObject _decisionPanel)
+    {
+        decisionPanel = _decisionPanel;
+    }
+
+    public void SetActive()
+    {
+        panel.SetActive();
+    }
+
+    public void SetInActive()
+    {
+        panel.SetInActive();
+    }
+
 }

@@ -35,6 +35,10 @@ public class TurnController : MonoBehaviour
         for(int i = playerParty.Count - 1; i >= 0; i--)
         {
             getPlayerCharacterDecision(playerParty[i], i);
+            if(i == 0)
+            {
+               playerDecisionController[i].GetComponent<PlayerDecisionController>().SetActive();
+            }
         }
     }
 
@@ -63,6 +67,7 @@ public class TurnController : MonoBehaviour
         else
         {
             CharacterFightController character = playerParty[characterDecisionIndex];
+            playerDecisionController[characterDecisionIndex].GetComponent<PlayerDecisionController>().decisionPanel.GetComponent<Panel>().SetActive();
         }
     }
 

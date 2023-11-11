@@ -311,7 +311,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Action
-    descriptiveName: Use to talk to NPC
+    descriptiveName: used as general action
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: k
@@ -333,6 +333,22 @@ InputManager:
     positiveButton: l
     altNegativeButton: 
     altPositiveButton: joystick button 3
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: AdventureAction
+    descriptiveName: Used to talk to NPC & Pickup Item
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: l
+    altNegativeButton: 
+    altPositiveButton: joystick button 2
     gravity: 1000
     dead: 0.001
     sensitivity: 1000

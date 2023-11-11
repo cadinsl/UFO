@@ -30,11 +30,11 @@ public class PlayerAdventureInput : MonoBehaviour
             {
                 pausedGame.Invoke();
             }
-            else if(canTalkToNPC && Input.GetButton("Action"))
+            else if(canTalkToNPC && Input.GetButton("AdventureAction"))
             {
                 characterBrain.TalkToNPC();
             }
-            else if(canPickupItem && Input.GetButton("Action")){
+            else if(canPickupItem && Input.GetButton("AdventureAction")){
                 characterBrain.PickUpItem();
             }
             else if(Input.GetButtonDown("Sing"))

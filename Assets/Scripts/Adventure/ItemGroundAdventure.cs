@@ -8,6 +8,7 @@ public class ItemGroundAdventure : MonoBehaviour
 
     public Item item;
     public GameObject model;
+    private CharacterBrainAdventure characterBrain;
 
     private CharacterBrainAdventure _characterBrainAdventure;
     void Start()
@@ -23,6 +24,7 @@ public class ItemGroundAdventure : MonoBehaviour
 
     public void EndDialog(){
         _characterBrainAdventure.EndTalk();
+        characterBrain.disactivateItemArea();
         Destroy(this.gameObject);
     }
 
@@ -36,8 +38,8 @@ public class ItemGroundAdventure : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            CharacterBrainAdventure characteBrain = other.gameObject.GetComponent<CharacterBrainAdventure>();
-            characteBrain.activateItemArea(this);
+            characterBrain = other.gameObject.GetComponent<CharacterBrainAdventure>();
+            characterBrain.activateItemArea(this);
         }
     }
 
@@ -45,8 +47,8 @@ public class ItemGroundAdventure : MonoBehaviour
     {
          if(other.gameObject.CompareTag("Player"))
         {
-            CharacterBrainAdventure characteBrain = other.gameObject.GetComponent<CharacterBrainAdventure>();
-            characteBrain.disactivateItemArea();
+            characterBrain = other.gameObject.GetComponent<CharacterBrainAdventure>();
+            characterBrain.disactivateItemArea();
         }
     }
 

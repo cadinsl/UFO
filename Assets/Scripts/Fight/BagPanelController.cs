@@ -16,12 +16,14 @@ public class BagPanelController : MonoBehaviour
 
     public GameObject targetManagerPanel;
 
+    private Panel panel;
 
     public void Setup(CharacterFightController _character, PlayerDecisionController _decisionController, List<CharacterFightController> _enemyParty)
     {
         character = _character;
         decisionController = _decisionController;
         enemyParty = _enemyParty;
+        panel = GetComponent<Panel>();
     }
 
     public void Display()
@@ -71,7 +73,9 @@ public class BagPanelController : MonoBehaviour
         TargetController targetController = targetManagerPanel.GetComponent<TargetController>();
         targetController.Setup(enemyParty, decisionController, decision);
         targetController.optionalBagPanel = this.gameObject;
+        targetController.SetDecisionPanel(decisionController.decisionPanel);
         targetController.Display();
+        targetController.SetActive();
         this.gameObject.SetActive(false);
     }
 
@@ -82,12 +86,16 @@ public class BagPanelController : MonoBehaviour
         }
     }
 
-    /*public void SetTarget(CharacterController target)
+    public void SetActive()
     {
-        CharacterDecision decision = new CharacterDecision(Decision.Bag, savedItem, target);
-        decisionController.InputDecision(decision);
-        Destroy(this.gameObject);
-    }*/
+        panel.SetActive();
+    }
+
+    public void SetInActive()
+    {
+        panel.SetInActive();
+    }
+
 
     #endregion
 }

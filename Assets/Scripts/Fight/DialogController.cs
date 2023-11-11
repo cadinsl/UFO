@@ -39,6 +39,7 @@ public class DialogController : MonoBehaviour
         this.action = action;
         addNextEventToButton(action);
         dialogPanelInstance.transform.SetAsLastSibling();
+        dialogPanelInstance.GetComponent<Panel>().SetActive();
     }
 
     public void Next()

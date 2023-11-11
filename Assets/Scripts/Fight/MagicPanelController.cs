@@ -19,6 +19,8 @@ public class MagicPanelController : MonoBehaviour
 
     public GameObject targetManagerPanel;
 
+    private Panel panel;
+
     List<IMagicObserver> observers = new List<IMagicObserver>();
 
 
@@ -28,7 +30,7 @@ public class MagicPanelController : MonoBehaviour
         decisionController = _decisionController;
         enemyParty = _enemyParty;
         playerParty = _playerParty;
-
+        panel = GetComponent<Panel>();
         //setup observers
         MasterBattleController masterBattleController =   GameObject.Find("Master Manager").GetComponent<MasterBattleController>();
         AddObserver(masterBattleController);
@@ -77,6 +79,16 @@ public class MagicPanelController : MonoBehaviour
         }
     }
 
+    public void SetActive()
+    {
+        panel.SetActive();
+    }
+
+    public void SetInActive()
+    {
+        panel.SetInActive();
+    }
+
     #region ButtonFunctions
     public void GoBack()
     {
@@ -100,14 +112,18 @@ public class MagicPanelController : MonoBehaviour
             TargetController targetController = targetManagerPanel.GetComponent<TargetController>();
             targetController.Setup(enemyParty, decisionController, decision);
             targetController.optionalBagPanel = this.gameObject;
+            targetController.SetDecisionPanel(decisionController.decisionPanel);
             targetController.Display();
+            targetController.SetActive();
         }
         else if(character.doll.magicSkills.spells[i] is HealSpell){
             targetManagerPanel.SetActive(true);
             TargetController targetController = targetManagerPanel.GetComponent<TargetController>();
             targetController.Setup(playerParty, decisionController, decision);
             targetController.optionalBagPanel = this.gameObject;
+            targetController.SetDecisionPanel(decisionController.decisionPanel);
             targetController.Display();
+            targetController.SetActive();
         }
     }
 

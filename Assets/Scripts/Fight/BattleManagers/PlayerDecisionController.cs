@@ -44,8 +44,8 @@ public class PlayerDecisionController : MonoBehaviour
         rectTransform.anchoredPosition = Vector3.zero;
         decisionPanel.SetActive(true);
         decisionMade = false;
-        updateEventSystem(decisionPanel.transform.GetChild(1).gameObject);
         UpdateNamePanel();
+        SetInactive();
     }
     //We get decision turn it to turn manager and destroy this object.
     public void InputDecision(CharacterDecision decisionReceived)
@@ -72,43 +72,36 @@ public class PlayerDecisionController : MonoBehaviour
     //Function called by the fight button
     public void Fight()
     {
-        if(active)
-        {
-            CharacterDecision turn = new CharacterDecision(character, Decision.Fight, null);
-            //InputDecision(turn);
+        CharacterDecision turn = new CharacterDecision(character, Decision.Fight, null);
 
-            targetManagerPrefab.SetActive(true);
-            TargetController targetController = targetManagerPrefab.GetComponent<TargetController>();
-            targetController.Setup(enemyParty, this, turn);
-            updateEventSystem(targetController.transform.GetChild(0).gameObject);
-            targetController.Display();
-        }
+        targetManagerPrefab.SetActive(true);
+        TargetController targetController = targetManagerPrefab.GetComponent<TargetController>();
+        targetController.Setup(enemyParty, this, turn);
+        targetController.SetDecisionPanel(decisionPanel);
+        targetController.Display();
+        targetController.SetActive();
+
+        SetInactive();
     }
     
     public void Bag()
     {
-        if(active)
-        {
-            bagManagerPanel.SetActive(true);
-            BagPanelController bagPanelController = bagManagerPanel.GetComponent<BagPanelController>();
-            bagPanelController.Setup(character, this, enemyParty);
-            updateEventSystem(bagPanelController.transform.GetChild(0).gameObject);
-            bagPanelController.Display();
-            active = false;
-        }
+        bagManagerPanel.SetActive(true);
+        BagPanelController bagPanelController = bagManagerPanel.GetComponent<BagPanelController>();
+        bagPanelController.Setup(character, this, enemyParty);
+        bagPanelController.Display();
+        bagPanelController.SetActive();
+        SetInactive();
     }
 
     public void Magic()
     {
-        if(active)
-        {
-            magicManagerPanel.SetActive(true);
-            MagicPanelController magicPanelController = magicManagerPanel.GetComponent<MagicPanelController>();
-            magicPanelController.Setup(character, this, enemyParty, playerParty);
-            updateEventSystem(magicPanelController.transform.GetChild(0).gameObject);
-            magicPanelController.Display();
-            active = false;
-        }
+        magicManagerPanel.SetActive(true);
+        MagicPanelController magicPanelController = magicManagerPanel.GetComponent<MagicPanelController>();
+        magicPanelController.Setup(character, this, enemyParty, playerParty);
+        magicPanelController.Display();
+        magicPanelController.SetActive();
+        SetInactive();
     }
 
     public void Guard()
@@ -127,12 +120,14 @@ public class PlayerDecisionController : MonoBehaviour
     {
         //decisionPanel.interactable = true;
         active = true;
+        decisionPanel.GetComponent<Panel>().SetActive();
     }
 
     public void SetInactive()
     {
         //decisionPanel.interactable = false;
         active = false;
+        decisionPanel.GetComponent<Panel>().SetInActive();
     }
 
     public void Hide(){
@@ -148,22 +143,4 @@ public class PlayerDecisionController : MonoBehaviour
         namePanel.GetComponent<TextMeshProUGUI>().SetText(character.doll.name);
     }
 
-    private void updateEventSystem(GameObject target)
-    {
-        var eventSystem = EventSystem.current;
-        if (!eventSystem.alreadySelecting)
-        {
-            // eventSystem.SetSelectedGameObject(target);
-            target.GetComponent<Button>().Select();
-            target.GetComponent<Button>().OnSelect(null);
-        }
-    }
-
-    /*private IEnumerator waitForDecision()
-    {
-        while(!decisionMade)
-        {
-            yield return null;
-        }
-    }*/
 }
