@@ -12680,6 +12680,105 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1559913968}
+--- !u!114 &568564578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568564559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a1c6f7db286de40a267ae4fe971393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 275e8c22e84c9cd40a459d0e465c67c7, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &568564579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568564559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7dbb75ce0776349856de3aeac889a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!54 &568564580
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568564559}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &568564581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568564559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2fe7bcb3e8667c41917bfcdf4a943af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &568564582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568564559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba8755196abcd14793d21378e63c4c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &569310860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5493146397510214889, guid: acf3cbee60aa48c49a50ec2971482cb1, type: 3}
@@ -16259,7 +16358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 768, y: 432}
+  customRes: {x: 512, y: 288}
   resolutionFactor: 5
   limitFramerate: -1
   skipFrames: 0
@@ -52220,6 +52319,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 761541019736438082, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       insertIndex: -1
       addedObject: {fileID: 568564569}
+    - targetCorrespondingSourceObject: {fileID: 761541019736438082, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 568564582}
+    - targetCorrespondingSourceObject: {fileID: 761541019736438082, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 568564581}
+    - targetCorrespondingSourceObject: {fileID: 761541019736438082, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 568564580}
+    - targetCorrespondingSourceObject: {fileID: 761541019736438082, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 568564579}
+    - targetCorrespondingSourceObject: {fileID: 761541019736438082, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 568564578}
     - targetCorrespondingSourceObject: {fileID: 2714929951317312872, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1195397291}

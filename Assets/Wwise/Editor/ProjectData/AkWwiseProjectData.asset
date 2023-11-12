@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 18f64c7563c8064ea39dbe681c114294
     GuidInternal: 
-    m_lastTime: -8585024974748057361
+    m_lastTime: -8585027162097960529
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b4b334770658b44594e87764e808b878
     GuidInternal: 
-    m_lastTime: -8585024974748173729
+    m_lastTime: -8585027162098284987
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3b78ccb8c8d97142bd2586189549a8ca
     GuidInternal: 
-    m_lastTime: -8585024974748132776
-    List: []
+    m_lastTime: -8585022648674593562
+    List:
+    - name: Player
+      guid: f8aff31c2223fd4b8ed49b5a8750e093
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3b78ccb8c8d97142bd2586189549a8ca
+      - ElementName: Player
+        ObjectType: 7
+        guid: f8aff31c2223fd4b8ed49b5a8750e093
+      Path: SoundBanks\Default Work Unit\Player
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e2b0201a2a38be43871d2ab3390120e4
     GuidInternal: 
-    m_lastTime: -8585024974748213793
-    List: []
+    m_lastTime: -8585022648674655252
+    List:
+    - name: Footsteps_Grass
+      guid: 74a2de4e7ee8114387ff20d9ca60c938
+      id: 7365553
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e2b0201a2a38be43871d2ab3390120e4
+      - ElementName: Footsteps_Grass
+        ObjectType: 3
+        guid: 74a2de4e7ee8114387ff20d9ca60c938
+      Path: Events\Default Work Unit\Footsteps_Grass
+      maxAttenuation: 0
+      maxDuration: 3081.127
+      minDuration: 1158.7946
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +125,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 44072a76ce87fc4ea04010ba36377762
     GuidInternal: 
-    m_lastTime: -8585024974748213793
+    m_lastTime: -8585027162098006188
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +139,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c8f082d546a18949a15fe1155761b54d
     GuidInternal: 
-    m_lastTime: -8585024974748132776
+    m_lastTime: -8585027162098376299
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +153,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4b67cafea3b44141bad123852dd86363
     GuidInternal: 
-    m_lastTime: -8585024974748132776
+    m_lastTime: -8585027162098426998
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,10 +167,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 69d2432897cf814386132f454c32e803
     GuidInternal: 
-    m_lastTime: -8585024974748092566
+    m_lastTime: -8585027162098188706
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
