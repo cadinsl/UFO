@@ -59,6 +59,7 @@ public class EncounterManager : MonoBehaviour
 
     public void startPlannedEncounter(CharacterDoll[] enemies)
     {
+        player.GetComponent<CharacterBrainAdventure>().disactivateNPCAreaTalk();
         Instantiate(encounterTranslator);
         EncouterTranslator translator = encounterTranslator.GetComponent<EncouterTranslator>();
         List<CharacterDoll> dolls = new List<CharacterDoll>();
