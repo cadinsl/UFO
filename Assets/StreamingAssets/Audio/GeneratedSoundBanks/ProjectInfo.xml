@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="UFO_WwiseProject" GUID="{A0742DEF-387C-4CFE-87C1-B167C79F7BFC}" Generator="2022.1.8.8316"/>
+	<Project Name="UFO_WwiseProject" GUID="{7BBA0F40-496B-4CFA-889F-63ABBE9DE8F4}" Generator="2022.1.8.8316"/>
 	<CacheRoot>../../../../UFO_WwiseProject/.cache</CacheRoot>
 	<Platforms>
-		<Platform Name="Mac" GUID="{55B3B7BC-2CAB-462E-9AA6-77796342F7AF}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../UFO_WwiseProject/GeneratedSoundBanks/Mac"/>
-		<Platform Name="Windows" GUID="{AF929A31-C11D-4ECD-9370-656841722439}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../UFO_WwiseProject/GeneratedSoundBanks/Windows"/>
+		<Platform Name="Mac" GUID="{8FA0B60E-476E-4ACE-98A0-A8CF92B24C90}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../UFO_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{FB645311-3827-4DF0-BE16-0C0815CA8947}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
 	</Platforms>
 	<Languages>
-		<Language Name="English(US)" Id="684519430" GUID="{3B44CE8D-EDC5-4F8C-9089-3D92D7F4E57B}" Default="true" UseAsStandIn="true"/>
+		<Language Name="English(US)" Id="684519430" GUID="{1C69B708-F458-4920-9958-EE06C441A456}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{70A40113-59C3-7D0B-BEAF-3012A237C278}</FileHash>
+	<FileHash>{C004CF37-6AC9-CF61-FA28-E6358887B7D4}</FileHash>
 </ProjectInfo>

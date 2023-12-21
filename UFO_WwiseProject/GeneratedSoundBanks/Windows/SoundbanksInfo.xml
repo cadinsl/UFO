@@ -9,58 +9,6 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{6BD7D1B5-5340-2E98-F000-4E2C6611C63D}">
-			<ShortName>Player</ShortName>
-			<Path>Player.bnk</Path>
-			<Media>
-				<File Id="422380641" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-004.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-004_10C4C929.wem</CachePath>
-				</File>
-				<File Id="426611598" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-008.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-008_10C4C929.wem</CachePath>
-				</File>
-				<File Id="426909683" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-003.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-003_10C4C929.wem</CachePath>
-				</File>
-				<File Id="432453967" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-002.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-002_10C4C929.wem</CachePath>
-				</File>
-				<File Id="598201649" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-005.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-005_10C4C929.wem</CachePath>
-				</File>
-				<File Id="666239164" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-007.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-007_10C4C929.wem</CachePath>
-				</File>
-				<File Id="766598276" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-001.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-001_10C4C929.wem</CachePath>
-				</File>
-				<File Id="786136072" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Footsteps\Footsteps Grass-006.wav</ShortName>
-					<CachePath>SFX/Footsteps/Footsteps Grass-006_10C4C929.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="7365553" Name="Footsteps_Grass" DurationType="OneShot" DurationMin="1158.7946" DurationMax="3081.127">
-					<MediaRefs>
-						<MediaRef Id="422380641"/>
-						<MediaRef Id="426611598"/>
-						<MediaRef Id="426909683"/>
-						<MediaRef Id="432453967"/>
-						<MediaRef Id="598201649"/>
-						<MediaRef Id="666239164"/>
-						<MediaRef Id="766598276"/>
-						<MediaRef Id="786136072"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -75,5 +23,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{751EA2EE-3B24-14EF-C92F-04FCDF31CE0D}</FileHash>
+	<FileHash>{728B0CF1-C3AD-A635-6DAF-778047395964}</FileHash>
 </SoundBanksInfo>

@@ -64,14 +64,14 @@ ModelImporter:
       curves: []
       events:
       - time: 0.45082
-        functionName: Callevent
+        functionName: FootstepSound
         data: Footsteps_Grass
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.9767442
-        functionName: Callevent
+        functionName: FootstepSound
         data: Footsteps_Grass
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
@@ -107,15 +107,15 @@ ModelImporter:
       curves: []
       events:
       - time: 0.3949629
-        functionName: Callevent
-        data: Footsteps_Grass
+        functionName: PlayFootsteps
+        data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.8949629
-        functionName: Callevent
-        data: Footsteps_Grass
+        functionName: PlayFootsteps
+        data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{1A20B0E2-382A-43BE-871D-2AB3390120E4}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{20347C09-B1D7-4779-963B-3F28AB30B067}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1A20B0E2-382A-43BE-871D-2AB3390120E4}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{20347C09-B1D7-4779-963B-3F28AB30B067}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Footsteps_Grass" ID="{4EDEA274-E87E-4311-87FF-20D9CA60C938}">
+				<Event Name="Play_Grass" ID="{8F315263-FF7B-400D-A609-394BBA320D88}">
 					<ChildrenList>
-						<Action Name="" ID="{972D652B-1256-4FF7-9174-DD3B8DDC647B}" ShortID="296778332">
+						<Action Name="" ID="{701D367A-072F-489A-B86F-E23612B6DE87}" ShortID="936978134">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps_Grass" ID="{AA70E6AD-4ABE-4F14-A8D8-30527A69A1A2}" WorkUnitID="{7A3BCB7F-6D18-4FA6-BF2B-D7D0D887A756}"/>
+									<ObjectRef Name="Grass" ID="{B233AB50-FCF3-4DE0-9D94-73CD9DEC092E}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
