@@ -5194,7 +5194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &243263686
 Transform:
   m_ObjectHideFlags: 0
@@ -16987,7 +16987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 633, y: 474}
+  customRes: {x: 800, y: 600}
   resolutionFactor: 1
   limitFramerate: -1
   skipFrames: 0
@@ -17011,7 +17011,7 @@ MonoBehaviour:
   postProcessing: 1
   verticalScanlines: 1
   shadowIntensity: 0.5
-  downscale: 0
+  downscale: 1
   snapCamera: 0
   camInaccuracy: 0.05
   camSnapping: 1
