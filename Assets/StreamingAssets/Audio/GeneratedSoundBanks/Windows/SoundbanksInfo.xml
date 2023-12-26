@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../../../../../UFO_WwiseProject</ProjectRoot>
+		<SourceFilesRoot>../../../../../UFO_WwiseProject/.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../../UFO_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A99C08D4-BEF3-4FB2-3FA0-6292E911D1F7}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="20496875" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Footsteps Grass-005.wav</ShortName>
+					<CachePath>SFX/Grass/Footsteps Grass-005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="220269723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Footsteps Grass-008.wav</ShortName>
+					<CachePath>SFX/Grass/Footsteps Grass-008_10C4C929.wem</CachePath>
+				</File>
+				<File Id="228610776" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Footsteps Grass-001.wav</ShortName>
+					<CachePath>SFX/Grass/Footsteps Grass-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="233498879" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Footsteps Grass-002.wav</ShortName>
+					<CachePath>SFX/Grass/Footsteps Grass-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="278922027" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Footsteps Grass-006.wav</ShortName>
+					<CachePath>SFX/Grass/Footsteps Grass-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="338801011" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Footsteps Grass-004.wav</ShortName>
+					<CachePath>SFX/Grass/Footsteps Grass-004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1051144874" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grass\Footsteps Grass-003.wav</ShortName>
+					<CachePath>SFX/Grass/Footsteps Grass-003_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3198961276" Name="Play_Grass" DurationType="OneShot" DurationMin="221.20534" DurationMax="221.20534">
+					<MediaRefs>
+						<MediaRef Id="20496875"/>
+						<MediaRef Id="220269723"/>
+						<MediaRef Id="228610776"/>
+						<MediaRef Id="233498879"/>
+						<MediaRef Id="278922027"/>
+						<MediaRef Id="338801011"/>
+						<MediaRef Id="1051144874"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{2EC53AAA-288D-48F3-DA49-0E1EE41BEDE8}</FileHash>
+</SoundBanksInfo>
