@@ -20749,12 +20749,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.46
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -45045,7 +45045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b7911d501bc7940a29f9a6d7ac0862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogPanelPrefab: {fileID: 8993619129130354005, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
+  dialogPanelPrefab: {fileID: 3622741586886147739, guid: 5e2936aafd0ccfa4480ffb22b1879beb, type: 3}
   texts: []
 --- !u!1001 &1799979811
 PrefabInstance:
