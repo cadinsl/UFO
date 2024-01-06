@@ -47,6 +47,7 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -60,6 +61,33 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+
+
+## ---------------- ##
+##   WWise stuff    ##
+## ---------------- ##
+
+# project stuff
+WWiseProject/.cache/
+WWiseProject/*.prof
+WwiseProject/*_WwiseProject.*.validationcache
+WwiseProject/*_WwiseProject.*.wsettings
+WwiseProject/**/*.akd
+
+# build stuff (unsure?)
+# Assets/Wwise/Deployment/Plugins/Windows/**/*.meta
+
+# WWise Picker (editor)
+# from https://www.audiokinetic.com/library/edge/?source=Unity&id=unity__troubleshooting.html
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+
+Assets/Wwise/Editor/ProjectData.meta
+
+Assets/StreamingAssets/Audio/GeneratedSoundBanks
+
+## --------------- ##
+## End WWise Stuff ##
+## --------------- ##
 
 # Crashlytics generated file
 crashlytics-build.properties
