@@ -12,6 +12,7 @@ public class PausedTargetController : MonoBehaviour
     public GameObject targetPanel;
 
     public Button[] itemButtons;
+    public Panel panel;
     private UnityAction<CharacterDoll> getBackAction;
 
     public void DisplayTargets(CharacterDoll[] targets, UnityAction<CharacterDoll> getBackAction)
@@ -23,9 +24,11 @@ public class PausedTargetController : MonoBehaviour
         {
             itemButtons[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(targets[i].name);
             int x = i;
+            itemButtons[i].onClick.RemoveAllListeners();
             itemButtons[i].onClick.AddListener(delegate {ChosenItem(x);});
             itemButtons[i].gameObject.SetActive(true);
         }
+        panel.SetActive();
     }
 
     public void ChosenItem(int index)

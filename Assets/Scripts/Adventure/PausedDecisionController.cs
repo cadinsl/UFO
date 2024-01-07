@@ -12,6 +12,7 @@ public class PausedDecisionController : APausedMenu
     public UnityEvent unpauseGameEvent;
 
     public Stack<APausedMenu> pausedMenus = new Stack<APausedMenu>();
+    public Panel panel;
 
     public void Start()
     {
@@ -22,6 +23,7 @@ public class PausedDecisionController : APausedMenu
     {
         this.characterDoll = characterDoll;
         this.gameObject.SetActive(true);
+        panel.SetActive();
     }
     public void GoBack()
     {

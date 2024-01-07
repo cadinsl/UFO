@@ -14,6 +14,7 @@ public class PlayerAdventureInput : MonoBehaviour
 
     public bool canPickupItem = false;
     private PlayerSing playerSing;
+    private bool pauseMenuUp;
 
     private NPCAdventure npcInArea;
     void Start()
@@ -26,11 +27,7 @@ public class PlayerAdventureInput : MonoBehaviour
     {
         if(enableInput)
         {
-            if(Input.GetButton("Pause"))
-            {
-                pausedGame.Invoke();
-            }
-            else if(canTalkToNPC && Input.GetButton("AdventureAction"))
+            if(canTalkToNPC && Input.GetButton("AdventureAction"))
             {
                 characterBrain.TalkToNPC();
             }
@@ -39,8 +36,8 @@ public class PlayerAdventureInput : MonoBehaviour
             }
             else if(Input.GetButtonDown("Sing"))
             {
-                if (playerSing != null)
-                    playerSing.Sing();
+                //if (playerSing != null)
+                   // playerSing.Sing();
             }
         }
     }

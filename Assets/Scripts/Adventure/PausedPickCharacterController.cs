@@ -8,10 +8,12 @@ public class PausedPickCharacterController : APausedMenu
 {
     public GameObject pickCharacterPanel;
     public Button[] buttons;
+    public Panel panel;
 
     private CharacterDoll[] dolls;
 
     private CharacterDoll currentDoll;
+
 
     public override void Display(CharacterDoll doll)
     {
@@ -19,6 +21,7 @@ public class PausedPickCharacterController : APausedMenu
         dolls = PausedController.Instance.playerPartyDolls;
         setupCharacterButtons();
         this.gameObject.SetActive(true);
+        panel.SetActive();
     }
 
     public override void Close()

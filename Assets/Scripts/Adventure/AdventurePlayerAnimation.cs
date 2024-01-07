@@ -9,7 +9,6 @@ public class AdventurePlayerAnimation : MonoBehaviour
 
     public void SetSpeed(float speed)
     {
-        Debug.Log(speed);
         animator.SetFloat("Speed", speed);
     }
 }

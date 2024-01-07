@@ -7,6 +7,7 @@ using TMPro;
 public class PausedInventoryController : APausedMenu
 {
     public PausedTargetController targetController;
+    public Panel panel;
     private Inventory inventory;
     private int maxButtons = 8;
 
@@ -17,6 +18,7 @@ public class PausedInventoryController : APausedMenu
         inventory = doll.inventory;
         updateItems();
         this.gameObject.SetActive(true);
+        panel.SetActive();
     }
 
     public void ChosenItem(int index)
@@ -26,7 +28,7 @@ public class PausedInventoryController : APausedMenu
         {
             List<string> texts = new List<string>();
             texts.Add("Cannot use this item rn </3");
-            PausedController.Instance.DisplayDialog(texts, delegate{});
+            PausedController.Instance.DisplayDialog(texts, delegate{ this.panel.SetActive(); });
         }
         else
         {
@@ -60,6 +62,7 @@ public class PausedInventoryController : APausedMenu
                 Button button = buttonObject.GetComponent<Button>();
                 buttonObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(inventory.items[i].name);
                 int x = i;
+                button.onClick.RemoveAllListeners();
                 button.onClick.AddListener(delegate{ChosenItem(x);});
                 buttonObject.SetActive(true);
             }

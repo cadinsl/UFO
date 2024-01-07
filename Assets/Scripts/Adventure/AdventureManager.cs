@@ -32,24 +32,41 @@ public class AdventureManager : MonoBehaviour
 
     public PausedController pausedController;
 
+    public bool isPaused;
+
     public void Start()
     {
+        isPaused = false;
         DontDestroyOnLoad(this.gameObject);
     }
     public void Update()
     {
+        if (Input.GetButtonDown("Pause"))
+        {
+            if (!isPaused)
+            {
+                PauseGame();
+            }
+            else
+            {
+                UnpauseGame();
+
+            }
+        }
     }
 
     public void PauseGame()
     {
         Time.timeScale = 0;
         pausedController.DisplayPauseSettings(playerParty);
+        isPaused = true;
     }
 
     public void UnpauseGame()
     {
         Time.timeScale = 1;
         pausedController.ClosePauseMenu();
+        isPaused = false;
     }
 
     public void SetupBackFromEncounter()
