@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 522632966570386639}
   - component: {fileID: 6378365095585035081}
   m_Layer: 0
-  m_Name: HealSpellTEST
+  m_Name: Dog Lick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,6 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 1
-  name: Healing Chant
-  mana: 5
-  heal: 20
+  name: Dog Lick
+  mana: 1
+  heal: 1

@@ -17215,12 +17215,12 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 1.3737388
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
   m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
+  m_SensorSize: {x: 1, y: 1}
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -17256,8 +17256,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730584002}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45937282, y: -0.000000008413703, z: 0.0000000043513158, w: 0.8882436}
-  m_LocalPosition: {x: -42.6, y: 14.26105, z: 34.73071}
+  m_LocalRotation: {x: 0.45937306, y: 0, z: 0, w: 0.88824344}
+  m_LocalPosition: {x: -42.6, y: 14.261052, z: 34.73071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28153,7 +28153,7 @@ GameObject:
   - component: {fileID: 1173743666}
   - component: {fileID: 1173743665}
   m_Layer: 0
-  m_Name: Enemy2
+  m_Name: Right Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30049,7 +30049,7 @@ GameObject:
   - component: {fileID: 1246228920}
   - component: {fileID: 1246228919}
   m_Layer: 0
-  m_Name: Enemy3
+  m_Name: Left Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30364,8 +30364,8 @@ MonoBehaviour:
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.1
+  m_SoftZoneHeight: 0.1
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -37188,7 +37188,7 @@ GameObject:
   - component: {fileID: 1476820062}
   - component: {fileID: 1476820061}
   m_Layer: 0
-  m_Name: Enemy1
+  m_Name: Center Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41742,6 +41742,7 @@ MonoBehaviour:
   canvas: {fileID: 855144976}
   currentLeader: {fileID: 568564559}
   pausedController: {fileID: 388857661}
+  isPaused: 0
 --- !u!1 &1636904709
 GameObject:
   m_ObjectHideFlags: 0
@@ -48137,8 +48138,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903199099}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45937282, y: -0.000000008413703, z: 0.0000000043513158, w: 0.8882436}
-  m_LocalPosition: {x: -42.6, y: 14.26105, z: 34.73071}
+  m_LocalRotation: {x: 0.45937306, y: 0, z: 0, w: 0.88824344}
+  m_LocalPosition: {x: -42.6, y: 14.261052, z: 34.73071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
