@@ -49,4 +49,9 @@ public class PausedDecisionController : APausedMenu
         pausedMenus.Clear();
         this.gameObject.SetActive(false);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

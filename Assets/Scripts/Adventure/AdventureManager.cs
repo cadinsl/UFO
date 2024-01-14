@@ -34,14 +34,17 @@ public class AdventureManager : MonoBehaviour
 
     public bool isPaused;
 
+    private bool isAdventure;
+
     public void Start()
     {
         isPaused = false;
+        isAdventure = true;
         DontDestroyOnLoad(this.gameObject);
     }
     public void Update()
     {
-        if (Input.GetButtonDown("Pause"))
+        if (Input.GetButtonDown("Pause") && isAdventure)
         {
             if (!isPaused)
             {
@@ -77,11 +80,13 @@ public class AdventureManager : MonoBehaviour
     {
         canvas.SetActive(false);
         currentLeader.GetComponent<CharacterBrainAdventure>().DesactivatePlayer();
+        isAdventure = false;
     }
 
     public void ActivateAdventure()
     {
         canvas.SetActive(true);
         currentLeader.GetComponent<CharacterBrainAdventure>().ActivatePlayer();
+        isAdventure = true;
     }
 }

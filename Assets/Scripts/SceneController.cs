@@ -28,6 +28,8 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     public void LoadFightScene(UnityAction method)
