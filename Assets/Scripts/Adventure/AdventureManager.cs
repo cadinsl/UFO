@@ -20,7 +20,8 @@ public class AdventureManager : MonoBehaviour
         else 
         { 
             Instance = this; 
-        } 
+        }
+        playerInput = new PlayerInput();
     }
     #endregion
 
@@ -32,9 +33,20 @@ public class AdventureManager : MonoBehaviour
 
     public PausedController pausedController;
 
+    public PlayerInput playerInput;
+
     public bool isPaused;
 
     private bool isAdventure;
+
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
 
     public void Start()
     {
@@ -44,7 +56,7 @@ public class AdventureManager : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetButtonDown("Pause") && isAdventure)
+        if ( playerInput.Player.Pause.triggered && isAdventure)
         {
             if (!isPaused)
             {
@@ -62,6 +74,7 @@ public class AdventureManager : MonoBehaviour
     {
         Time.timeScale = 0;
         pausedController.DisplayPauseSettings(playerParty);
+        currentLeader.GetComponent<CharacterBrainAdventure>().DesactivatePlayer();
         isPaused = true;
     }
 
@@ -69,6 +82,7 @@ public class AdventureManager : MonoBehaviour
     {
         Time.timeScale = 1;
         pausedController.ClosePauseMenu();
+        currentLeader.GetComponent<CharacterBrainAdventure>().ActivatePlayer();
         isPaused = false;
     }
 

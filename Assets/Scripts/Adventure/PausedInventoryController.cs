@@ -80,6 +80,7 @@ public class PausedInventoryController : APausedMenu
             GameObject buttonObject = this.transform.GetChild(i).gameObject;
             buttonObject.SetActive(false);
         }
+        targetController.Close();
         this.gameObject.SetActive(false);
     }
 }

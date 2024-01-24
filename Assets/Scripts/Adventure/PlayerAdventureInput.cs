@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class PlayerAdventureInput : MonoBehaviour
 {
@@ -16,7 +17,25 @@ public class PlayerAdventureInput : MonoBehaviour
     private PlayerSing playerSing;
     private bool pauseMenuUp;
 
+    public PlayerInput playerInput;
+
     private NPCAdventure npcInArea;
+
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+
+    private void OnEnable()
+    {
+        playerInput.Enable();
+    }
+    private void OnDisable()
+    {
+        playerInput.Disable();
+    }
+
+
     void Start()
     {
         pausedGame.AddListener(AdventureManager.Instance.PauseGame);
@@ -27,18 +46,18 @@ public class PlayerAdventureInput : MonoBehaviour
     {
         if(enableInput)
         {
-            if(canTalkToNPC && Input.GetButton("AdventureAction"))
+            if(canTalkToNPC && (playerInput.Player.Interact.WasPressedThisFrame()))
             {
                 characterBrain.TalkToNPC();
             }
-            else if(canPickupItem && Input.GetButton("AdventureAction")){
+            else if(canPickupItem && (playerInput.Player.Interact.WasPressedThisFrame())){
                 characterBrain.PickUpItem();
             }
-            else if(Input.GetButtonDown("Sing"))
-            {
-                //if (playerSing != null)
-                   // playerSing.Sing();
-            }
+            //else if(Input.GetButtonDown("Sing"))
+            //{
+            //    //if (playerSing != null)
+            //       // playerSing.Sing();
+            //}
         }
     }
 

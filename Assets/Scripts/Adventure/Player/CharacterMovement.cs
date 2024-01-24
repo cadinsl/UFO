@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -9,6 +10,25 @@ public class CharacterMovement : MonoBehaviour
     private CharacterController characterController;
     private AdventurePlayerAnimation adventurePlayerAnimation;
     private PlayerAdventureInput playerAdventureInput;
+
+    public PlayerInput playerInput;
+    private InputAction moveInput;
+
+    private void Awake()
+    {
+        playerInput = new PlayerInput();
+    }
+
+    private void OnEnable()
+    {
+        moveInput = playerInput.Player.Move;
+        moveInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        moveInput.Disable();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +43,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (playerAdventureInput.isInputEnabled())
         {
-            Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            Vector3 move = new Vector3(moveInput.ReadValue<Vector2>().x, 0, moveInput.ReadValue<Vector2>().y);
             move = Vector3.ClampMagnitude(move, 1);
             if (adventurePlayerAnimation != null)
             {

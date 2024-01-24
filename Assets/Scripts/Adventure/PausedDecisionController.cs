@@ -18,6 +18,7 @@ public class PausedDecisionController : APausedMenu
     {
         unpauseGameEvent.AddListener(AdventureManager.Instance.UnpauseGame);
         pausedMenus.Push(pausedInventoryController);
+        pausedMenus.Push(pausedMagicSkillsController);
     }
     public override void Display(CharacterDoll characterDoll)
     {
@@ -32,11 +33,13 @@ public class PausedDecisionController : APausedMenu
 
     public void Inventory()
     {
+        pausedMagicSkillsController.Close();
         pausedInventoryController.Display(this.characterDoll);
     }
 
     public void Magic()
     {
+        pausedInventoryController.Close();
         pausedMagicSkillsController.Display(this.characterDoll);
     }
 

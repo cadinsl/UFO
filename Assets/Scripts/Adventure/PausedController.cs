@@ -24,6 +24,7 @@ public class PausedController : MonoBehaviour
     #endregion
     
     public APausedMenu[] pausedMenus;
+    public APausedMenu[] extraPausedMenus;
 
     public CharacterDoll[] playerPartyDolls;
     public DialogController pauseDialog;
@@ -53,6 +54,10 @@ public class PausedController : MonoBehaviour
     public void ClosePauseMenu()
     {
         foreach(APausedMenu pausedMenu in pausedMenus)
+        {
+            pausedMenu.Close();
+        }
+        foreach(APausedMenu pausedMenu in extraPausedMenus)
         {
             pausedMenu.Close();
         }
