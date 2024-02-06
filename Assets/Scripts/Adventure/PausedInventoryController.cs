@@ -50,6 +50,7 @@ public class PausedInventoryController : APausedMenu
     private void displayTargets()
     {
         targetController.DisplayTargets(PausedController.Instance.playerPartyDolls, UseItem);
+        panel.SetInActive();
     }
 
     private void updateItems()

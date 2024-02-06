@@ -13,6 +13,7 @@ public class PausedDecisionController : APausedMenu
 
     public Stack<APausedMenu> pausedMenus = new Stack<APausedMenu>();
     public Panel panel;
+    public Panel pickCharacterPanel;
 
     public void Start()
     {
@@ -25,6 +26,7 @@ public class PausedDecisionController : APausedMenu
         this.characterDoll = characterDoll;
         this.gameObject.SetActive(true);
         panel.SetActive();
+        pickCharacterPanel.SetActive();
     }
     public void GoBack()
     {
@@ -35,12 +37,16 @@ public class PausedDecisionController : APausedMenu
     {
         pausedMagicSkillsController.Close();
         pausedInventoryController.Display(this.characterDoll);
+        panel.SetInActive();
+        pickCharacterPanel.SetInActive();
     }
 
     public void Magic()
     {
         pausedInventoryController.Close();
         pausedMagicSkillsController.Display(this.characterDoll);
+        panel.SetInActive();
+        pickCharacterPanel.SetInActive();
     }
 
     public override void Close()

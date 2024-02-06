@@ -61,6 +61,7 @@ public class PausedMagicSkillsController : APausedMenu
     private void displayTargets()
     {
         targetController.DisplayTargets(PausedController.Instance.playerPartyDolls, UseSpell);
+        panel.SetInActive();
     }
 
     private void updateSpells()

@@ -47,6 +47,8 @@ public class Panel : MonoBehaviour
 
     private Button[] getAllChildButtons()
     {
+        if (targetPanel == null)
+            targetPanel = this.gameObject;
         Button[] _button = targetPanel.GetComponentsInChildren<Button>();
         return _button;
     }

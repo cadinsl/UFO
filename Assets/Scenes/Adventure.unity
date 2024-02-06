@@ -3526,7 +3526,7 @@ GameObject:
   - component: {fileID: 152467476}
   m_Layer: 5
   m_Name: Pause Decision Panel
-  m_TagString: Untagged
+  m_TagString: Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3634,6 +3634,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   panel: {fileID: 152467476}
+  pickCharacterPanel: {fileID: 592194645}
 --- !u!114 &152467476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4703,6 +4704,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8993619129130354005, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
+      propertyPath: m_TagString
+      value: Panel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5413,6 +5418,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 152467476}
+        m_TargetAssemblyTypeName: Panel, Assembly-CSharp
+        m_MethodName: SetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 592194645}
         m_TargetAssemblyTypeName: Panel, Assembly-CSharp
         m_MethodName: SetActive
         m_Mode: 1
@@ -11167,7 +11184,7 @@ GameObject:
   - component: {fileID: 461840207}
   m_Layer: 5
   m_Name: Inventory Panel
-  m_TagString: Untagged
+  m_TagString: Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12815,6 +12832,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8139728368717185485, guid: b59e6faa9a1115c4782361e3c108dba2, type: 3}
+      propertyPath: m_TagString
+      value: Panel
+      objectReference: {fileID: 0}
     - target: {fileID: 8381121357964671384, guid: b59e6faa9a1115c4782361e3c108dba2, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -13218,6 +13239,10 @@ PrefabInstance:
     - target: {fileID: 1455149303300275637, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455149303300275637, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
+      propertyPath: m_TagString
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 3484627712076346825, guid: f1807d072bba9b344acd5711fc35dbcf, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
@@ -14656,7 +14681,7 @@ GameObject:
   - component: {fileID: 592194645}
   m_Layer: 5
   m_Name: Pick Character Panel
-  m_TagString: Untagged
+  m_TagString: Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14777,7 +14802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7085b5e0fb96d234e8a6fd7685f5b4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPanel: {fileID: 0}
+  targetPanel: {fileID: 592194639}
 --- !u!1001 &597185016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18402,7 +18427,7 @@ GameObject:
   - component: {fileID: 751759014}
   m_Layer: 5
   m_Name: CharacterStatsPanel
-  m_TagString: Untagged
+  m_TagString: Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28237,6 +28262,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2232136510477783275, guid: cd22f41714135ef4a91394f2ee03f472, type: 3}
+      propertyPath: m_TagString
+      value: Panel
+      objectReference: {fileID: 0}
     - target: {fileID: 2828818129996788560, guid: cd22f41714135ef4a91394f2ee03f472, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: -1
@@ -31648,6 +31677,10 @@ PrefabInstance:
       propertyPath: targetManagerPanel
       value: 
       objectReference: {fileID: 1162395664}
+    - target: {fileID: 5747575217214056969, guid: 1d0940e6bab49f04fb19f33639314cb8, type: 3}
+      propertyPath: m_TagString
+      value: Panel
+      objectReference: {fileID: 0}
     - target: {fileID: 5756618916089873876, guid: 1d0940e6bab49f04fb19f33639314cb8, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -32075,6 +32108,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 152467476}
+        m_TargetAssemblyTypeName: Panel, Assembly-CSharp
+        m_MethodName: SetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 592194645}
         m_TargetAssemblyTypeName: Panel, Assembly-CSharp
         m_MethodName: SetActive
         m_Mode: 1
@@ -36857,6 +36902,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5916238229657752364, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
+      propertyPath: m_TagString
+      value: Panel
+      objectReference: {fileID: 0}
     - target: {fileID: 7314101009104063338, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -37644,6 +37693,10 @@ PrefabInstance:
     - target: {fileID: 5916238229657752364, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916238229657752364, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
+      propertyPath: m_TagString
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 7314101009104063338, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
       propertyPath: m_AnchorMax.y
@@ -41633,7 +41686,7 @@ MonoBehaviour:
   m_text: Go Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -8124573646982526819, guid: d2100cb677825f84bb6d48f36c437729, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -47848,6 +47901,10 @@ PrefabInstance:
     - target: {fileID: 5916238229657752364, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916238229657752364, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
+      propertyPath: m_TagString
+      value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 7314101009104063338, guid: 59710dcf48175d941b08d7fb2c172a01, type: 3}
       propertyPath: m_AnchorMax.y
@@ -54163,7 +54220,7 @@ GameObject:
   - component: {fileID: 2124209028}
   m_Layer: 5
   m_Name: Magic Skills Panel
-  m_TagString: Untagged
+  m_TagString: Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
