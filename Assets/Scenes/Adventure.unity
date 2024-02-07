@@ -4694,7 +4694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7914941556798206039, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -11.9149475
+      value: -11.914856
       objectReference: {fileID: 0}
     - target: {fileID: 8993619129130354005, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
       propertyPath: m_Name
@@ -15113,7 +15113,7 @@ GameObject:
   - component: {fileID: 624854551}
   - component: {fileID: 624854550}
   m_Layer: 0
-  m_Name: Player1
+  m_Name: Angel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18458,7 +18458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.365, y: 1}
-  m_AnchoredPosition: {x: -1, y: 0}
+  m_AnchoredPosition: {x: -0.99993896, y: 0}
   m_SizeDelta: {x: -3.800171, y: -0.000061035156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &751759011
@@ -21459,7 +21459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 586392334575596551, guid: c3142a47141208e4aa65875391353e33, type: 3}
       propertyPath: dialogTexts.Array.data[0]
-      value: Congrats you see, you don't need to pursue higher education
+      value: I could wait here all day for you to notice me..
       objectReference: {fileID: 0}
     - target: {fileID: 586392334575596551, guid: c3142a47141208e4aa65875391353e33, type: 3}
       propertyPath: dialogTexts.Array.data[1]
@@ -30443,8 +30443,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogTexts:
   - Brrrr Brrr Brrrrr Brrrr
-  - 'Piou          Piou        Piou      Piou     '
-  - Tzzzzz Tzzzzz Tzzzzz Tzzzzz
+  - Brrrrrrrrrrrrrrrrrrrrrrr
+  - Brrrr Brrr Brrrrr Brrrr
   encounterManager: {fileID: 795644391}
   enemy: {fileID: 77734844311010562, guid: 8474ce78230c8f34d88dfd976c073975, type: 3}
 --- !u!114 &1235344353
@@ -52999,7 +52999,7 @@ GameObject:
   - component: {fileID: 2079158786}
   - component: {fileID: 2079158785}
   m_Layer: 0
-  m_Name: Player2
+  m_Name: Neil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55005,11 +55005,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 586392334575596551, guid: c3142a47141208e4aa65875391353e33, type: 3}
       propertyPath: dialogTexts.Array.data[0]
-      value: Some people will tell you to go to university, I dont...
+      value: These signs were made to guide you through the forest.
       objectReference: {fileID: 0}
     - target: {fileID: 586392334575596551, guid: c3142a47141208e4aa65875391353e33, type: 3}
       propertyPath: dialogTexts.Array.data[1]
-      value: I just guide you through the forest
+      value: Consult us if you need of help!
       objectReference: {fileID: 0}
     - target: {fileID: 586392334575596556, guid: c3142a47141208e4aa65875391353e33, type: 3}
       propertyPath: m_Name

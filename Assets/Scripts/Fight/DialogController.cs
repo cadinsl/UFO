@@ -29,6 +29,10 @@ public class DialogController : MonoBehaviour
             action();
             return;
         }
+        if(action == null)
+        {
+            action = delegate { };
+        }
         GameObject canvas = GameObject.Find("Canvas");
         dialogPanelInstance = Instantiate(dialogPanelPrefab, canvas.transform);
         //dialogPanelInstance.transform.localPosition = Vector3.zero;
@@ -187,7 +191,16 @@ public class DialogController : MonoBehaviour
                 }
             break;
         }
+        if(Equals(result.characterDecision.target?.doll.status, Status.Dead))
+        {
+            dialogTexts.Add(GetTextForDeceasedPlayer(result.characterDecision.target.doll));
+        }
         return dialogTexts;
+    }
+
+    private string GetTextForDeceasedPlayer(CharacterDoll doll)
+    {
+        return doll.name + " Has Fallen !";
     }
 
     public List<string> GetTextItemPickup(string itemName){

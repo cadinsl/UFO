@@ -92,18 +92,19 @@ public class BattleController : MonoBehaviour
             {   
                 CharacterFightController deceasedCharacter = allDecisions[currentIndex].target;             
                 CollectXP(allDecisions[currentIndex].from, deceasedCharacter);//Probably distribute XP
-                if(enemyParty.Contains(deceasedCharacter))
+                //dialogController.Display(dialogController.GetTextForDeceasedPlayer(deceasedCharacter.doll), null);
+                if (enemyParty.Contains(deceasedCharacter))
                 {
                     enemyParty.Remove(deceasedCharacter);
                 }
                 else
                 {
+
                     playerParty.Remove(deceasedCharacter);
                 }
                 //Destroy(allDecisions[currentIndex].target.gameObject);
             }
         }
-
         if(checkIfPartyDead(playerParty))
         {
             EndFight(new BattleEndResult(BattleEndResult.Result.DEFEATED));
