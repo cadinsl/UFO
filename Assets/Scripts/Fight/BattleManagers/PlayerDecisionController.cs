@@ -80,7 +80,6 @@ public class PlayerDecisionController : MonoBehaviour
         targetController.SetDecisionPanel(decisionPanel);
         targetController.Display();
         targetController.SetActive();
-
         SetInactive();
     }
     

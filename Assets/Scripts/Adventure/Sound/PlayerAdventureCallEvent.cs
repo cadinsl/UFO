@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerAdventureCallEvent : MonoBehaviour
 {
-    public void CallEvent(string s)
+    public void Callevent(string s)
     {
         AkSoundEngine.PostEvent(s, gameObject);
+        Debug.Log("Print Event: " + s + "Calledat: " + Time.time);
     }
 }

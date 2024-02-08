@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995764283315819566}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1995764283315819601
 MonoBehaviour:
@@ -59,6 +59,6 @@ MonoBehaviour:
     xp: 853700
   status: 0
   inventory: {fileID: 8826828283371143933, guid: 80e7d4f438dfb2e469204b1d97139cf0, type: 3}
-  magicSkills: {fileID: 0}
+  magicSkills: {fileID: 7972567101244904996, guid: c40d9a390bfaad14e8ddd8a49e7da0e9, type: 3}
   weapon: {fileID: 8979087687176905773, guid: 2f3c846487312b744b439460642f6507, type: 3}
   modelPrefab: {fileID: 0}

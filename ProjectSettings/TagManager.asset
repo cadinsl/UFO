@@ -7,15 +7,16 @@ TagManager:
   - Encounter Translator
   - CharacterDecisionManager
   - DialogFight
+  - Panel
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Stone
   - Water
   - UI
   - Forest
-  - 
+  - Grass
   - 
   - 
   - 

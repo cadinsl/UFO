@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerAdventureCallEvent : MonoBehaviour
+{
+    public void Callevent(string s)
+    {
+        AkSoundEngine.PostEvent(s, gameObject);
+<<<<<<< HEAD
+=======
+        Debug.Log("Print Event: " + s + "Calledat: " + Time.time);
+>>>>>>> 4d64f9be268d99bb531c2ca554cc0c512b18487a
+    }
+}

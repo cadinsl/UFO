@@ -7,6 +7,7 @@ using TMPro;
 public class PausedMagicSkillsController : APausedMenu
 {
     public PausedTargetController targetController;
+    public Panel panel;
     private CharacterDoll doll;
     private int maxButtons = 8;
 
@@ -17,6 +18,7 @@ public class PausedMagicSkillsController : APausedMenu
         this.doll = doll;
         updateSpells();
         this.gameObject.SetActive(true);
+        panel.SetActive();
     }
 
     public void ChosenSpell(int index)
@@ -26,7 +28,7 @@ public class PausedMagicSkillsController : APausedMenu
         {
             List<string> texts = new List<string>();
             texts.Add("Cannot use this spell rn </3");
-            PausedController.Instance.DisplayDialog(texts, delegate{});
+            PausedController.Instance.DisplayDialog(texts, delegate{ this.Display(doll); });
         }
         else
         {
@@ -34,7 +36,7 @@ public class PausedMagicSkillsController : APausedMenu
             {
                 List<string> texts = new List<string>();
                 texts.Add("not enough mana </3");
-                PausedController.Instance.DisplayDialog(texts, delegate{});
+                PausedController.Instance.DisplayDialog(texts, delegate{ this.Display(doll); });
             }
             else
             {
@@ -48,6 +50,9 @@ public class PausedMagicSkillsController : APausedMenu
     {
         if(chosenSpell is HealSpell)
         {
+            List<string> texts = new List<string>();
+            texts.Add("You are now healing <3");
+            PausedController.Instance.DisplayDialog(texts, delegate { this.Display(doll); });
             target.Heal(((HealSpell)chosenSpell).heal);
             doll.stats.mana -= chosenSpell.mana;
         }
@@ -56,6 +61,7 @@ public class PausedMagicSkillsController : APausedMenu
     private void displayTargets()
     {
         targetController.DisplayTargets(PausedController.Instance.playerPartyDolls, UseSpell);
+        panel.SetInActive();
     }
 
     private void updateSpells()
@@ -68,6 +74,7 @@ public class PausedMagicSkillsController : APausedMenu
                 Button button = buttonObject.GetComponent<Button>();
                 buttonObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().SetText(doll.magicSkills.spells[i].name);
                 int x = i;
+                button.onClick.RemoveAllListeners();
                 button.onClick.AddListener(delegate{ChosenSpell(x);});
                 buttonObject.SetActive(true);
             }
@@ -85,6 +92,7 @@ public class PausedMagicSkillsController : APausedMenu
             GameObject buttonObject = this.transform.GetChild(i).gameObject;
             buttonObject.SetActive(false);
         }
+        targetController.Close();
         this.gameObject.SetActive(false);
     }
 }

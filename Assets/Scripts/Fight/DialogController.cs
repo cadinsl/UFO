@@ -29,6 +29,10 @@ public class DialogController : MonoBehaviour
             action();
             return;
         }
+        if(action == null)
+        {
+            action = delegate { };
+        }
         GameObject canvas = GameObject.Find("Canvas");
         dialogPanelInstance = Instantiate(dialogPanelPrefab, canvas.transform);
         //dialogPanelInstance.transform.localPosition = Vector3.zero;
@@ -92,25 +96,25 @@ public class DialogController : MonoBehaviour
         switch(characterDecision.decision)
         {
             case Decision.Fight:
-                texts.Add(characterDecision.from.name + " attacks " + characterDecision.target.name);
+                texts.Add(characterDecision.from.doll.name + " attacks " + characterDecision.target.doll.name);
             break;
             case Decision.Bag:
-                texts.Add(characterDecision.from.name+ " is going to use " + characterDecision.decisionObject.name + " on " + characterDecision.target.name);
+                texts.Add(characterDecision.from.doll.name+ " is going to use " + characterDecision.decisionObject.name + " on " + characterDecision.target.doll.name);
             break;
             case Decision.Magic:
                 if(characterDecision.decisionObject is DamageSpell)
                 {
-                    texts.Add(characterDecision.from.name+ " casted " + characterDecision.decisionObject.name + " on " + characterDecision.target.name);
+                    texts.Add(characterDecision.from.doll.name+ " casted " + characterDecision.decisionObject.name + " on " + characterDecision.target.doll.name);
                 }
                 else if(characterDecision.decisionObject is HealSpell){
-                    texts.Add(characterDecision.from.name+ " casted " + characterDecision.decisionObject.name + " on " + characterDecision.target.name);
+                    texts.Add(characterDecision.from.doll.name+ " casted " + characterDecision.decisionObject.name + " on " + characterDecision.target.doll.name);
                 }
             break;
             case Decision.Guard:
-                texts.Add(characterDecision.from.name + " is guarding");
+                texts.Add(characterDecision.from.doll.name + " is guarding");
             break;
             case Decision.Run:
-                texts.Add(characterDecision.from.name + " tried to run!");
+                texts.Add(characterDecision.from.doll.name + " tried to run!");
             break;
         }
         return texts;
@@ -187,7 +191,16 @@ public class DialogController : MonoBehaviour
                 }
             break;
         }
+        if(Equals(result.characterDecision.target?.doll.status, Status.Dead))
+        {
+            dialogTexts.Add(GetTextForDeceasedPlayer(result.characterDecision.target.doll));
+        }
         return dialogTexts;
+    }
+
+    private string GetTextForDeceasedPlayer(CharacterDoll doll)
+    {
+        return doll.name + " Has Fallen !";
     }
 
     public List<string> GetTextItemPickup(string itemName){
