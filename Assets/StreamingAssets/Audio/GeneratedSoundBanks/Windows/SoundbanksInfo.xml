@@ -22,13 +22,17 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{93BB5B54-59CB-1085-0EC6-2D5D7F8134FF}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B0712452-7A7F-76B1-A452-C2D25563F7B9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="20496875" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-005.wav</ShortName>
 					<CachePath>SFX/Grass/Footsteps Grass-005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="122449790" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-008.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-008_10C4C929.wem</CachePath>
 				</File>
 				<File Id="220269723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-008.wav</ShortName>
@@ -42,6 +46,14 @@
 					<ShortName>Grass\Footsteps Grass-002.wav</ShortName>
 					<CachePath>SFX/Grass/Footsteps Grass-002_10C4C929.wem</CachePath>
 				</File>
+				<File Id="256848070" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-003.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="261544192" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Foosteps_Slips\Footstep_Slip-005.wav</ShortName>
+					<CachePath>SFX/Foosteps_Slips/Footstep_Slip-005_10C4C929.wem</CachePath>
+				</File>
 				<File Id="278922027" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-006.wav</ShortName>
 					<CachePath>SFX/Grass/Footsteps Grass-006_10C4C929.wem</CachePath>
@@ -50,12 +62,58 @@
 					<ShortName>Grass\Footsteps Grass-004.wav</ShortName>
 					<CachePath>SFX/Grass/Footsteps Grass-004_10C4C929.wem</CachePath>
 				</File>
+				<File Id="422769103" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-006.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="494573613" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-005.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="502220725" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-001.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="639312830" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-007.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-007_10C4C929.wem</CachePath>
+				</File>
+				<File Id="776010921" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Foosteps_Slips\Footstep_Slip-006.wav</ShortName>
+					<CachePath>SFX/Foosteps_Slips/Footstep_Slip-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="841530006" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-002.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="895041144" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dog Barks\Dog Barks-004.wav</ShortName>
+					<CachePath>SFX/Dog Barks/Dog Barks-004_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1051144874" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-003.wav</ShortName>
 					<CachePath>SFX/Grass/Footsteps Grass-003_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1440870588" Name="Play_Dog_Barks" DurationType="OneShot" DurationMin="1.48" DurationMax="1.48">
+					<MediaRefs>
+						<MediaRef Id="122449790"/>
+						<MediaRef Id="256848070"/>
+						<MediaRef Id="422769103"/>
+						<MediaRef Id="494573613"/>
+						<MediaRef Id="502220725"/>
+						<MediaRef Id="639312830"/>
+						<MediaRef Id="841530006"/>
+						<MediaRef Id="895041144"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1476064027" Name="Play_Foosteps_Slips" DurationType="OneShot" DurationMin="0.9616182" DurationMax="1.4258966">
+					<MediaRefs>
+						<MediaRef Id="261544192"/>
+						<MediaRef Id="776010921"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3198961276" Name="Play_Grass" DurationType="OneShot" DurationMin="221.20534" DurationMax="221.20534">
 					<MediaRefs>
 						<MediaRef Id="20496875"/>
@@ -70,5 +128,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{57434D2A-FBCB-1D58-2A65-41A683B33D00}</FileHash>
+	<FileHash>{56F43CFC-1758-7CC9-9131-179C65BDC578}</FileHash>
 </SoundBanksInfo>

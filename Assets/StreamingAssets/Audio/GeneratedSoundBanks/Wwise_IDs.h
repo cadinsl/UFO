@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_DOG_BARKS = 1440870588U;
+        static const AkUniqueID PLAY_FOOSTEPS_SLIPS = 1476064027U;
         static const AkUniqueID PLAY_GRASS = 3198961276U;
     } // namespace EVENTS
 

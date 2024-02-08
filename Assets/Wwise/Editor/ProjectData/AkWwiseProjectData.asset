@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 312ea24f09b0cd4780bcb021b4b01cf7
     GuidInternal: 
-    m_lastTime: -8584984316612256930
+    m_lastTime: -8584941810657237460
     List:
     - name: Main
       guid: 13cdfa05ebbcec4388eecce2709de26b
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 097c3420d7b17947963b3f28ab30b067
     GuidInternal: 
-    m_lastTime: -8584984316612307671
+    m_lastTime: -8584941810657181798
     List:
+    - name: Play_Dog_Barks
+      guid: f9ee1e1220f84542a91b4fd845cff3f9
+      id: 1440870588
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Dog_Barks
+        ObjectType: 3
+        guid: f9ee1e1220f84542a91b4fd845cff3f9
+      Path: Events\Default Work Unit\Play_Dog_Barks
+      maxAttenuation: 0
+      maxDuration: 1.48
+      minDuration: 1.48
+    - name: Play_Foosteps_Slips
+      guid: a08ac4862dfce045b5ade07971fb9a5b
+      id: 1476064027
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Foosteps_Slips
+        ObjectType: 3
+        guid: a08ac4862dfce045b5ade07971fb9a5b
+      Path: Events\Default Work Unit\Play_Foosteps_Slips
+      maxAttenuation: 0
+      maxDuration: 1.4258966
+      minDuration: 0.9616182
     - name: Play_Grass
       guid: 6352318f7bff0d40a609394bba320d88
       id: 3198961276
@@ -170,7 +204,7 @@ MonoBehaviour:
     m_lastTime: -8584984330261225123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

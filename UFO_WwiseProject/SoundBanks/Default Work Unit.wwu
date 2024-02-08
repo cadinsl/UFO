@@ -6,6 +6,9 @@
 				<SoundBank Name="Main" ID="{05FACD13-BCEB-43EC-88EE-CCE2709DE26B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Grass" ID="{8F315263-FF7B-400D-A609-394BBA320D88}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Dog_Barks" ID="{121EEEF9-F820-4245-A91B-4FD845CFF3F9}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Foosteps_Slips" ID="{86C48AA0-FC2D-45E0-B5AD-E07971FB9A5B}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Foosteps_Slips" ID="{65B0BFF1-C8F8-4631-9324-7F31294FAE3E}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
