@@ -15,6 +15,8 @@ public class PlayerAdventureInput : MonoBehaviour
 
     public bool canPickupItem = false;
     private PlayerSing playerSing;
+    public DogBark dogBark;
+
     private bool pauseMenuUp;
 
     public PlayerInput playerInput;
@@ -53,11 +55,11 @@ public class PlayerAdventureInput : MonoBehaviour
             else if(canPickupItem && (playerInput.Player.Interact.WasPressedThisFrame())){
                 characterBrain.PickUpItem();
             }
-            //else if(Input.GetButtonDown("Sing"))
-            //{
-            //    //if (playerSing != null)
-            //       // playerSing.Sing();
-            //}
+            else if (playerInput.Player.SpecialAction.WasPressedThisFrame())
+            {
+                if (dogBark != null)
+                    dogBark.Bark();
+            }
         }
     }
 
