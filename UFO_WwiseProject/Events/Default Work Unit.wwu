@@ -25,17 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Foosteps_Slips" ID="{86C48AA0-FC2D-45E0-B5AD-E07971FB9A5B}">
-					<ChildrenList>
-						<Action Name="" ID="{CBA56D5C-F2FA-4DF4-89E5-339823F7D397}" ShortID="638955222">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Foosteps_Slips" ID="{65B0BFF1-C8F8-4631-9324-7F31294FAE3E}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

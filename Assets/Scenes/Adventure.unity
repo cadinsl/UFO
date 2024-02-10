@@ -4742,7 +4742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7914941556798206039, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -11.914856
+      value: -11.914978
       objectReference: {fileID: 0}
     - target: {fileID: 8993619129130354005, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
       propertyPath: m_Name
@@ -18506,7 +18506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.365, y: 1}
-  m_AnchoredPosition: {x: -0.9998169, y: 0}
+  m_AnchoredPosition: {x: -0.99975586, y: 0}
   m_SizeDelta: {x: -3.800171, y: -0.000061035156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &751759011
@@ -40402,22 +40402,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
---- !u!114 &1559913977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472409338}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77943627ce582f24eb14da04f58b7626, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footstepsslipsEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ca2c69154bba68e4fb080ca92ec0a7bc, type: 2}
 --- !u!1 &1560768198
 GameObject:
   m_ObjectHideFlags: 0
@@ -55066,9 +55050,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9135762082416064433, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1559913976}
-    - targetCorrespondingSourceObject: {fileID: 9135762082416064433, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1559913977}
     - targetCorrespondingSourceObject: {fileID: 2714929951317312872, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1195397291}

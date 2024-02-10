@@ -63,7 +63,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.45082
+      - time: 0.478841
         functionName: FootstepSound
         data: Footsteps_Grass
         objectReferenceParameter: {instanceID: 0}
@@ -106,22 +106,15 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.3967142
+      - time: 0.051705465
         functionName: PlayFootsteps
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.8949629
+      - time: 0.5036952
         functionName: PlayFootsteps
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.04260874
-        functionName: PlayFootstepsSlips
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
