@@ -53414,7 +53414,7 @@ MonoBehaviour:
   BarkSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 0f95c5030d8b2d24193248d31a2ce2dc, type: 2}
 --- !u!1 &2091329588 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb09f51df04b6e4a8b5f11e82d90ed9, type: 3}
