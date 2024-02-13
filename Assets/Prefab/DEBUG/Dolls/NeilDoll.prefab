@@ -44,11 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f486faffee1f6ca48b9b9f6a5aaee938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 2
   name: Neil
   stats:
     characterName: Neil
-    hp: 100
-    maxHp: 100
+    hp: 1
+    maxHp: 1
     mana: 100
     maxMana: 100
     speed: 40

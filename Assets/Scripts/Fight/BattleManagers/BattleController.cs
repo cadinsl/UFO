@@ -105,7 +105,7 @@ public class BattleController : MonoBehaviour
                 //Destroy(allDecisions[currentIndex].target.gameObject);
             }
         }
-        if(checkIfPartyDead(playerParty))
+        if(checkIfPartyDead(playerParty) || checkIfAngelDead(playerParty))
         {
             EndFight(new BattleEndResult(BattleEndResult.Result.DEFEATED));
             return;
@@ -232,6 +232,12 @@ public class BattleController : MonoBehaviour
         }
         return true;
         */
+    }
+
+    private bool checkIfAngelDead(List<CharacterFightController> party)
+    {
+        var angel = party.FirstOrDefault(character => character.doll.id == 1);
+        return angel == null;
     }
 
     private void updateCharactersTurn()

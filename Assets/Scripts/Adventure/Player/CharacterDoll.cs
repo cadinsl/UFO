@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterDoll : MonoBehaviour
 {
+    public int id;
+
     public string name;
 
     [SerializeField] public CharacterStats stats;
