@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{11AE950E-05FF-4E91-47B0-D00A23B83BA4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9188CB59-AA2A-E534-A2D2-EE8FC1E5082F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8C607B1D-49C3-0FD2-1D65-8E95D3753401}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -70,9 +70,17 @@
 					<ShortName>Dog Barks\Dog Barks-001.wav</ShortName>
 					<CachePath>SFX/Dog Barks/Dog Barks-001_10C4C929.wem</CachePath>
 				</File>
+				<File Id="563356497" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ForrestAmbiance.wav</ShortName>
+					<CachePath>SFX/ForrestAmbiance_C64A749C.wem</CachePath>
+				</File>
 				<File Id="639312830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-007.wav</ShortName>
 					<CachePath>SFX/Dog Barks/Dog Barks-007_10C4C929.wem</CachePath>
+				</File>
+				<File Id="835812743" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>super8startup.wav</ShortName>
+					<CachePath>SFX/super8startup_10C4C929.wem</CachePath>
 				</File>
 				<File Id="841530006" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-002.wav</ShortName>
@@ -87,6 +95,11 @@
 					<CachePath>SFX/Grass/Footsteps Grass-003_8CD28855.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="896456195" Name="Have_U_Ever_Been_Outside (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="1440870588" Name="Play_Dog_Barks" DurationType="OneShot" DurationMin="1.48" DurationMax="1.48">
 					<MediaRefs>
@@ -98,6 +111,16 @@
 						<MediaRef Id="639312830"/>
 						<MediaRef Id="841530006"/>
 						<MediaRef Id="895041144"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="896456195"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="212573685" Name="Play_ForrestAmbiance" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="563356497"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3198961276" Name="Play_Grass" DurationType="OneShot" DurationMin="0.089006126" DurationMax="0.30551296">
@@ -111,8 +134,13 @@
 						<MediaRef Id="1051144874"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2469785129" Name="Play_Startup" DurationType="OneShot" DurationMin="6" DurationMax="6">
+					<MediaRefs>
+						<MediaRef Id="835812743"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{05FD80BD-19F2-57F5-0552-678F158A9EFF}</FileHash>
+	<FileHash>{652B72E5-0D86-191A-BCAD-D899F1B2CE6E}</FileHash>
 </SoundBanksInfo>

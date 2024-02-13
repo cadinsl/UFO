@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 312ea24f09b0cd4780bcb021b4b01cf7
     GuidInternal: 
-    m_lastTime: -8584940669760885475
+    m_lastTime: -8584937475540176934
     List:
     - name: Main
       guid: 13cdfa05ebbcec4388eecce2709de26b
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 097c3420d7b17947963b3f28ab30b067
     GuidInternal: 
-    m_lastTime: -8584940669760757178
+    m_lastTime: -8584937475540282332
     List:
     - name: Play_Dog_Barks
       guid: f9ee1e1220f84542a91b4fd845cff3f9
@@ -113,6 +113,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.48
       minDuration: 1.48
+    - name: Play_ForrestAmbiance
+      guid: 2a532e36c9f17f459ad564f108b03bee
+      id: 212573685
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_ForrestAmbiance
+        ObjectType: 3
+        guid: 2a532e36c9f17f459ad564f108b03bee
+      Path: Events\Default Work Unit\Play_ForrestAmbiance
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Grass
       guid: 6352318f7bff0d40a609394bba320d88
       id: 3198961276
@@ -130,6 +147,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.30551296
       minDuration: 0.089006126
+    - name: Play_Startup
+      guid: 8e4350a2252d1946af97a14a55b0bc5b
+      id: 2469785129
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Startup
+        ObjectType: 3
+        guid: 8e4350a2252d1946af97a14a55b0bc5b
+      Path: Events\Default Work Unit\Play_Startup
+      maxAttenuation: 0
+      maxDuration: 6
+      minDuration: 6
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -187,7 +221,7 @@ MonoBehaviour:
     m_lastTime: -8584984330261225123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c000000
+  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

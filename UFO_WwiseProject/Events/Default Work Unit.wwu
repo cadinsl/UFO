@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_ForrestAmbiance" ID="{362E532A-F1C9-457F-9AD5-64F108B03BEE}">
+					<ChildrenList>
+						<Action Name="" ID="{D405B166-B27E-421B-B1E5-EA5969E0E06B}" ShortID="1029765990">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ForrestAmbiance" ID="{6ADD7866-5E11-4007-B825-2D99D0F43378}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Startup" ID="{A250438E-2D25-4619-AF97-A14A55B0BC5B}">
+					<ChildrenList>
+						<Action Name="" ID="{D89BA066-65C7-48DE-B4BC-CD395E2F775D}" ShortID="31020445">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Startup" ID="{9BED9378-AB9F-4602-AA06-046BA402DAA5}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

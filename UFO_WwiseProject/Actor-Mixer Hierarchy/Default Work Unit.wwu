@@ -7,13 +7,40 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+								<Effect Name="Have_U_Ever_Been_Outside (Custom)" ID="{8C51045E-C1AD-406F-BE96-F8794A9487B0}" ShortID="896456195" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<PropertyList>
+										<Property Name="DecayTime" Type="Real32" Value="1"/>
+										<Property Name="Density" Type="Real32" Value="86"/>
+										<Property Name="DryLevel" Type="Real32" Value="-10.3"/>
+										<Property Name="ERFrontBackDelay" Type="Real32" Value="86"/>
+										<Property Name="ERLevel" Type="Real32" Value="-18"/>
+										<Property Name="ERPattern" Type="int32" Value="29"/>
+										<Property Name="Filter1Freq" Type="Real32" Value="210"/>
+										<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
+										<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+										<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+										<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+										<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
+										<Property Name="PreDelay" Type="Real32" Value="145"/>
+										<Property Name="Quality" Type="int32" Value="12"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-37"/>
+										<Property Name="RoomSize" Type="Real32" Value="14"/>
+										<Property Name="StereoWidth" Type="Real32" Value="123"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
@@ -216,7 +243,7 @@
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-30</Value>
+										<Value>-29</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -435,6 +462,87 @@
 						</GroupingBehaviorList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Sound Name="ForrestAmbiance" ID="{6ADD7866-5E11-4007-B825-2D99D0F43378}" ShortID="853521177">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>27</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ForrestAmbiance" ID="{5E19E3AA-419E-4FE0-B96E-9C8C12DD20EA}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.436283668730651"/>
+								<Property Name="TrimEnd" Type="Real64" Value="73.520884969808"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ForrestAmbiance.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="563356497"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ForrestAmbiance" ID="{5E19E3AA-419E-4FE0-B96E-9C8C12DD20EA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Startup" ID="{9BED9378-AB9F-4602-AA06-046BA402DAA5}" ShortID="326294587">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6618FF27-EFC6-4D15-93AE-875A977FDEFD}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="super8startup" ID="{3215EBCA-50F4-4CD3-8CA5-8FE1BF429C2B}">
+							<Language>SFX</Language>
+							<AudioFile>super8startup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="835812743"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="super8startup" ID="{3215EBCA-50F4-4CD3-8CA5-8FE1BF429C2B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

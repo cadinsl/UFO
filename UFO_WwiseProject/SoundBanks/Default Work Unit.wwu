@@ -7,6 +7,8 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Grass" ID="{8F315263-FF7B-400D-A609-394BBA320D88}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Dog_Barks" ID="{121EEEF9-F820-4245-A91B-4FD845CFF3F9}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ForrestAmbiance" ID="{362E532A-F1C9-457F-9AD5-64F108B03BEE}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Startup" ID="{A250438E-2D25-4619-AF97-A14A55B0BC5B}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
