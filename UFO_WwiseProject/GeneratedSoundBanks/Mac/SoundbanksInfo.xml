@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8C607B1D-49C3-0FD2-1D65-8E95D3753401}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{13B56EAF-738E-8330-E241-EE90F609E211}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -72,7 +72,7 @@
 				</File>
 				<File Id="563356497" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ForrestAmbiance.wav</ShortName>
-					<CachePath>SFX/ForrestAmbiance_C64A749C.wem</CachePath>
+					<CachePath>SFX/ForrestAmbiance_F2FFC952.wem</CachePath>
 				</File>
 				<File Id="639312830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-007.wav</ShortName>
@@ -142,5 +142,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{652B72E5-0D86-191A-BCAD-D899F1B2CE6E}</FileHash>
+	<FileHash>{45A7F3C1-E7D3-E3F5-BEE6-B200296C75C6}</FileHash>
 </SoundBanksInfo>
