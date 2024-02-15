@@ -7,13 +7,13 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+							<ObjectRef Name="SFX" ID="{805FCAF8-4119-44C3-B696-2EA04150ED81}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
@@ -21,7 +21,7 @@
 									<PropertyList>
 										<Property Name="DecayTime" Type="Real32" Value="1"/>
 										<Property Name="Density" Type="Real32" Value="86"/>
-										<Property Name="DryLevel" Type="Real32" Value="-10.3"/>
+										<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
 										<Property Name="ERFrontBackDelay" Type="Real32" Value="86"/>
 										<Property Name="ERLevel" Type="Real32" Value="-18"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
@@ -228,7 +228,7 @@
 				<SwitchContainer Name="Footsteps" ID="{250A2B48-F419-4D92-89B8-AA7596E20992}" ShortID="852166971">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+							<ObjectRef Name="SFX" ID="{805FCAF8-4119-44C3-B696-2EA04150ED81}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
@@ -483,7 +483,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+							<ObjectRef Name="SFX" ID="{805FCAF8-4119-44C3-B696-2EA04150ED81}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
@@ -524,7 +524,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+							<ObjectRef Name="SFX" ID="{805FCAF8-4119-44C3-B696-2EA04150ED81}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
