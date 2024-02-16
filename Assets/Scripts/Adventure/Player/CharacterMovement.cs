@@ -13,6 +13,7 @@ public class CharacterMovement : MonoBehaviour
 
     public PlayerInput playerInput;
     private InputAction moveInput;
+    private Rigidbody rb;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class CharacterMovement : MonoBehaviour
         characterController = gameObject.GetComponent<CharacterController>();
         adventurePlayerAnimation = gameObject.GetComponent<AdventurePlayerAnimation>();
         playerAdventureInput = gameObject.GetComponent<PlayerAdventureInput>();
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -43,6 +45,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (playerAdventureInput.isInputEnabled())
         {
+            characterController.enabled = true;
             Vector3 move = new Vector3(moveInput.ReadValue<Vector2>().x, 0, moveInput.ReadValue<Vector2>().y);
             move = Vector3.ClampMagnitude(move, 1);
             if (adventurePlayerAnimation != null)
@@ -60,7 +63,11 @@ public class CharacterMovement : MonoBehaviour
 
     public void StopMovement()
     {
+        characterController.enabled = false;
         adventurePlayerAnimation.SetSpeed(0);
-
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        rb.position = this.gameObject.transform.position;
+        rb.rotation = this.gameObject.transform.rotation;
     }
 }

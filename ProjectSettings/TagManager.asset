@@ -8,6 +8,7 @@ TagManager:
   - CharacterDecisionManager
   - DialogFight
   - Panel
+  - Dialog
   layers:
   - Default
   - TransparentFX

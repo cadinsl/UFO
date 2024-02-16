@@ -63,7 +63,10 @@ public class AdventureManager : MonoBehaviour
             }
             else
             {
-                UnpauseGame();
+                if (pausedController.CanUnpauseGame())
+                {
+                    UnpauseGame();
+                }
 
             }
         }

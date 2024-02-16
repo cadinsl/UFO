@@ -28,6 +28,7 @@ public class PausedInventoryController : APausedMenu
         {
             List<string> texts = new List<string>();
             texts.Add("Cannot use this item rn </3");
+            this.panel.SetInActive();
             PausedController.Instance.DisplayDialog(texts, delegate{ this.panel.SetActive(); });
         }
         else

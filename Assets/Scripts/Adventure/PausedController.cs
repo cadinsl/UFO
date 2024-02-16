@@ -75,6 +75,11 @@ public class PausedController : MonoBehaviour
         }
     }
 
+    public bool CanUnpauseGame()
+    {
+        return GameObject.FindGameObjectsWithTag("Dialog").Length == 0;
+    }
+
     public void DisplayDialog(List<string> texts, UnityAction goBackAction)
     {
         pauseDialog.Display(texts, goBackAction);

@@ -28,6 +28,7 @@ public class PausedMagicSkillsController : APausedMenu
         {
             List<string> texts = new List<string>();
             texts.Add("Cannot use this spell rn </3");
+            this.panel.SetInActive();
             PausedController.Instance.DisplayDialog(texts, delegate{ this.Display(doll); });
         }
         else
@@ -36,6 +37,7 @@ public class PausedMagicSkillsController : APausedMenu
             {
                 List<string> texts = new List<string>();
                 texts.Add("not enough mana </3");
+                this.panel.SetInActive();
                 PausedController.Instance.DisplayDialog(texts, delegate{ this.Display(doll); });
             }
             else
