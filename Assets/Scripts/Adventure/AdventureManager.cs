@@ -52,7 +52,6 @@ public class AdventureManager : MonoBehaviour
     {
         isPaused = false;
         isAdventure = true;
-        DontDestroyOnLoad(this.gameObject);
     }
     public void Update()
     {

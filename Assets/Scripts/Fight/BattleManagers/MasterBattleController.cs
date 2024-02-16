@@ -66,14 +66,23 @@ public class MasterBattleController : MonoBehaviour, IDialogObserver, IMagicObse
         battleController.StartTurn();
     }
 
-    public void endBattle()
+    public void endBattle(BattleEndResult result)
     {
-        dialogController.gameObject.SetActive(false);
-        virtualCamera.SetActive(false);
-        canvas.SetActive(false);
-        removeEnemyModels();
         EncouterTranslator encounterTranslator = GameObject.FindGameObjectWithTag("Encounter Translator").GetComponent<EncouterTranslator>();
-        encounterTranslator.SetupGoBackAdventure();
+        switch (result.result)
+        {
+            case BattleEndResult.Result.DEFEATED:
+                encounterTranslator.SetupDefeat();
+                break;
+            case BattleEndResult.Result.WON:
+                dialogController.gameObject.SetActive(false);
+                virtualCamera.SetActive(false);
+                canvas.SetActive(false);
+                removeEnemyModels();
+                encounterTranslator.SetupGoBackAdventure();
+                break;
+
+        }
     }
 
     public void NotifyEnd()
@@ -203,7 +212,7 @@ public class MasterBattleController : MonoBehaviour, IDialogObserver, IMagicObse
             break;
         }
         dialogController.AddObserver(this);
-        dialogController.Display(dialogTexts, this.endBattle);
+        dialogController.Display(dialogTexts, () => endBattle(result));
     }
 
     private void removeEnemyModels()

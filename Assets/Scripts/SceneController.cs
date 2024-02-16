@@ -20,7 +20,8 @@ public class SceneController : MonoBehaviour
         } 
         else 
         { 
-            Instance = this; 
+            Instance = this;
+            DontDestroyOnLoad(Instance);
         } 
 
     }
@@ -32,20 +33,20 @@ public class SceneController : MonoBehaviour
         //Cursor.visible = false;
     }
 
-    public void LoadFightScene(UnityAction method)
+    public void LoadGameOverScene()
     {
-        loadScene(1, method);
-    }
-
-    public void LoadAdventureScene(UnityAction method)
-    {
-        loadScene(0, method);
+        SceneManager.LoadScene("GameOver");
     }
 
     private void loadScene(int sceneNumber, UnityAction actionAfterLoaded)
     {
         SceneManager.LoadScene(sceneNumber, LoadSceneMode.Additive);
         StartCoroutine(waitForSceneLoad(1, actionAfterLoaded));
+    }
+
+    public void LoadAdventureScene()
+    {
+        SceneManager.LoadScene("Adventure");
     }
 
      

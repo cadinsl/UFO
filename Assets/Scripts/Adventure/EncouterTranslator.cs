@@ -62,5 +62,10 @@ public class EncouterTranslator : MonoBehaviour
         postFightEvent.RemoveAllListeners();
     }
 
+    public void SetupDefeat()
+    {
+        SceneController.Instance.LoadGameOverScene();
+    }
+
 
 }
