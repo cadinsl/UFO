@@ -14,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     public PlayerInput playerInput;
     private InputAction moveInput;
     private Rigidbody rb;
+    public float neilPushForce;
 
     private void Awake()
     {
@@ -69,5 +70,14 @@ public class CharacterMovement : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         rb.position = this.gameObject.transform.position;
         rb.rotation = this.gameObject.transform.rotation;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag.Equals("Neil"))
+        {
+            var neil = collision.gameObject;
+            neil.GetComponent<Rigidbody>().velocity = -neil.transform.forward * neilPushForce;
+        }
     }
 }

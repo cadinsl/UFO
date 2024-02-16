@@ -9,6 +9,7 @@ TagManager:
   - DialogFight
   - Panel
   - Dialog
+  - Neil
   layers:
   - Default
   - TransparentFX
