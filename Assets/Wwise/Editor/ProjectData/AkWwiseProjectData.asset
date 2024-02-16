@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 312ea24f09b0cd4780bcb021b4b01cf7
     GuidInternal: 
-    m_lastTime: -8584937475540176934
+    m_lastTime: -8584934991899649399
     List:
     - name: Main
       guid: 13cdfa05ebbcec4388eecce2709de26b
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 097c3420d7b17947963b3f28ab30b067
     GuidInternal: 
-    m_lastTime: -8584937475540282332
+    m_lastTime: -8584934991899588879
     List:
+    - name: Play_Angel_Footsteps_Grass
+      guid: 6352318f7bff0d40a609394bba320d88
+      id: 1796644714
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Angel_Footsteps_Grass
+        ObjectType: 3
+        guid: 6352318f7bff0d40a609394bba320d88
+      Path: Events\Default Work Unit\Play_Angel_Footsteps_Grass
+      maxAttenuation: 0
+      maxDuration: 0.30551296
+      minDuration: 0.089006126
+    - name: Play_Angel_Footsteps_Stone
+      guid: c63f234e94d56745ade060cbfd31b1a6
+      id: 2197726475
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Angel_Footsteps_Stone
+        ObjectType: 3
+        guid: c63f234e94d56745ade060cbfd31b1a6
+      Path: Events\Default Work Unit\Play_Angel_Footsteps_Stone
+      maxAttenuation: 0
+      maxDuration: 0.13865608
+      minDuration: 0.07576306
     - name: Play_Dog_Barks
       guid: f9ee1e1220f84542a91b4fd845cff3f9
       id: 1440870588
@@ -130,23 +164,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Grass
-      guid: 6352318f7bff0d40a609394bba320d88
-      id: 3198961276
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 097c3420d7b17947963b3f28ab30b067
-      - ElementName: Play_Grass
-        ObjectType: 3
-        guid: 6352318f7bff0d40a609394bba320d88
-      Path: Events\Default Work Unit\Play_Grass
-      maxAttenuation: 0
-      maxDuration: 0.30551296
-      minDuration: 0.089006126
     - name: Play_Startup
       guid: 8e4350a2252d1946af97a14a55b0bc5b
       id: 2469785129
@@ -221,7 +238,7 @@ MonoBehaviour:
     m_lastTime: -8584984330261225123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c0000000d000000
+  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c0000000d0000004d0100004e010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
