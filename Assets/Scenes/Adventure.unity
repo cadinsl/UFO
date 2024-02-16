@@ -1464,10 +1464,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: b0ecc66bfb0049f4ca8916be8d93a14d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b0ecc66bfb0049f4ca8916be8d93a14d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2fa23a1aee811524e8705ca8f8543553, type: 2}
+    - target: {fileID: -7146521406498821007, guid: b0ecc66bfb0049f4ca8916be8d93a14d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: b0ecc66bfb0049f4ca8916be8d93a14d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1488,9 +1496,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: cf9650368a8423f46896ad584bef6e31, type: 2}
+    - target: {fileID: -516098083770646512, guid: b0ecc66bfb0049f4ca8916be8d93a14d, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b0ecc66bfb0049f4ca8916be8d93a14d, type: 3}
       propertyPath: m_Name
       value: FountainTiles
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b0ecc66bfb0049f4ca8916be8d93a14d, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41024,6 +41040,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ed4248b38e6b446812d586a31392fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentTerrain: 0
+  terrainSwitch:
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   footstepsEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -53845,9 +53883,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6f7aec5a4e117fc4fb36b22f547a29bd, type: 2}
+    - target: {fileID: -516098083770646512, guid: 0eb09f51df04b6e4a8b5f11e82d90ed9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0eb09f51df04b6e4a8b5f11e82d90ed9, type: 3}
       propertyPath: m_Name
       value: GroundMaze
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0eb09f51df04b6e4a8b5f11e82d90ed9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0eb09f51df04b6e4a8b5f11e82d90ed9, type: 3}
       propertyPath: m_IsActive
