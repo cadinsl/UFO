@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{20347C09-B1D7-4779-963B-3F28AB30B067}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Angel_Footsteps_Grass" ID="{8F315263-FF7B-400D-A609-394BBA320D88}">
-					<ChildrenList>
-						<Action Name="" ID="{701D367A-072F-489A-B86F-E23612B6DE87}" ShortID="936978134">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grass" ID="{B233AB50-FCF3-4DE0-9D94-73CD9DEC092E}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Dog_Barks" ID="{121EEEF9-F820-4245-A91B-4FD845CFF3F9}">
 					<ChildrenList>
 						<Action Name="" ID="{6FD9087E-2243-46F1-AFDF-E888741752A3}" ShortID="631288730">
@@ -47,12 +36,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Angel_Footsteps_Stone" ID="{4E233FC6-D594-4567-ADE0-60CBFD31B1A6}">
+				<Event Name="Play_Footsteps" ID="{FDF419F5-F246-408B-AEC2-633C6E1D7EF9}">
 					<ChildrenList>
-						<Action Name="" ID="{11340083-5E05-4FAD-B513-4972AAA5A174}" ShortID="297951308">
+						<Action Name="" ID="{E4BA09F4-50B5-41B6-8D0D-CE86380BDC06}" ShortID="670436135">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Stone" ID="{C5BB06EC-E0AF-4E67-BA55-8B7B07D1D2EB}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+									<ObjectRef Name="Footsteps" ID="{250A2B48-F419-4D92-89B8-AA7596E20992}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

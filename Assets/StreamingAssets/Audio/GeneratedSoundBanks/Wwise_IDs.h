@@ -13,12 +13,26 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_ANGEL_FOOTSTEPS_GRASS = 1796644714U;
-        static const AkUniqueID PLAY_ANGEL_FOOTSTEPS_STONE = 2197726475U;
         static const AkUniqueID PLAY_DOG_BARKS = 1440870588U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_FORRESTAMBIANCE = 212573685U;
         static const AkUniqueID PLAY_STARTUP = 2469785129U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEPSTERRAIN
+        {
+            static const AkUniqueID GROUP = 665703777U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID GRAVEL = 2185786256U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPSTERRAIN
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

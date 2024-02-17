@@ -21,8 +21,16 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
+					<Switches>
+						<Switch Id="2185786256" Name="Gravel"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{71F2C6C1-582C-79F6-5E20-08388CE24F84}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{05DE2BF6-B072-67D1-FB8C-BDFE39C113FE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -32,11 +40,11 @@
 				</File>
 				<File Id="68090058" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-007.wav</ShortName>
-					<CachePath>SFX/Stone/Footsteps_Stone-007_77B8DAB9.wem</CachePath>
+					<CachePath>SFX/Stone/Footsteps_Stone-007_8FE916CC.wem</CachePath>
 				</File>
 				<File Id="86577511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-005.wav</ShortName>
-					<CachePath>SFX/Stone/Footsteps_Stone-005_BE227C12.wem</CachePath>
+					<CachePath>SFX/Stone/Footsteps_Stone-005_A38C3C49.wem</CachePath>
 				</File>
 				<File Id="122449790" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-008.wav</ShortName>
@@ -64,7 +72,7 @@
 				</File>
 				<File Id="304104122" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-001.wav</ShortName>
-					<CachePath>SFX/Stone/Footsteps_Stone-001_821CCEA7.wem</CachePath>
+					<CachePath>SFX/Stone/Footsteps_Stone-001_F5494539.wem</CachePath>
 				</File>
 				<File Id="338801011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-004.wav</ShortName>
@@ -88,7 +96,7 @@
 				</File>
 				<File Id="629506482" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-002.wav</ShortName>
-					<CachePath>SFX/Stone/Footsteps_Stone-002_6DCE4E2F.wem</CachePath>
+					<CachePath>SFX/Stone/Footsteps_Stone-002_CCCB20F5.wem</CachePath>
 				</File>
 				<File Id="639312830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-007.wav</ShortName>
@@ -96,7 +104,7 @@
 				</File>
 				<File Id="675514442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-004.wav</ShortName>
-					<CachePath>SFX/Stone/Footsteps_Stone-004_35A5C709.wem</CachePath>
+					<CachePath>SFX/Stone/Footsteps_Stone-004_9D37F953.wem</CachePath>
 				</File>
 				<File Id="835812743" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>super8startup.wav</ShortName>
@@ -104,7 +112,7 @@
 				</File>
 				<File Id="838232528" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-006.wav</ShortName>
-					<CachePath>SFX/Stone/Footsteps_Stone-006_D317BF84.wem</CachePath>
+					<CachePath>SFX/Stone/Footsteps_Stone-006_FB76405F.wem</CachePath>
 				</File>
 				<File Id="841530006" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-002.wav</ShortName>
@@ -116,7 +124,7 @@
 				</File>
 				<File Id="898573900" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-003.wav</ShortName>
-					<CachePath>SFX/Stone/Footsteps_Stone-003_72DC41BE.wem</CachePath>
+					<CachePath>SFX/Stone/Footsteps_Stone-003_D4446B72.wem</CachePath>
 				</File>
 				<File Id="1051144874" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-003.wav</ShortName>
@@ -129,28 +137,6 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="1796644714" Name="Play_Angel_Footsteps_Grass" DurationType="OneShot" DurationMin="0.089006126" DurationMax="0.30551296">
-					<MediaRefs>
-						<MediaRef Id="20496875"/>
-						<MediaRef Id="220269723"/>
-						<MediaRef Id="228610776"/>
-						<MediaRef Id="233498879"/>
-						<MediaRef Id="278922027"/>
-						<MediaRef Id="338801011"/>
-						<MediaRef Id="1051144874"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2197726475" Name="Play_Angel_Footsteps_Stone" DurationType="OneShot" DurationMin="0.07576306" DurationMax="0.13865608">
-					<MediaRefs>
-						<MediaRef Id="68090058"/>
-						<MediaRef Id="86577511"/>
-						<MediaRef Id="304104122"/>
-						<MediaRef Id="629506482"/>
-						<MediaRef Id="675514442"/>
-						<MediaRef Id="838232528"/>
-						<MediaRef Id="898573900"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="1440870588" Name="Play_Dog_Barks" DurationType="OneShot" DurationMin="1.48" DurationMax="1.48">
 					<MediaRefs>
 						<MediaRef Id="122449790"/>
@@ -168,6 +154,34 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.07576306" DurationMax="0.30551296">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="665703777" Id="4248645337" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="20496875"/>
+								<MediaRef Id="220269723"/>
+								<MediaRef Id="228610776"/>
+								<MediaRef Id="233498879"/>
+								<MediaRef Id="278922027"/>
+								<MediaRef Id="338801011"/>
+								<MediaRef Id="1051144874"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="665703777" Id="2185786256"/>
+							<MediaRefs>
+								<MediaRef Id="68090058"/>
+								<MediaRef Id="86577511"/>
+								<MediaRef Id="304104122"/>
+								<MediaRef Id="629506482"/>
+								<MediaRef Id="675514442"/>
+								<MediaRef Id="838232528"/>
+								<MediaRef Id="898573900"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="212573685" Name="Play_ForrestAmbiance" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="563356497"/>
@@ -179,7 +193,15 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
+					<Switches>
+						<Switch Id="2185786256" Name="Gravel"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E378C31A-6732-AA22-CB3F-3A4AD2BC57FA}</FileHash>
+	<FileHash>{DA76A832-5578-870C-C748-0BD221FF3D9E}</FileHash>
 </SoundBanksInfo>

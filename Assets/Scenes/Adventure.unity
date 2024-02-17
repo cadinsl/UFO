@@ -41046,12 +41046,12 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 7ed053e6e1f739440addb46e5b8aca1f, type: 2}
   - idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a1bbe62f891c3a64498474cd71dde1cb, type: 2}
   - idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
@@ -41065,7 +41065,7 @@ MonoBehaviour:
   footstepsEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9c8622ba9b814fb4185197c5260a74bb, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1751dd32509227c488da6266e5833d34, type: 2}
 --- !u!114 &1559913976
 MonoBehaviour:
   m_ObjectHideFlags: 0

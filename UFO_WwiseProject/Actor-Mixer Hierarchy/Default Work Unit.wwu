@@ -230,8 +230,14 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="SFX" ID="{805FCAF8-4119-44C3-B696-2EA04150ED81}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Grass" ID="{3B19BA0F-5091-4AD0-AE7E-C964847DD3E7}" WorkUnitID="{07E8910F-64EE-47BC-BA31-9663FBC0861E}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="FootstepsTerrain" ID="{88A6057D-4F1B-4BAD-9BD8-E83FB68085A5}" WorkUnitID="{07E8910F-64EE-47BC-BA31-9663FBC0861E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -453,7 +459,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Stone" ID="{C5BB06EC-E0AF-4E67-BA55-8B7B07D1D2EB}" ShortID="765742817">
+						<RandomSequenceContainer Name="Gravel" ID="{C5BB06EC-E0AF-4E67-BA55-8B7B07D1D2EB}" ShortID="765742817">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -463,7 +469,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Footsteps_Stone-001" ID="{CE39E316-9E2A-4A7C-801B-180060F01B9C}" ShortID="434018984">
+								<Sound Name="Footsteps_Gravel-001" ID="{CE39E316-9E2A-4A7C-801B-180060F01B9C}" ShortID="434018984">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -490,7 +496,7 @@
 										<ActiveSource Name="Footsteps_Stone-001" ID="{0170D0D5-2512-46B3-8CE0-2117F5EB35A5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Footsteps_Stone-002" ID="{3E04F11A-0D09-4A79-B34F-A4C7F11914A3}" ShortID="334642324">
+								<Sound Name="Footsteps_Gravel-002" ID="{3E04F11A-0D09-4A79-B34F-A4C7F11914A3}" ShortID="334642324">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -518,7 +524,7 @@
 										<ActiveSource Name="Footsteps_Stone-002" ID="{DDB0D1C7-3643-450E-8745-46A0B656467E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Footsteps_Stone-003" ID="{CE9FB229-064E-47E7-9519-221C3B8B6A77}" ShortID="481867837">
+								<Sound Name="Footsteps_Gravel-003" ID="{CE9FB229-064E-47E7-9519-221C3B8B6A77}" ShortID="481867837">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -546,7 +552,7 @@
 										<ActiveSource Name="Footsteps_Stone-003" ID="{140C0B35-2017-4D7C-BE58-14C0BA69F69D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Footsteps_Stone-004" ID="{DD460C26-C54E-4826-AFC2-67C0D21EAA2B}" ShortID="313759628">
+								<Sound Name="Footsteps_Gravel-004" ID="{DD460C26-C54E-4826-AFC2-67C0D21EAA2B}" ShortID="313759628">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -574,7 +580,7 @@
 										<ActiveSource Name="Footsteps_Stone-004" ID="{EED87DA2-C6B9-4359-BD28-DD8755D0A4EF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Footsteps_Stone-005" ID="{034E42E5-6A33-4887-AC21-D152452EDFF2}" ShortID="8724086">
+								<Sound Name="Footsteps_Gravel-005" ID="{034E42E5-6A33-4887-AC21-D152452EDFF2}" ShortID="8724086">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -601,7 +607,7 @@
 										<ActiveSource Name="Footsteps_Stone-005" ID="{874B1776-5D3C-40DA-AA23-6E4556B0A24D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Footsteps_Stone-006" ID="{210F4C00-FF72-486B-BDF3-71D294D2B468}" ShortID="581712941">
+								<Sound Name="Footsteps_Gravel-006" ID="{210F4C00-FF72-486B-BDF3-71D294D2B468}" ShortID="581712941">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -629,7 +635,7 @@
 										<ActiveSource Name="Footsteps_Stone-006" ID="{2862D482-E563-43CD-BB0B-9DF0E7E35DFC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Footsteps_Stone-007" ID="{EDC4C0A1-E2E3-41E5-AD7B-83017A9868F6}" ShortID="710489964">
+								<Sound Name="Footsteps_Gravel-007" ID="{EDC4C0A1-E2E3-41E5-AD7B-83017A9868F6}" ShortID="710489964">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
@@ -666,9 +672,23 @@
 								<ItemRef Name="Grass" ID="{B233AB50-FCF3-4DE0-9D94-73CD9DEC092E}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="Stone" ID="{C5BB06EC-E0AF-4E67-BA55-8B7B07D1D2EB}"/>
+								<ItemRef Name="Gravel" ID="{C5BB06EC-E0AF-4E67-BA55-8B7B07D1D2EB}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Grass" ID="{3B19BA0F-5091-4AD0-AE7E-C964847DD3E7}"/>
+								<ItemList>
+									<ItemRef Name="Grass" ID="{B233AB50-FCF3-4DE0-9D94-73CD9DEC092E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Gravel" ID="{13019361-6BC0-4CD9-B5D2-4A922AFFDF95}"/>
+								<ItemList>
+									<ItemRef Name="Gravel" ID="{C5BB06EC-E0AF-4E67-BA55-8B7B07D1D2EB}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<Sound Name="ForrestAmbiance" ID="{6ADD7866-5E11-4007-B825-2D99D0F43378}" ShortID="853521177">
