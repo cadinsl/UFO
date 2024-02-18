@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class CharacterMovement : MonoBehaviour
 {
     public int movementSpeed;
+    public int neilPushForce;
 
     private CharacterController characterController;
     private AdventurePlayerAnimation adventurePlayerAnimation;
@@ -14,6 +15,7 @@ public class CharacterMovement : MonoBehaviour
     public PlayerInput playerInput;
     private InputAction moveInput;
     private Rigidbody rb;
+
 
     private void Awake()
     {
@@ -69,5 +71,14 @@ public class CharacterMovement : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         rb.position = this.gameObject.transform.position;
         rb.rotation = this.gameObject.transform.rotation;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("Neil"))
+        {
+            var neil = collision.gameObject;
+            neil.GetComponent<Rigidbody>().velocity = -neil.transform.forward * neilPushForce;
+        }
     }
 }

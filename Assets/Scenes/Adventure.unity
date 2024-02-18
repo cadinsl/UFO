@@ -54351,8 +54351,8 @@ Rigidbody:
   m_GameObject: {fileID: 2091032273}
   serializedVersion: 4
   m_Mass: 5
-  m_Drag: 20
-  m_AngularDrag: 1
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -55917,6 +55917,10 @@ PrefabInstance:
       propertyPath: m_StepOffset
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 761541019736438109, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: neilPushForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 761541019736438110, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       propertyPath: m_ReceiveShadows
       value: 1
@@ -57049,6 +57053,10 @@ PrefabInstance:
       objectReference: {fileID: 1995764283315819601, guid: 273ef79ba60d8ca40b476651aeca0fd3, type: 3}
     - target: {fileID: 8482722768962156975, guid: 27c654105ee6d3a4a82e7f878dc075ab, type: 3}
       propertyPath: m_Name
+      value: Neil
+      objectReference: {fileID: 0}
+    - target: {fileID: 8482722768962156975, guid: 27c654105ee6d3a4a82e7f878dc075ab, type: 3}
+      propertyPath: m_TagString
       value: Neil
       objectReference: {fileID: 0}
     - target: {fileID: 8731772656842749742, guid: 27c654105ee6d3a4a82e7f878dc075ab, type: 3}
