@@ -30,7 +30,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{12C8BC90-A14A-D0EB-3A18-B3A031682209}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F936785E-19E8-EDF1-78E3-D8ED7A32283E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -92,7 +92,7 @@
 				</File>
 				<File Id="563356497" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ForrestAmbiance.wav</ShortName>
-					<CachePath>SFX/ForrestAmbiance_BBDC8862.wem</CachePath>
+					<CachePath>SFX/ForrestAmbiance_6C2A27A8.wem</CachePath>
 				</File>
 				<File Id="629506482" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-002.wav</ShortName>
@@ -203,5 +203,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E45B5EDE-A87D-C901-47AC-D023F7165367}</FileHash>
+	<FileHash>{D658ED04-EC1D-1EB0-F561-935110BD6A0E}</FileHash>
 </SoundBanksInfo>

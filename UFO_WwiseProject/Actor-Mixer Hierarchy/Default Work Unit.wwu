@@ -705,11 +705,6 @@
 								<Value>27</Value>
 							</ValueList>
 						</Property>
-						<Property Name="InitialDelay" Type="Real64">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -729,8 +724,8 @@
 						<AudioFileSource Name="ForrestAmbiance" ID="{5E19E3AA-419E-4FE0-B96E-9C8C12DD20EA}">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.436283668730651"/>
-								<Property Name="TrimEnd" Type="Real64" Value="73.520884969808"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.61046560565016"/>
+								<Property Name="TrimEnd" Type="Real64" Value="69.0530805759804"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>ForrestAmbiance.wav</AudioFile>
