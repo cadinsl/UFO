@@ -6,10 +6,10 @@
 				<SoundBank Name="Main" ID="{05FACD13-BCEB-43EC-88EE-CCE2709DE26B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Footsteps" ID="{FDF419F5-F246-408B-AEC2-633C6E1D7EF9}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps_Neil" ID="{BA2EAA35-B51F-4152-9D08-3B79FE2BBDFE}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Dog_Barks" ID="{121EEEF9-F820-4245-A91B-4FD845CFF3F9}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ForrestAmbiance" ID="{362E532A-F1C9-457F-9AD5-64F108B03BEE}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Startup" ID="{A250438E-2D25-4619-AF97-A14A55B0BC5B}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Footsteps_Neil" ID="{9453A96A-6060-4ADE-8244-8070D3578998}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

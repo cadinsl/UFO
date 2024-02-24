@@ -47,9 +47,9 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Footsteps_Neil" ID="{9453A96A-6060-4ADE-8244-8070D3578998}">
+				<Event Name="Play_Footsteps_Neil" ID="{BA2EAA35-B51F-4152-9D08-3B79FE2BBDFE}">
 					<ChildrenList>
-						<Action Name="" ID="{2F26953A-9444-4C8A-B862-DBD70C6D6796}" ShortID="460938496">
+						<Action Name="" ID="{FC853ED5-DE85-45DD-88EC-FD2925442743}" ShortID="641929519">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Footsteps Neil" ID="{499C7EBA-BD46-47C1-B9BD-563EE7902E29}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>

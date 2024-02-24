@@ -42380,7 +42380,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ec29cee7eb4bbdc4b85262b35346a5ce, type: 2}
   - idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
@@ -42394,7 +42394,7 @@ MonoBehaviour:
   footstepsEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6343edd0975a9ed4cb22861f1ac2ef3e, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: eb2b6ced174f15a4fa2fe74f835eab05, type: 2}
 --- !u!1 &1603345454
 GameObject:
   m_ObjectHideFlags: 0

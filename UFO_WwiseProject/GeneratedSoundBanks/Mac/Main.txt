@@ -12,6 +12,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	2185786256	Gravel	FootstepsTerrain			
 	4248645337	Grass	FootstepsTerrain			
+	2185786256	Gravel	FootstepsTerrainNeil			
 	4248645337	Grass	FootstepsTerrainNeil			
 
 Effect plug-ins	ID	Name	Type				Notes
@@ -19,17 +20,21 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20496875	Footsteps Grass-005	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\Footsteps Grass-005_24F2E247.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Grass\Footsteps Grass-005		2507
+	41235107	FootstepsDog_Gravel-002	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Gravel\Footsteps-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Gravel\FootstepsDog_Gravel-002		210008
+	55910847	FootstepsDog_Gravel-006	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Gravel\Footsteps-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Gravel\FootstepsDog_Gravel-006		210008
 	68090058	Footsteps_Gravel-007	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Stone\Footsteps_Stone-007_8FE916CC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Gravel\Footsteps_Gravel-007		2489
 	86577511	Footsteps_Gravel-005	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Stone\Footsteps_Stone-005_A38C3C49.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Gravel\Footsteps_Gravel-005		2617
-	101504224	FootstepsDog_Grass-003	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-003		2137056
+	101504224	FootstepsDog_Grass-003	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-003_913158B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-003		36484
 	122449790	Dog Barks-008	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Dog Barks\Dog Barks-008_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog Barks\Dog Barks-008		5180
+	134427381	FootstepsDog_Gravel-003	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Gravel\Footsteps-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Gravel\FootstepsDog_Gravel-003		210008
 	220269723	Footsteps Grass-008	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\Footsteps Grass-008_D42D6AE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Grass\Footsteps Grass-008		1593
 	228610776	Footsteps Grass-001	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\Footsteps Grass-001_07E133D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Grass\Footsteps Grass-001		5040
-	229315902	FootstepsDog_Grass-004	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-004		2137056
+	229315902	FootstepsDog_Grass-004	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-004_DB45A89E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-004		39792
 	233498879	Footsteps Grass-002	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\Footsteps Grass-002_4B402225.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Grass\Footsteps Grass-002		3247
 	256848070	Dog Barks-003	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Dog Barks\Dog Barks-003_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog Barks\Dog Barks-003		5117
-	261707968	FootstepsDog_Grass-001	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-001		2137056
+	261707968	FootstepsDog_Grass-001	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-001_0F8B6486.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-001		86104
 	278922027	Footsteps Grass-006	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\Footsteps Grass-006_21D68A0F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Grass\Footsteps Grass-006		3012
+	290974148	FootstepsDog_Gravel-005	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Gravel\Footsteps-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Gravel\FootstepsDog_Gravel-005		210008
 	304104122	Footsteps_Gravel-001	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Stone\Footsteps_Stone-001_F5494539.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Gravel\Footsteps_Gravel-001		1688
 	338801011	Footsteps Grass-004	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\Footsteps Grass-004_3A2BFEFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Grass\Footsteps Grass-004		3436
 	422769103	Dog Barks-006	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Dog Barks\Dog Barks-006_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog Barks\Dog Barks-006		5724
@@ -39,14 +44,17 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	629506482	Footsteps_Gravel-002	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Stone\Footsteps_Stone-002_CCCB20F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Gravel\Footsteps_Gravel-002		2458
 	639312830	Dog Barks-007	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Dog Barks\Dog Barks-007_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog Barks\Dog Barks-007		5295
 	675514442	Footsteps_Gravel-004	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Stone\Footsteps_Stone-004_9D37F953.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Gravel\Footsteps_Gravel-004		2146
-	697895656	FootstepsDog_Grass-007	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-007_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-007		2137056
-	735515897	FootstepsDog_Grass-005	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-005		2137056
-	820787179	FootstepsDog_Grass-006	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-006		2137056
+	697895656	FootstepsDog_Grass-007	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-007_90898C20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-007		41444
+	699413261	FootstepsDog_Gravel-004	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Gravel\Footsteps-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Gravel\FootstepsDog_Gravel-004		210008
+	735515897	FootstepsDog_Grass-005	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-005_0468A154.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-005		54676
+	748414407	FootstepsDog_Gravel-001	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Gravel\Footsteps-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Gravel\FootstepsDog_Gravel-001		210008
+	820787179	FootstepsDog_Grass-006	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-006_FDC6ABFF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-006		53024
 	835812743	Startup	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\super8startup_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Startup		72491
 	838232528	Footsteps_Gravel-006	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Stone\Footsteps_Stone-006_FB76405F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Gravel\Footsteps_Gravel-006		2239
 	841530006	Dog Barks-002	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Dog Barks\Dog Barks-002_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog Barks\Dog Barks-002		4920
 	895041144	Dog Barks-004	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Dog Barks\Dog Barks-004_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dog Barks\Dog Barks-004		5400
 	898573900	Footsteps_Gravel-003	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Stone\Footsteps_Stone-003_D4446B72.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Gravel\Footsteps_Gravel-003		2071
-	941264334	FootstepsDog_Grass-002	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-002		2137056
+	931313870	FootstepsDog_Gravel-007	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Gravel\Footsteps-007_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Gravel\FootstepsDog_Gravel-007		210008
+	941264334	FootstepsDog_Grass-002	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\FootstepsDog_Grass-002_3CC4C617.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Neil\Grass\FootstepsDog_Grass-002		56332
 	1051144874	Footsteps Grass-003	C:\Users\Mutatayi\OneDrive\Documents\GitHub\UFO\UFO_WwiseProject\.cache\Mac\SFX\Grass\Footsteps Grass-003_6104B725.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps Angel\Grass\Footsteps Grass-003		4552
 

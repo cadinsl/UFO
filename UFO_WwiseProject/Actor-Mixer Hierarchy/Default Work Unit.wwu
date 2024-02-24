@@ -793,11 +793,14 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Grass" ID="{D4B3563B-E0C4-496B-B405-795F51F314DA}" ShortID="466253465">
 							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -819,6 +822,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="FootstepsDog_Grass-001" ID="{AC3E585C-124A-4CF8-8DA4-C51BA288602C}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.447956656346748"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Grass\FootstepsDog_Grass-001.wav</AudioFile>
 											<MediaIDList>
@@ -841,6 +849,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="FootstepsDog_Grass-002" ID="{4BC17DA3-015A-4BAC-A495-63A9AA375E6B}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.292894736842106"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Grass\FootstepsDog_Grass-002.wav</AudioFile>
 											<MediaIDList>
@@ -863,6 +876,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="FootstepsDog_Grass-003" ID="{A1648EFD-6179-4DD4-81C2-5343E5E6D210}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.189520123839009"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Grass\FootstepsDog_Grass-003.wav</AudioFile>
 											<MediaIDList>
@@ -885,6 +903,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="FootstepsDog_Grass-004" ID="{C76EBF9D-92A5-4184-9BA5-945F3C66A862}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.206749226006192"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Grass\FootstepsDog_Grass-004.wav</AudioFile>
 											<MediaIDList>
@@ -907,6 +930,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="FootstepsDog_Grass-005" ID="{402AE9AD-3BFC-4924-A770-9D84FCB0EC9A}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.284280185758512"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Grass\FootstepsDog_Grass-005.wav</AudioFile>
 											<MediaIDList>
@@ -929,6 +957,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="FootstepsDog_Grass-006" ID="{AC80B1B5-1878-4DBA-BC08-C0F08DBFC25C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.275665634674923"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Grass\FootstepsDog_Grass-006.wav</AudioFile>
 											<MediaIDList>
@@ -951,6 +983,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="FootstepsDog_Grass-007" ID="{35D33EE6-1E9F-4FB9-BE2D-64EF5227CA94}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.215363777089783"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Grass\FootstepsDog_Grass-007.wav</AudioFile>
 											<MediaIDList>
@@ -964,14 +1001,202 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Gravel" ID="{CA64E9E6-6D9F-4625-A563-8A4E1249D096}" ShortID="435664196">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FootstepsDog_Gravel-001" ID="{DACD265B-D8C0-4B0E-8DF4-3D2AA598CA28}" ShortID="622772615">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps-001" ID="{D49D6013-543A-42E4-9B26-8F0B4D24FFA6}">
+											<Language>SFX</Language>
+											<AudioFile>Gravel\Footsteps-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748414407"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps-001" ID="{D49D6013-543A-42E4-9B26-8F0B4D24FFA6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsDog_Gravel-002" ID="{A7FEEBE0-4859-4286-816E-0938CA56FA83}" ShortID="441321693">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps-002" ID="{A93B44AD-F7C1-47CB-A7C7-A5C27C68BEEC}">
+											<Language>SFX</Language>
+											<AudioFile>Gravel\Footsteps-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="41235107"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps-002" ID="{A93B44AD-F7C1-47CB-A7C7-A5C27C68BEEC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsDog_Gravel-003" ID="{F3763352-A14E-490F-BFC9-03F2245D94A1}" ShortID="633637633">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps-003" ID="{817CE4D5-F745-4645-902F-F7268A30AB50}">
+											<Language>SFX</Language>
+											<AudioFile>Gravel\Footsteps-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="134427381"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps-003" ID="{817CE4D5-F745-4645-902F-F7268A30AB50}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsDog_Gravel-004" ID="{19938A0B-D01D-4498-8B42-470A4E1AC05C}" ShortID="732557788">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps-004" ID="{B0AE6D76-CC99-432C-AEB0-60FC6ABCD201}">
+											<Language>SFX</Language>
+											<AudioFile>Gravel\Footsteps-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="699413261"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps-004" ID="{B0AE6D76-CC99-432C-AEB0-60FC6ABCD201}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsDog_Gravel-005" ID="{092EC83B-C5DB-4C0F-AEF8-50001E0E8FF2}" ShortID="726929577">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps-005" ID="{416D9C98-426E-4DB5-8B48-126998911894}">
+											<Language>SFX</Language>
+											<AudioFile>Gravel\Footsteps-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="290974148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps-005" ID="{416D9C98-426E-4DB5-8B48-126998911894}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsDog_Gravel-006" ID="{5B1BFD06-C43B-4E47-9EB2-BF46A1AFAEA5}" ShortID="768230745">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps-006" ID="{F0FC469E-CA51-4F7F-96C8-3212B9AEE250}">
+											<Language>SFX</Language>
+											<AudioFile>Gravel\Footsteps-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="55910847"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps-006" ID="{F0FC469E-CA51-4F7F-96C8-3212B9AEE250}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsDog_Gravel-007" ID="{DD6EDEE1-D96F-451F-AE9B-3244342AB7A7}" ShortID="828491306">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps-007" ID="{33082831-4B26-470E-8E8C-E60904C4E6F9}">
+											<Language>SFX</Language>
+											<AudioFile>Gravel\Footsteps-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="931313870"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps-007" ID="{33082831-4B26-470E-8E8C-E60904C4E6F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
 								<ItemRef Name="Grass" ID="{D4B3563B-E0C4-496B-B405-795F51F314DA}"/>
 							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Gravel" ID="{CA64E9E6-6D9F-4625-A563-8A4E1249D096}"/>
+							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Gravel" ID="{D1CE09A8-7BA3-4119-BF34-2391CFA43E59}"/>
+								<ItemList>
+									<ItemRef Name="Gravel" ID="{CA64E9E6-6D9F-4625-A563-8A4E1249D096}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Grass" ID="{3834ADDC-14F7-4BB8-8DFD-A9672747FC76}"/>
 								<ItemList>
