@@ -8,6 +8,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{3B19BA0F-5091-4AD0-AE7E-C964847DD3E7}"/>
+						<CurrentSwitchRef Name="Grass" ID="{3834ADDC-14F7-4BB8-8DFD-A9672747FC76}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

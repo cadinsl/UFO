@@ -9,6 +9,11 @@
 						<Switch Name="Gravel" ID="{13019361-6BC0-4CD9-B5D2-4A922AFFDF95}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="FootstepsTerrainNeil" ID="{8601B3E8-2762-4ECE-83E9-6C565593718A}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{3834ADDC-14F7-4BB8-8DFD-A9672747FC76}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

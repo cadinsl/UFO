@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 097c3420d7b17947963b3f28ab30b067
     GuidInternal: 
-    m_lastTime: -8584934859020053799
+    m_lastTime: -8584928522664896535
     List:
     - name: Play_Dog_Barks
       guid: f9ee1e1220f84542a91b4fd845cff3f9
@@ -130,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.30551296
       minDuration: 0.07576306
+    - name: Play_Footsteps_Neil
+      guid: 6aa953946060de4a82448070d3578998
+      id: 2071198046
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Footsteps_Neil
+        ObjectType: 3
+        guid: 6aa953946060de4a82448070d3578998
+      Path: Events\Default Work Unit\Play_Footsteps_Neil
+      maxAttenuation: 0
+      maxDuration: 11.13
+      minDuration: 11.13
     - name: Play_ForrestAmbiance
       guid: 2a532e36c9f17f459ad564f108b03bee
       id: 212573685
@@ -204,7 +221,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0f91e807ee64bc47ba319663fbc0861e
     GuidInternal: 
-    m_lastTime: -8584934866563666946
+    m_lastTime: -8584928523582968101
     List:
     - name: FootstepsTerrain
       guid: 7d05a6881b4fad4b9bd8e83fb68085a5
@@ -256,6 +273,40 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: FootstepsTerrainNeil
+      guid: e8b301866227ce4e83e96c565593718a
+      id: 3801704881
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0f91e807ee64bc47ba319663fbc0861e
+      - ElementName: FootstepsTerrainNeil
+        ObjectType: 11
+        guid: e8b301866227ce4e83e96c565593718a
+      Path: Switches\Default Work Unit\FootstepsTerrainNeil
+      values:
+      - name: Grass
+        guid: dcad3438f714b84b8dfda9672747fc76
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0f91e807ee64bc47ba319663fbc0861e
+        - ElementName: FootstepsTerrainNeil
+          ObjectType: 11
+          guid: e8b301866227ce4e83e96c565593718a
+        - ElementName: Grass
+          ObjectType: 10
+          guid: dcad3438f714b84b8dfda9672747fc76
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -271,7 +322,7 @@ MonoBehaviour:
     m_lastTime: -8584984330261225123
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000000d000000100000001100000012000000130000004d0100004e010000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000000d00000010000000110000001200000013000000190000004d0100004e010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

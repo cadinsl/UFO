@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_DOG_BARKS = 1440870588U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_FOOTSTEPS_NEIL = 2071198046U;
         static const AkUniqueID PLAY_FORRESTAMBIANCE = 212573685U;
         static const AkUniqueID PLAY_STARTUP = 2469785129U;
     } // namespace EVENTS
@@ -31,6 +32,16 @@ namespace AK
                 static const AkUniqueID GRAVEL = 2185786256U;
             } // namespace SWITCH
         } // namespace FOOTSTEPSTERRAIN
+
+        namespace FOOTSTEPSTERRAINNEIL
+        {
+            static const AkUniqueID GROUP = 3801704881U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPSTERRAINNEIL
 
     } // namespace SWITCHES
 
