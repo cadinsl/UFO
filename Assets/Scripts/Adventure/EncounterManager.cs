@@ -16,6 +16,9 @@ public class EncounterManager : MonoBehaviour
 
     private RegionMonsterProvider regionMonsterProvider;
 
+    [SerializeField]
+    private FF7Transition ff7Transition;
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,9 +40,19 @@ public class EncounterManager : MonoBehaviour
             lastCellPosition = currentCellPosition;
             if(Random.Range(1, 101)  <= WorldConstants.EncounterChance)
             {
-                startEncounter();
+                StartCoroutine(TransitionToFight());
             }
         }
+    }
+
+    IEnumerator TransitionToFight()
+    {
+        player.GetComponent<CharacterBrainAdventure>().DesactivatePlayer();
+        ff7Transition.enabled = true;
+
+        yield return new WaitForSeconds(1f);
+        ff7Transition.enabled = false;
+        startEncounter();
     }
 
     private void startEncounter()
