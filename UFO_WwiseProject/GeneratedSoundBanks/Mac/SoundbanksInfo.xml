@@ -36,7 +36,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{60CEADD1-3BFF-795B-D0D4-F1BDC2A24FE6}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{282134D9-1F7D-1ED5-48D1-9E4FEE7082A7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -46,11 +46,11 @@
 				</File>
 				<File Id="41235107" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel\Footsteps-002.wav</ShortName>
-					<CachePath>SFX/Gravel/Footsteps-002_10C4C929.wem</CachePath>
+					<CachePath>SFX/Gravel/Footsteps-002_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="55910847" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel\Footsteps-006.wav</ShortName>
-					<CachePath>SFX/Gravel/Footsteps-006_10C4C929.wem</CachePath>
+					<CachePath>SFX/Gravel/Footsteps-006_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="68090058" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-007.wav</ShortName>
@@ -62,7 +62,7 @@
 				</File>
 				<File Id="101504224" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-003.wav</ShortName>
-					<CachePath>SFX/Grass/FootstepsDog_Grass-003_913158B7.wem</CachePath>
+					<CachePath>SFX/Grass/FootstepsDog_Grass-003_10707E47.wem</CachePath>
 				</File>
 				<File Id="122449790" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-008.wav</ShortName>
@@ -70,7 +70,7 @@
 				</File>
 				<File Id="134427381" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel\Footsteps-003.wav</ShortName>
-					<CachePath>SFX/Gravel/Footsteps-003_10C4C929.wem</CachePath>
+					<CachePath>SFX/Gravel/Footsteps-003_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="220269723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-008.wav</ShortName>
@@ -82,7 +82,7 @@
 				</File>
 				<File Id="229315902" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-004.wav</ShortName>
-					<CachePath>SFX/Grass/FootstepsDog_Grass-004_DB45A89E.wem</CachePath>
+					<CachePath>SFX/Grass/FootstepsDog_Grass-004_21F1F96E.wem</CachePath>
 				</File>
 				<File Id="233498879" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-002.wav</ShortName>
@@ -94,7 +94,7 @@
 				</File>
 				<File Id="261707968" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-001.wav</ShortName>
-					<CachePath>SFX/Grass/FootstepsDog_Grass-001_0F8B6486.wem</CachePath>
+					<CachePath>SFX/Grass/FootstepsDog_Grass-001_1045ABF6.wem</CachePath>
 				</File>
 				<File Id="278922027" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-006.wav</ShortName>
@@ -102,7 +102,7 @@
 				</File>
 				<File Id="290974148" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel\Footsteps-005.wav</ShortName>
-					<CachePath>SFX/Gravel/Footsteps-005_10C4C929.wem</CachePath>
+					<CachePath>SFX/Gravel/Footsteps-005_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="304104122" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-001.wav</ShortName>
@@ -142,23 +142,23 @@
 				</File>
 				<File Id="697895656" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-007.wav</ShortName>
-					<CachePath>SFX/Grass/FootstepsDog_Grass-007_90898C20.wem</CachePath>
+					<CachePath>SFX/Grass/FootstepsDog_Grass-007_006A76B0.wem</CachePath>
 				</File>
 				<File Id="699413261" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel\Footsteps-004.wav</ShortName>
-					<CachePath>SFX/Gravel/Footsteps-004_10C4C929.wem</CachePath>
+					<CachePath>SFX/Gravel/Footsteps-004_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="735515897" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-005.wav</ShortName>
-					<CachePath>SFX/Grass/FootstepsDog_Grass-005_0468A154.wem</CachePath>
+					<CachePath>SFX/Grass/FootstepsDog_Grass-005_C3D700C4.wem</CachePath>
 				</File>
 				<File Id="748414407" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel\Footsteps-001.wav</ShortName>
-					<CachePath>SFX/Gravel/Footsteps-001_10C4C929.wem</CachePath>
+					<CachePath>SFX/Gravel/Footsteps-001_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="820787179" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-006.wav</ShortName>
-					<CachePath>SFX/Grass/FootstepsDog_Grass-006_FDC6ABFF.wem</CachePath>
+					<CachePath>SFX/Grass/FootstepsDog_Grass-006_8575622F.wem</CachePath>
 				</File>
 				<File Id="835812743" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>super8startup.wav</ShortName>
@@ -182,11 +182,11 @@
 				</File>
 				<File Id="931313870" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gravel\Footsteps-007.wav</ShortName>
-					<CachePath>SFX/Gravel/Footsteps-007_10C4C929.wem</CachePath>
+					<CachePath>SFX/Gravel/Footsteps-007_3F75BDB9.wem</CachePath>
 				</File>
 				<File Id="941264334" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-002.wav</ShortName>
-					<CachePath>SFX/Grass/FootstepsDog_Grass-002_3CC4C617.wem</CachePath>
+					<CachePath>SFX/Grass/FootstepsDog_Grass-002_C8B36847.wem</CachePath>
 				</File>
 				<File Id="1051144874" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-003.wav</ShortName>
@@ -299,5 +299,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{760AE627-073C-BD95-663F-043E4ADC7904}</FileHash>
+	<FileHash>{B2875B5F-7522-0BD5-A722-33341ADA5ECB}</FileHash>
 </SoundBanksInfo>
