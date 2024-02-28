@@ -13428,6 +13428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera RT source water layer
       objectReference: {fileID: 0}
+    - target: {fileID: 2981691608423081028, guid: cb9600d8e45ffe5419985ee8a554b994, type: 3}
+      propertyPath: m_Depth
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48285,7 +48289,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849986785}
   m_Enabled: 1
-  m_CellSize: {x: 10, y: 10, z: 10}
+  m_CellSize: {x: 20, y: 20, z: 20}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
