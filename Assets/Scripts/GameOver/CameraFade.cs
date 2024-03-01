@@ -13,6 +13,6 @@ public class CameraFade : MonoBehaviour
     }
     private void Update()
     {
-        pSXEffects.subtractFade -=  (int)(Time.time * fadeSpeed);
+        pSXEffects.subtractFade =  (int)Mathf.Lerp(60, 0, Time.time * fadeSpeed);
     }
 }
