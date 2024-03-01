@@ -7,6 +7,7 @@ public class CharacterFightController : MonoBehaviour
 {
     #region Field Declarations
 
+    public GameObject dollPrefab;
     public CharacterDoll doll;
 
 
@@ -21,12 +22,15 @@ public class CharacterFightController : MonoBehaviour
 
     private UnityAction<CharacterDecisionResult> getResultBackMethod;
 
+    private GameObject dollInstance;
 
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        dollInstance = Instantiate(dollPrefab);
+        doll = dollInstance.GetComponent<CharacterDoll>();
     }
 
     // Update is called once per frame

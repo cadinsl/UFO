@@ -7,7 +7,7 @@ using UnityEngine;
 public class RegionMonsters 
 {
     public CharacterDoll[] monsters;
-
+    public GameObject[] monstersObject;
 
 
 }

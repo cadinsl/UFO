@@ -33,7 +33,7 @@ public class CharacterDoll : MonoBehaviour
 
     public CharacterDoll Copy()
     {
-        CharacterDoll characterDoll = this;
+        CharacterDoll characterDoll = Instantiate(this.gameObject).GetComponent<CharacterDoll>();
         characterDoll.name = (string)this.name.Clone();
         characterDoll.stats = stats.Copy();
         characterDoll.inventory = this.inventory;
