@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EncounterManager : MonoBehaviour
 {
+    public bool canEncounter = false;
     public Transform player;
 
     public Grid grid;
@@ -29,7 +30,8 @@ public class EncounterManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkForEncounters();
+        if(canEncounter)
+            checkForEncounters();
     }
 
     private void checkForEncounters()
