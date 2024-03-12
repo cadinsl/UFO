@@ -13,20 +13,19 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - DIFF_VERTEX
+  - OPAQUE
   - SPEC_GOURAUD
-  - TRANSPARENT
   - _EMISSION
   m_InvalidKeywords:
-  - _ALPHABLEND_ON
   - _DIFFMODEL_VERTEX
   - _DRAWDIST_ON
   - _SPECMODEL_GOURAUD
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2000
   stringTagMap:
-    RenderType: Transparent
+    RenderType: Opaque
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -50,6 +49,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplGuide:
+        m_Texture: {fileID: 2800000, guid: 33bbc8626a9e9cb4eb96a80865096c50, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -97,30 +100,33 @@ Material:
     - _CutoutThreshold: 0.5
     - _DetailNormalMapScale: 1
     - _DiffModel: 0
+    - _DisplAmount: 0
     - _DrawDist: 1
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _IntersectionThresholdMax: 1
     - _LODAmt: 0
     - _Metallic: 0
     - _Mode: 0
     - _NormalMapDepth: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RenderMode: 1
+    - _RenderMode: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecModel: 0
     - _Specular: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _UVSec: 0
     - _Unlit: 0
     - _VertexInaccuracy: -1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.08957815, g: 0.54100543, b: 0.5754717, a: 0.4117647}
+    - _Color: {r: 0.3433962, g: 0.7721313, b: 1, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _IntersectionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

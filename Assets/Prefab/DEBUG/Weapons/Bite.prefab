@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strengthNeeded: 0
   intelligenceNeeded: 0
-  damage: 1
+  damage: 999
   missingChance: 0
   criticalChance: 0
