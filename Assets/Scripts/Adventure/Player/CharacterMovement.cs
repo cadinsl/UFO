@@ -45,7 +45,7 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerAdventureInput.isInputEnabled())
+        if (playerAdventureInput.isInputEnabled() && playerAdventureInput.canPlayerMove())
         {
             characterController.enabled = true;
             Vector3 move = new Vector3(moveInput.ReadValue<Vector2>().x, 0, moveInput.ReadValue<Vector2>().y);
@@ -71,6 +71,11 @@ public class CharacterMovement : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         rb.position = this.gameObject.transform.position;
         rb.rotation = this.gameObject.transform.rotation;
+    }
+
+    public Vector2 GetCharacterMovement()
+    {
+        return moveInput.ReadValue<Vector2>();
     }
 
     private void OnCollisionEnter(Collision collision)

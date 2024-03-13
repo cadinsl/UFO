@@ -25,13 +25,14 @@ public class CharacterAudioManager : MonoBehaviour
     {
         RaycastHit[] hit;
 
-        hit = Physics.RaycastAll(transform.position, Vector3.down, 10.0f);
+        hit = Physics.RaycastAll(transform.position, Vector3.down, 1.0f);
 
         foreach (RaycastHit rayhit in hit)
         {
             if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Gravel"))
             {
                 currentTerrain = CURRENT_TERRAIN.GRAVEL;
+                break;
             }
             else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Wood"))
             {

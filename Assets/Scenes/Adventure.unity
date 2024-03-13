@@ -9681,7 +9681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7914941556798206039, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -11.915283
+      value: -11.915253
       objectReference: {fileID: 0}
     - target: {fileID: 8993619129130354005, guid: 93aca05f455e4d14d80e1c266f05f740, type: 3}
       propertyPath: m_Name
@@ -24241,6 +24241,28 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &568564591 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+  m_PrefabInstance: {fileID: 761541020262657549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568564559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1aca69c5c2dd6242a17bed46a5829ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &568564593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 761541019736438109, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+  m_PrefabInstance: {fileID: 761541020262657549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568564559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e941c02d4f219424da64074ab21b3616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &569310860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5493146397510214889, guid: acf3cbee60aa48c49a50ec2971482cb1, type: 3}
@@ -30368,7 +30390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &795644391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85577,6 +85599,10 @@ PrefabInstance:
       propertyPath: dogBark
       value: 
       objectReference: {fileID: 2091032292}
+    - target: {fileID: 761541019736438106, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: playerSing
+      value: 
+      objectReference: {fileID: 568564591}
     - target: {fileID: 761541019736438107, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       propertyPath: doll
       value: 
@@ -85618,9 +85644,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1195397291}
     - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: soundPrefab
+      value: 
+      objectReference: {fileID: 7579255518851850, guid: d0d1d767659b0644bbf1b55d0de294c4, type: 3}
+    - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       propertyPath: notes.Array.size
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: characterMovement
+      value: 
+      objectReference: {fileID: 568564593}
     - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
       propertyPath: notes.Array.data[0]
       value: 
