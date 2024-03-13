@@ -80,15 +80,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Sing"",
-                    ""type"": ""Button"",
-                    ""id"": ""44f484e0-a48d-4a69-8b52-bb886a418ed1"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -375,28 +366,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Special Action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a09c1732-9934-4f75-b37e-f80524fde3d1"",
-                    ""path"": ""<Keyboard>/k"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Sing"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d4417096-623e-4eea-b2d0-96672e0c9358"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Sing"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1001,7 +970,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         m_Player_SpecialAction = m_Player.FindAction("Special Action", throwIfNotFound: true);
-        m_Player_Sing = m_Player.FindAction("Sing", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1081,7 +1049,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Pause;
     private readonly InputAction m_Player_SpecialAction;
-    private readonly InputAction m_Player_Sing;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
@@ -1092,7 +1059,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputAction @SpecialAction => m_Wrapper.m_Player_SpecialAction;
-        public InputAction @Sing => m_Wrapper.m_Player_Sing;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1120,9 +1086,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @SpecialAction.started += instance.OnSpecialAction;
             @SpecialAction.performed += instance.OnSpecialAction;
             @SpecialAction.canceled += instance.OnSpecialAction;
-            @Sing.started += instance.OnSing;
-            @Sing.performed += instance.OnSing;
-            @Sing.canceled += instance.OnSing;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1145,9 +1108,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @SpecialAction.started -= instance.OnSpecialAction;
             @SpecialAction.performed -= instance.OnSpecialAction;
             @SpecialAction.canceled -= instance.OnSpecialAction;
-            @Sing.started -= instance.OnSing;
-            @Sing.performed -= instance.OnSing;
-            @Sing.canceled -= instance.OnSing;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1336,7 +1296,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnSpecialAction(InputAction.CallbackContext context);
-        void OnSing(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
