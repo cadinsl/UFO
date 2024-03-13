@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 179297289881362845}
   - component: {fileID: 3870468733731044600}
   m_Layer: 0
-  m_Name: Music Notes
+  m_Name: Do
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4777,7 +4777,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e90277b4c697796419a35dfcb3e2c3de, type: 2}
+  - {fileID: 2100000, guid: 84171218c7724f748a56f5592cd21b60, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

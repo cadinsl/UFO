@@ -14,6 +14,7 @@ public class PlayerAdventureInput : MonoBehaviour
     public bool canTalkToNPC = false;
 
     public bool canPickupItem = false;
+    [SerializeField]
     private PlayerSing playerSing;
     public DogBark dogBark;
 
@@ -48,7 +49,11 @@ public class PlayerAdventureInput : MonoBehaviour
     {
         if(enableInput)
         {
-            if(canTalkToNPC && (playerInput.Player.Interact.WasPressedThisFrame()))
+            if (playerInput.Player.Sing.IsPressed())
+            {
+                playerSing.Sing();
+            }
+            else if (canTalkToNPC && (playerInput.Player.Interact.WasPressedThisFrame()))
             {
                 characterBrain.TalkToNPC();
             }
@@ -76,5 +81,10 @@ public class PlayerAdventureInput : MonoBehaviour
     public bool isInputEnabled()
     {
         return enableInput;
+    }
+
+    public bool canPlayerMove()
+    {
+        return !playerInput.Player.Sing.IsPressed();
     }
 }
