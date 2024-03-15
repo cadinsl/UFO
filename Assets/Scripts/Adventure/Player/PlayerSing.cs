@@ -13,44 +13,98 @@ public enum eSingNotes
 
 public class PlayerSing : MonoBehaviour{
     public Transform mouthPosition;
-    public GameObject soundPrefab;
+    public GameObject[] soundPrefab;
     public CharacterMovement characterMovement;
+    private GameObject soundInstance;
+    private List<string> songs = new List<string>();
+    private int[] indexes;
+    private string currentCode;
 
-    public void Sing()
+    private void Start()
+    {
+        songs.Add(WorldConstants.removeEncounterManagercheatCode);
+    }
+
+    public void Sing(PlayerInput playerInput)
     {
         characterMovement.StopMovement();
-        eSingNotes currentNote = GetNote();
-        GameObject soundInstance = Instantiate(soundPrefab, mouthPosition.position, mouthPosition.rotation);
-        ParticleSystem singParticles = soundInstance.GetComponent<ParticleSystem>();
+        eSingNotes currentNote = GetNote(playerInput);
+        ParticleSystem singParticles = null;
         switch (currentNote)
         {
             case eSingNotes.Do:
-                singParticles.Emit(1);
+                soundInstance = Instantiate(soundPrefab[0], mouthPosition.position, mouthPosition.rotation);
+                singParticles = soundInstance.GetComponent<ParticleSystem>();
                 singParticles.Play();
+                currentCode += "d";
+                CheckForCode();
+                break;
+            case eSingNotes.Re:
+                soundInstance = Instantiate(soundPrefab[1], mouthPosition.position, mouthPosition.rotation);
+                singParticles = soundInstance.GetComponent<ParticleSystem>();
+                singParticles.Play();
+                currentCode += "r";
+                CheckForCode();
+                break;
+            case eSingNotes.Mi:
+                soundInstance = Instantiate(soundPrefab[2], mouthPosition.position, mouthPosition.rotation);
+                singParticles = soundInstance.GetComponent<ParticleSystem>();
+                currentCode += "m";
+                singParticles.Play();
+                CheckForCode();
+                break;
+            case eSingNotes.Fa:
+                soundInstance = Instantiate(soundPrefab[3], mouthPosition.position, mouthPosition.rotation);
+                singParticles = soundInstance.GetComponent<ParticleSystem>();
+                singParticles.Play();
+                currentCode += "f";
+                CheckForCode();
                 break;
         }
     }
 
-    private eSingNotes GetNote()
+    private eSingNotes GetNote(PlayerInput playerInput)
     {
         Vector2 moveVector = characterMovement.GetCharacterMovement();
-        if(Equals(moveVector, Vector2.up) )
+        if(playerInput.Player.UpSing.WasPressedThisFrame())
         {
             return eSingNotes.Do;
         }
-        else if (Equals(moveVector, Vector2.down))
+        else if (playerInput.Player.RightSing.WasPressedThisFrame())
         {
             return eSingNotes.Re;
         }
-        else if (Equals(moveVector, Vector2.left))
+        else if (playerInput.Player.LeftSing.WasPressedThisFrame())
         {
             return eSingNotes.Mi;
         }
-        else if (Equals(moveVector, Vector2.right))
+        else if (playerInput.Player.DownSing.WasPressedThisFrame())
         {
             return eSingNotes.Fa;
         }
         return eSingNotes.None;
+    }
+
+    private void CheckForCode()
+    {
+        bool match = false;
+        foreach(string song in songs)
+        {
+            if(song.StartsWith(currentCode))
+            {
+                match = true;
+                if (Equals(song, currentCode))
+                {
+                    SingManager.Instance.ActivateSong(song);
+                    currentCode = string.Empty;
+                }
+                    
+            }
+        }
+        if(!match)
+        {
+            currentCode = "";
+        }
     }
 
     

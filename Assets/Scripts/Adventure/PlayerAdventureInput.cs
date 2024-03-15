@@ -51,7 +51,7 @@ public class PlayerAdventureInput : MonoBehaviour
         {
             if (playerInput.Player.Sing.IsPressed())
             {
-                playerSing.Sing();
+                playerSing.Sing(playerInput);
             }
             else if (canTalkToNPC && (playerInput.Player.Interact.WasPressedThisFrame()))
             {

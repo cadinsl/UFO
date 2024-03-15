@@ -9,4 +9,6 @@ public static class WorldConstants
     public static int ChanceForAnotherEnemyToJoinEncounter = 5;
 
     public static int maxEnemiesInFight = 3;
+
+    public  const string removeEncounterManagercheatCode = "ddddffffrm";
 }

@@ -89,6 +89,42 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UpSing"",
+                    ""type"": ""Button"",
+                    ""id"": ""2a6b489d-607a-4f65-a39b-7fcf3da13154"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DownSing"",
+                    ""type"": ""Button"",
+                    ""id"": ""ffd1bf07-c297-41f4-95a9-0950069551fe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LeftSing"",
+                    ""type"": ""Button"",
+                    ""id"": ""8053e59f-6b40-4e20-80ff-d9948e7a3d3a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightSing"",
+                    ""type"": ""Button"",
+                    ""id"": ""ead23375-95c7-46b5-a28f-68c82beeabff"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -397,6 +433,138 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Sing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cbcf7c04-826b-4a8e-af8d-70591ec09f62"",
+                    ""path"": ""<Joystick>/stick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UpSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""de5c0b76-bf87-4db6-89c8-317ec53cb427"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UpSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0bd09cae-879c-4966-97a4-fcc3e1d591c0"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UpSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""30fcb25c-5146-4379-bdce-1dbeb90e356c"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DownSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2bbee26b-692c-42c2-8907-ba1e2a374c85"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DownSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b168547f-66dd-4b75-b17f-737ad8a1d9ae"",
+                    ""path"": ""<Joystick>/stick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DownSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""996cc4bb-4343-41c7-89fe-f831a9ea8f4f"",
+                    ""path"": ""<Joystick>/stick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""deee6a7d-52f1-4626-bb08-38f29cb4fc4c"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fe30742d-ff8a-4917-82d4-94d1f2e10844"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""98973809-120c-4908-b051-f979192b678c"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eca113c5-ab3b-4782-867a-e9c550114d2c"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightSing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5846805b-6096-40c9-8903-67e4d96e344e"",
+                    ""path"": ""<Joystick>/stick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightSing"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1002,6 +1170,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         m_Player_SpecialAction = m_Player.FindAction("Special Action", throwIfNotFound: true);
         m_Player_Sing = m_Player.FindAction("Sing", throwIfNotFound: true);
+        m_Player_UpSing = m_Player.FindAction("UpSing", throwIfNotFound: true);
+        m_Player_DownSing = m_Player.FindAction("DownSing", throwIfNotFound: true);
+        m_Player_LeftSing = m_Player.FindAction("LeftSing", throwIfNotFound: true);
+        m_Player_RightSing = m_Player.FindAction("RightSing", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1082,6 +1254,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Pause;
     private readonly InputAction m_Player_SpecialAction;
     private readonly InputAction m_Player_Sing;
+    private readonly InputAction m_Player_UpSing;
+    private readonly InputAction m_Player_DownSing;
+    private readonly InputAction m_Player_LeftSing;
+    private readonly InputAction m_Player_RightSing;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
@@ -1093,6 +1269,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputAction @SpecialAction => m_Wrapper.m_Player_SpecialAction;
         public InputAction @Sing => m_Wrapper.m_Player_Sing;
+        public InputAction @UpSing => m_Wrapper.m_Player_UpSing;
+        public InputAction @DownSing => m_Wrapper.m_Player_DownSing;
+        public InputAction @LeftSing => m_Wrapper.m_Player_LeftSing;
+        public InputAction @RightSing => m_Wrapper.m_Player_RightSing;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1123,6 +1303,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Sing.started += instance.OnSing;
             @Sing.performed += instance.OnSing;
             @Sing.canceled += instance.OnSing;
+            @UpSing.started += instance.OnUpSing;
+            @UpSing.performed += instance.OnUpSing;
+            @UpSing.canceled += instance.OnUpSing;
+            @DownSing.started += instance.OnDownSing;
+            @DownSing.performed += instance.OnDownSing;
+            @DownSing.canceled += instance.OnDownSing;
+            @LeftSing.started += instance.OnLeftSing;
+            @LeftSing.performed += instance.OnLeftSing;
+            @LeftSing.canceled += instance.OnLeftSing;
+            @RightSing.started += instance.OnRightSing;
+            @RightSing.performed += instance.OnRightSing;
+            @RightSing.canceled += instance.OnRightSing;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1148,6 +1340,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Sing.started -= instance.OnSing;
             @Sing.performed -= instance.OnSing;
             @Sing.canceled -= instance.OnSing;
+            @UpSing.started -= instance.OnUpSing;
+            @UpSing.performed -= instance.OnUpSing;
+            @UpSing.canceled -= instance.OnUpSing;
+            @DownSing.started -= instance.OnDownSing;
+            @DownSing.performed -= instance.OnDownSing;
+            @DownSing.canceled -= instance.OnDownSing;
+            @LeftSing.started -= instance.OnLeftSing;
+            @LeftSing.performed -= instance.OnLeftSing;
+            @LeftSing.canceled -= instance.OnLeftSing;
+            @RightSing.started -= instance.OnRightSing;
+            @RightSing.performed -= instance.OnRightSing;
+            @RightSing.canceled -= instance.OnRightSing;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1337,6 +1541,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnPause(InputAction.CallbackContext context);
         void OnSpecialAction(InputAction.CallbackContext context);
         void OnSing(InputAction.CallbackContext context);
+        void OnUpSing(InputAction.CallbackContext context);
+        void OnDownSing(InputAction.CallbackContext context);
+        void OnLeftSing(InputAction.CallbackContext context);
+        void OnRightSing(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

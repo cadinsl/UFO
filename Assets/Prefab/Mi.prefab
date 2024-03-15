@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 179297289881362845}
   - component: {fileID: 3870468733731044600}
   m_Layer: 0
-  m_Name: Do
+  m_Name: Mi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4835,7 +4835,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 84171218c7724f748a56f5592cd21b60, type: 2}
+  - {fileID: 2100000, guid: 409a9d168a4a88f4b85f7a8d8d6babd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
