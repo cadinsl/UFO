@@ -8,6 +8,8 @@ public class PlayerAdventureInput : MonoBehaviour
 {
     public CharacterBrainAdventure characterBrain;
     public UnityEvent pausedGame;
+    public UnityEvent sing;
+    public UnityEvent singEnd;
 
     private bool enableInput = true;
 
@@ -52,6 +54,7 @@ public class PlayerAdventureInput : MonoBehaviour
             if (playerInput.Player.Sing.IsPressed())
             {
                 playerSing.Sing(playerInput);
+                sing.Invoke();
             }
             else if (canTalkToNPC && (playerInput.Player.Interact.WasPressedThisFrame()))
             {
@@ -64,6 +67,12 @@ public class PlayerAdventureInput : MonoBehaviour
             {
                 if (dogBark != null)
                     dogBark.Bark();
+            }
+
+            if(!playerInput.Player.Sing.IsPressed())
+            {
+                playerSing.Clear();
+                singEnd.Invoke();
             }
         }
     }

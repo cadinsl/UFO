@@ -19,6 +19,10 @@ public class PlayerSing : MonoBehaviour{
     private List<string> songs = new List<string>();
     private int[] indexes;
     private string currentCode;
+    public AK.Wwise.Event DoSound;
+    public AK.Wwise.Event ReSound;
+    public AK.Wwise.Event MiSound;
+    public AK.Wwise.Event FaSound;
 
     private void Start()
     {
@@ -36,6 +40,7 @@ public class PlayerSing : MonoBehaviour{
                 soundInstance = Instantiate(soundPrefab[0], mouthPosition.position, mouthPosition.rotation);
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 singParticles.Play();
+                DoSound.Post(gameObject);
                 currentCode += "d";
                 CheckForCode();
                 break;
@@ -44,12 +49,14 @@ public class PlayerSing : MonoBehaviour{
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 singParticles.Play();
                 currentCode += "r";
+                ReSound.Post(gameObject);
                 CheckForCode();
                 break;
             case eSingNotes.Mi:
                 soundInstance = Instantiate(soundPrefab[2], mouthPosition.position, mouthPosition.rotation);
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 currentCode += "m";
+                MiSound.Post(gameObject);
                 singParticles.Play();
                 CheckForCode();
                 break;
@@ -58,6 +65,7 @@ public class PlayerSing : MonoBehaviour{
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 singParticles.Play();
                 currentCode += "f";
+                FaSound.Post(gameObject);
                 CheckForCode();
                 break;
         }
@@ -96,15 +104,20 @@ public class PlayerSing : MonoBehaviour{
                 if (Equals(song, currentCode))
                 {
                     SingManager.Instance.ActivateSong(song);
-                    currentCode = string.Empty;
+                    Clear();
                 }
                     
             }
         }
         if(!match)
         {
-            currentCode = "";
+            Clear();
         }
+    }
+
+    public void Clear()
+    {
+        currentCode = string.Empty;
     }
 
     
