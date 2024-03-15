@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_WaterFountain" ID="{B40D3F92-6E06-4BB4-87B7-3BBCE675688E}">
+					<ChildrenList>
+						<Action Name="" ID="{3342CC11-C0F2-49B5-9805-33344D8F32C4}" ShortID="928733387">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WaterFountain" ID="{BA614F4A-BA23-42C7-943B-29ED8420C004}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

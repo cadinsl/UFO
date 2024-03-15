@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPS_NEIL = 2071198046U;
         static const AkUniqueID PLAY_FORRESTAMBIANCE = 212573685U;
         static const AkUniqueID PLAY_STARTUP = 2469785129U;
+        static const AkUniqueID PLAY_WATERFOUNTAIN = 1529605499U;
     } // namespace EVENTS
 
     namespace SWITCHES

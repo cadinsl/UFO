@@ -36,7 +36,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{282134D9-1F7D-1ED5-48D1-9E4FEE7082A7}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CFE3785E-5FB1-A118-861D-EF6C3A67CD08}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -111,6 +111,10 @@
 				<File Id="338801011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\Footsteps Grass-004.wav</ShortName>
 					<CachePath>SFX/Grass/Footsteps Grass-004_3A2BFEFC.wem</CachePath>
+				</File>
+				<File Id="346320301" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WaterFountain.wav</ShortName>
+					<CachePath>SFX/WaterFountain_D735B4FD.wem</CachePath>
 				</File>
 				<File Id="422769103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-006.wav</ShortName>
@@ -282,6 +286,11 @@
 						<MediaRef Id="835812743"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1529605499" Name="Play_WaterFountain" MaxAttenuation="35" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="346320301"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
@@ -299,5 +308,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B2875B5F-7522-0BD5-A722-33341ADA5ECB}</FileHash>
+	<FileHash>{4674BA7E-0D30-3540-82A0-617FB4B7AF3F}</FileHash>
 </SoundBanksInfo>
