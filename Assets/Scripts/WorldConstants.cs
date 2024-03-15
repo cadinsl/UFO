@@ -11,4 +11,6 @@ public static class WorldConstants
     public static int maxEnemiesInFight = 3;
 
     public  const string removeEncounterManagercheatCode = "ddddffffrm";
+
+    public const string specialAreaCode = "rmdfdf";
 }

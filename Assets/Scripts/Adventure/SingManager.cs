@@ -6,6 +6,8 @@ public class SingManager : MonoBehaviour
 {
     public static SingManager Instance { get; private set; }
 
+    public List<SongSpecialArea> specialAreas = new List<SongSpecialArea>();
+
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
@@ -33,6 +35,17 @@ public class SingManager : MonoBehaviour
             case WorldConstants.removeEncounterManagercheatCode:
                 FindObjectOfType<EncounterManager>().gameObject.SetActive(false);
                 break;
+            case WorldConstants.specialAreaCode:
+                ActivateSpecialArea();
+                break;
+        } 
+    }
+
+    private void ActivateSpecialArea()
+    {
+        foreach(SongSpecialArea area in specialAreas)
+        {
+            area.GiveItemToPlayer();
         }
     }
 }

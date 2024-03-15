@@ -19,14 +19,14 @@ public class PlayerSing : MonoBehaviour{
     private List<string> songs = new List<string>();
     private int[] indexes;
     private string currentCode;
-    public AK.Wwise.Event DoSound;
-    public AK.Wwise.Event ReSound;
-    public AK.Wwise.Event MiSound;
-    public AK.Wwise.Event FaSound;
-
+    public AK.Wwise.Event RedSound;
+    public AK.Wwise.Event BlueSound;
+    public AK.Wwise.Event PinkSound;
+    public AK.Wwise.Event YellowSound;
     private void Start()
     {
         songs.Add(WorldConstants.removeEncounterManagercheatCode);
+        songs.Add(WorldConstants.specialAreaCode);
     }
 
     public void Sing(PlayerInput playerInput)
@@ -40,7 +40,7 @@ public class PlayerSing : MonoBehaviour{
                 soundInstance = Instantiate(soundPrefab[0], mouthPosition.position, mouthPosition.rotation);
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 singParticles.Play();
-                DoSound.Post(gameObject);
+                RedSound.Post(gameObject);
                 currentCode += "d";
                 CheckForCode();
                 break;
@@ -49,14 +49,14 @@ public class PlayerSing : MonoBehaviour{
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 singParticles.Play();
                 currentCode += "r";
-                ReSound.Post(gameObject);
+                PinkSound.Post(gameObject);
                 CheckForCode();
                 break;
             case eSingNotes.Mi:
                 soundInstance = Instantiate(soundPrefab[2], mouthPosition.position, mouthPosition.rotation);
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 currentCode += "m";
-                MiSound.Post(gameObject);
+                BlueSound.Post(gameObject);
                 singParticles.Play();
                 CheckForCode();
                 break;
@@ -65,7 +65,7 @@ public class PlayerSing : MonoBehaviour{
                 singParticles = soundInstance.GetComponent<ParticleSystem>();
                 singParticles.Play();
                 currentCode += "f";
-                FaSound.Post(gameObject);
+                YellowSound.Post(gameObject);
                 CheckForCode();
                 break;
         }
