@@ -74,6 +74,7 @@ public class MasterBattleController : MonoBehaviour, IDialogObserver, IMagicObse
             case BattleEndResult.Result.DEFEATED:
                 encounterTranslator.SetupDefeat();
                 break;
+            case BattleEndResult.Result.RAN:
             case BattleEndResult.Result.WON:
                 dialogController.gameObject.SetActive(false);
                 virtualCamera.SetActive(false);
