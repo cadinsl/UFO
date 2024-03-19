@@ -69,6 +69,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Whistle_001" ID="{5518D3B1-F116-45EC-8C59-F6C61FCEE276}">
+					<ChildrenList>
+						<Action Name="" ID="{5166724B-3AF8-4439-93B1-9CC71B22130F}" ShortID="90055379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle-001" ID="{783D27F5-573D-4473-816E-36D3A247DD6F}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Whistle_002" ID="{00D245D6-2F6D-4358-9D7D-1D11C135292C}">
+					<ChildrenList>
+						<Action Name="" ID="{DA704155-1828-4F53-8DE2-7E86BC661D93}" ShortID="108782879">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle-002" ID="{45B81D2E-E21C-4DB7-87EB-4781DA8E3F71}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Whistle_003" ID="{06955565-6CA7-40A6-8124-D471E9D802DC}">
+					<ChildrenList>
+						<Action Name="" ID="{14628DE4-0E30-484E-A809-2BBFD0BA308B}" ShortID="224451154">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle-003" ID="{21B20DF2-EFD1-47D1-AD8D-693C0E8F3B73}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Whistle_004" ID="{4A11E06A-6DC2-4764-B588-9174BBAF53F2}">
+					<ChildrenList>
+						<Action Name="" ID="{C036DD94-8806-4DC8-8151-59037B5804A2}" ShortID="46416980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle-004" ID="{BE952F44-3306-481F-946D-817CE95E4A54}" WorkUnitID="{5DCE351D-CE45-4D9B-B0E5-553E467C71BF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

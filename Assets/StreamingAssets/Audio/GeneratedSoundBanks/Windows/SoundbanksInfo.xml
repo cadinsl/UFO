@@ -36,7 +36,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CFE3785E-5FB1-A118-861D-EF6C3A67CD08}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B3EEEFA8-C6C3-C2A2-F168-69121B2636CA}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -92,6 +92,10 @@
 					<ShortName>Dog Barks\Dog Barks-003.wav</ShortName>
 					<CachePath>SFX/Dog Barks/Dog Barks-003_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="260073915" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whistles\Whistle-002.wav</ShortName>
+					<CachePath>SFX/Whistles/Whistle-002_10C4C929.wem</CachePath>
+				</File>
 				<File Id="261707968" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass\FootstepsDog_Grass-001.wav</ShortName>
 					<CachePath>SFX/Grass/FootstepsDog_Grass-001_1045ABF6.wem</CachePath>
@@ -114,7 +118,7 @@
 				</File>
 				<File Id="346320301" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WaterFountain.wav</ShortName>
-					<CachePath>SFX/WaterFountain_D735B4FD.wem</CachePath>
+					<CachePath>SFX/WaterFountain_29DBD7DD.wem</CachePath>
 				</File>
 				<File Id="422769103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-006.wav</ShortName>
@@ -128,6 +132,10 @@
 					<ShortName>Dog Barks\Dog Barks-001.wav</ShortName>
 					<CachePath>SFX/Dog Barks/Dog Barks-001_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="547823831" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whistles\Whistle-004.wav</ShortName>
+					<CachePath>SFX/Whistles/Whistle-004_10C4C929.wem</CachePath>
+				</File>
 				<File Id="563356497" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ForrestAmbiance.wav</ShortName>
 					<CachePath>SFX/ForrestAmbiance_0EEDAA28.wem</CachePath>
@@ -135,6 +143,10 @@
 				<File Id="629506482" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Stone\Footsteps_Stone-002.wav</ShortName>
 					<CachePath>SFX/Stone/Footsteps_Stone-002_CCCB20F5.wem</CachePath>
+				</File>
+				<File Id="634054038" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whistles\Whistle-003.wav</ShortName>
+					<CachePath>SFX/Whistles/Whistle-003_10C4C929.wem</CachePath>
 				</File>
 				<File Id="639312830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-007.wav</ShortName>
@@ -176,6 +188,10 @@
 					<ShortName>Dog Barks\Dog Barks-002.wav</ShortName>
 					<CachePath>SFX/Dog Barks/Dog Barks-002_3F75BDB9.wem</CachePath>
 				</File>
+				<File Id="871874606" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Whistles\Whistle-001.wav</ShortName>
+					<CachePath>SFX/Whistles/Whistle-001_10C4C929.wem</CachePath>
+				</File>
 				<File Id="895041144" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dog Barks\Dog Barks-004.wav</ShortName>
 					<CachePath>SFX/Dog Barks/Dog Barks-004_3F75BDB9.wem</CachePath>
@@ -201,6 +217,9 @@
 				<Custom>
 					<Plugin Id="896456195" Name="Have_U_Ever_Been_Outside (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 			</Plugins>
 			<Events>
 				<Event Id="1440870588" Name="Play_Dog_Barks" DurationType="OneShot" DurationMin="1.48" DurationMax="1.48">
@@ -291,6 +310,46 @@
 						<MediaRef Id="346320301"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2801061144" Name="Play_Whistle_001" DurationType="OneShot" DurationMin="0.74291664" DurationMax="0.74291664">
+					<MediaRefs>
+						<MediaRef Id="871874606"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="2801061147" Name="Play_Whistle_002" DurationType="OneShot" DurationMin="0.74291664" DurationMax="0.74291664">
+					<MediaRefs>
+						<MediaRef Id="260073915"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="2801061146" Name="Play_Whistle_003" DurationType="OneShot" DurationMin="0.74291664" DurationMax="0.74291664">
+					<MediaRefs>
+						<MediaRef Id="634054038"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="2801061149" Name="Play_Whistle_004" DurationType="OneShot" DurationMin="0.74291664" DurationMax="0.74291664">
+					<MediaRefs>
+						<MediaRef Id="547823831"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="665703777" Name="FootstepsTerrain">
@@ -308,5 +367,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7DC47D28-F5CD-C873-09A4-8313C7C77EE2}</FileHash>
+	<FileHash>{2EC93D5D-184A-1115-E1F7-E7F38C204B0D}</FileHash>
 </SoundBanksInfo>

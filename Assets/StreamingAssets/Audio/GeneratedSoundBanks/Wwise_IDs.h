@@ -19,6 +19,10 @@ namespace AK
         static const AkUniqueID PLAY_FORRESTAMBIANCE = 212573685U;
         static const AkUniqueID PLAY_STARTUP = 2469785129U;
         static const AkUniqueID PLAY_WATERFOUNTAIN = 1529605499U;
+        static const AkUniqueID PLAY_WHISTLE_001 = 2801061144U;
+        static const AkUniqueID PLAY_WHISTLE_002 = 2801061147U;
+        static const AkUniqueID PLAY_WHISTLE_003 = 2801061146U;
+        static const AkUniqueID PLAY_WHISTLE_004 = 2801061149U;
     } // namespace EVENTS
 
     namespace SWITCHES
