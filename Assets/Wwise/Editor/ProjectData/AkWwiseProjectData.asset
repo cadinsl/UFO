@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 312ea24f09b0cd4780bcb021b4b01cf7
     GuidInternal: 
-    m_lastTime: -8584911359651465175
+    m_lastTime: -8584907143816364916
     List:
     - name: Main
       guid: 13cdfa05ebbcec4388eecce2709de26b
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 097c3420d7b17947963b3f28ab30b067
     GuidInternal: 
-    m_lastTime: -8584911359651514217
+    m_lastTime: -8584907143816314468
     List:
     - name: Play_Dog_Barks
       guid: f9ee1e1220f84542a91b4fd845cff3f9
@@ -198,6 +198,74 @@ MonoBehaviour:
       maxAttenuation: 35
       maxDuration: -1
       minDuration: -1
+    - name: Play_Whistle_001
+      guid: b1d3185516f1ec458c59f6c61fcee276
+      id: 2801061144
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Whistle_001
+        ObjectType: 3
+        guid: b1d3185516f1ec458c59f6c61fcee276
+      Path: Events\Default Work Unit\Play_Whistle_001
+      maxAttenuation: 0
+      maxDuration: 0.74291664
+      minDuration: 0.74291664
+    - name: Play_Whistle_002
+      guid: d645d2006d2f58439d7d1d11c135292c
+      id: 2801061147
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Whistle_002
+        ObjectType: 3
+        guid: d645d2006d2f58439d7d1d11c135292c
+      Path: Events\Default Work Unit\Play_Whistle_002
+      maxAttenuation: 0
+      maxDuration: 0.74291664
+      minDuration: 0.74291664
+    - name: Play_Whistle_003
+      guid: 65559506a76ca6408124d471e9d802dc
+      id: 2801061146
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Whistle_003
+        ObjectType: 3
+        guid: 65559506a76ca6408124d471e9d802dc
+      Path: Events\Default Work Unit\Play_Whistle_003
+      maxAttenuation: 0
+      maxDuration: 0.74291664
+      minDuration: 0.74291664
+    - name: Play_Whistle_004
+      guid: 6ae0114ac26d6447b5889174bbaf53f2
+      id: 2801061149
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 097c3420d7b17947963b3f28ab30b067
+      - ElementName: Play_Whistle_004
+        ObjectType: 3
+        guid: 6ae0114ac26d6447b5889174bbaf53f2
+      Path: Events\Default Work Unit\Play_Whistle_004
+      maxAttenuation: 0
+      maxDuration: 0.74291664
+      minDuration: 0.74291664
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
