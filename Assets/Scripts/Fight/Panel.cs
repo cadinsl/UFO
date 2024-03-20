@@ -52,4 +52,12 @@ public class Panel : MonoBehaviour
         Button[] _button = targetPanel.GetComponentsInChildren<Button>();
         return _button;
     }
+
+    private void AddClickSoundToAllButtons(Button[] buttons)
+    {
+        foreach(Button button in buttons)
+        {
+            button.onClick.AddListener(() => SoundManager.Instance.onClick());
+        }
+    }
 }
