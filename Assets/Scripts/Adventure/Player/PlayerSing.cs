@@ -119,6 +119,10 @@ public class PlayerSing : MonoBehaviour{
         }
         if(!match)
         {
+            if(singCoroutine != null)
+            {
+                StopCoroutine(singCoroutine);
+            }
             Clear();
         }
     }
