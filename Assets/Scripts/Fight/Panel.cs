@@ -50,6 +50,7 @@ public class Panel : MonoBehaviour
         if (targetPanel == null)
             targetPanel = this.gameObject;
         Button[] _button = targetPanel.GetComponentsInChildren<Button>();
+        AddClickSoundToAllButtons(_button);
         return _button;
     }
 
@@ -57,7 +58,15 @@ public class Panel : MonoBehaviour
     {
         foreach(Button button in buttons)
         {
-            button.onClick.AddListener(() => SoundManager.Instance.onClick());
+            button.onClick.AddListener(() => SoundManager.Instance.OnClick());
+            if (Equals(button.gameObject.GetComponent<EventTrigger>(), null))
+            {
+                EventTrigger trigger = button.gameObject.AddComponent<EventTrigger>();
+                EventTrigger.Entry entry = new EventTrigger.Entry();
+                entry.eventID = EventTriggerType.Move;
+                entry.callback.AddListener((data) => { SoundManager.Instance.OnMove(); });
+                trigger.triggers.Add(entry);
+            }
         }
     }
 }
