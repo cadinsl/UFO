@@ -6,10 +6,14 @@
 				<SoundBank Name="Main" ID="{05FACD13-BCEB-43EC-88EE-CCE2709DE26B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Footsteps" ID="{FDF419F5-F246-408B-AEC2-633C6E1D7EF9}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Whistle_003" ID="{06955565-6CA7-40A6-8124-D471E9D802DC}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps_Neil" ID="{BA2EAA35-B51F-4152-9D08-3B79FE2BBDFE}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Dog_Barks" ID="{121EEEF9-F820-4245-A91B-4FD845CFF3F9}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Whistle_002" ID="{00D245D6-2F6D-4358-9D7D-1D11C135292C}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ForrestAmbiance" ID="{362E532A-F1C9-457F-9AD5-64F108B03BEE}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Whistle_001" ID="{5518D3B1-F116-45EC-8C59-F6C61FCEE276}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Startup" ID="{A250438E-2D25-4619-AF97-A14A55B0BC5B}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Whistle_004" ID="{4A11E06A-6DC2-4764-B588-9174BBAF53F2}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_WaterFountain" ID="{B40D3F92-6E06-4BB4-87B7-3BBCE675688E}" WorkUnitID="{20347C09-B1D7-4779-963B-3F28AB30B067}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

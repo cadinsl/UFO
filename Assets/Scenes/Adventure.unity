@@ -87941,6 +87941,22 @@ PrefabInstance:
       propertyPath: soundPrefab.Array.data[3]
       value: 
       objectReference: {fileID: 7579255518851850, guid: 6534540071601024c80ab0de86c23136, type: 3}
+    - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: RedSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ea03f1fc4b08fe64f86cd1c4e880c6b1, type: 2}
+    - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: BlueSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8fbba8ae94938674c936b1ec39d9dfcb, type: 2}
+    - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: PinkSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cd303b5a7132a024481ac98e01637852, type: 2}
+    - target: {fileID: 1840788420082527582, guid: 0c12ed3a9db11d24c9d5d2cffe2c3523, type: 3}
+      propertyPath: YellowSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 73b98cea0f93c364c8a2fdb611e3be2b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

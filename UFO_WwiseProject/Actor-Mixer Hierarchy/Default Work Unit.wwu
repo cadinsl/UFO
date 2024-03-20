@@ -1334,6 +1334,109 @@
 						<ActiveSource Name="WaterFountain" ID="{2635F330-7C40-4DAE-BD0E-45712C6EEB22}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<ActorMixer Name="Whistles" ID="{B5FEE840-21FF-4FA1-9D1D-10329405365B}" ShortID="797936453">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Whistle-001" ID="{783D27F5-573D-4473-816E-36D3A247DD6F}" ShortID="694146520">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Whistle-001" ID="{A5BA2582-EE0F-4F0B-82E4-A155B152AC01}">
+									<Language>SFX</Language>
+									<AudioFile>Whistles\Whistle-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="871874606"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Whistle-001" ID="{A5BA2582-EE0F-4F0B-82E4-A155B152AC01}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Whistle-002" ID="{45B81D2E-E21C-4DB7-87EB-4781DA8E3F71}" ShortID="363153358">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Whistle-002" ID="{8538D4AC-B112-40FF-90F1-46EAEC29C815}">
+									<Language>SFX</Language>
+									<AudioFile>Whistles\Whistle-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="260073915"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Whistle-002" ID="{8538D4AC-B112-40FF-90F1-46EAEC29C815}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Whistle-003" ID="{21B20DF2-EFD1-47D1-AD8D-693C0E8F3B73}" ShortID="482049257">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Whistle-003" ID="{0CB1286D-5884-4A70-9855-3496CBBB84FD}">
+									<Language>SFX</Language>
+									<AudioFile>Whistles\Whistle-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="634054038"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Whistle-003" ID="{0CB1286D-5884-4A70-9855-3496CBBB84FD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Whistle-004" ID="{BE952F44-3306-481F-946D-817CE95E4A54}" ShortID="566291396">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E93E1D3C-474B-4429-B592-67269FDCE86A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45606221-B837-42D7-806D-4DC198C27504}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Whistle-004" ID="{D67C45AD-669B-40EF-94D0-B0C7BECD561A}">
+									<Language>SFX</Language>
+									<AudioFile>Whistles\Whistle-004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="547823831"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Whistle-004" ID="{D67C45AD-669B-40EF-94D0-B0C7BECD561A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
