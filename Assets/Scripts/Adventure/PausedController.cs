@@ -31,6 +31,7 @@ public class PausedController : MonoBehaviour
 
     private CharacterDoll currentCharacter;
 
+    public bool isPaused;
 
 
     public void Start()
@@ -42,6 +43,7 @@ public class PausedController : MonoBehaviour
         this.playerPartyDolls = GetDolls(playerPartyControllers);
         currentCharacter = playerPartyDolls[0];
         DisplayPauseMenuForCharacter();
+        isPaused = true;
     }
     private void DisplayPauseMenuForCharacter()
     {
@@ -61,6 +63,7 @@ public class PausedController : MonoBehaviour
         {
             pausedMenu.Close();
         }
+        isPaused = false;
     }
 
     public void ChangeCharacter(CharacterDoll doll)

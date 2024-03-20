@@ -34,33 +34,22 @@ public class AreaTitle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNew)
+        if(AdventureManager.Instance.isPaused || !AdventureManager.Instance.isPaused)
         {
-            float distance = Mathf.Abs(Vector3.Distance(this.transform.position, player.transform.position));
-            if (distance > distanceThreshold)
+            Destroy(this.gameObject);
+        }
+        if (increment)
+        {
+            FadeIn();
+            if (text.color.a >= 1 && !alreadyCalled)
             {
-                spriteRenderer.color = new Color(color.r, color.g, color.b, color.a - ((distance - distanceThreshold)) * transparencyMultiplier);
-            }
-            else
-            {
-                spriteRenderer.color = color;
+                StartCoroutine(fadeInfadeOut());
+                alreadyCalled = true;
             }
         }
         else
         {
-            if (increment)
-            {
-                FadeIn();
-                if (text.color.a >= 1 && !alreadyCalled)
-                {
-                    StartCoroutine(fadeInfadeOut());
-                    alreadyCalled = true;
-                }
-            }
-            else
-            {
-                FadeOut();
-            }
+            FadeOut();
         }
     }
 
