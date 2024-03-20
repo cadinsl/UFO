@@ -23,6 +23,8 @@ public class PlayerSing : MonoBehaviour{
     public AK.Wwise.Event BlueSound;
     public AK.Wwise.Event PinkSound;
     public AK.Wwise.Event YellowSound;
+    private IEnumerator singCoroutine;
+
     private void Start()
     {
         songs.Add(WorldConstants.removeEncounterManagercheatCode);
@@ -101,6 +103,12 @@ public class PlayerSing : MonoBehaviour{
             if(song.StartsWith(currentCode))
             {
                 match = true;
+                if(singCoroutine != null)
+                {
+                    StopCoroutine(singCoroutine);
+                }
+                singCoroutine = WaitForNextNote();
+                StartCoroutine(singCoroutine);
                 if (Equals(song, currentCode))
                 {
                     SingManager.Instance.ActivateSong(song);
@@ -120,5 +128,12 @@ public class PlayerSing : MonoBehaviour{
         currentCode = string.Empty;
     }
 
-    
+    IEnumerator WaitForNextNote()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Clear();
+
+    }
+
+
 }
