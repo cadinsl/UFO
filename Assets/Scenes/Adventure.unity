@@ -14920,6 +14920,7 @@ MonoBehaviour:
   - {fileID: 2124209027}
   playerPartyDolls: []
   pauseDialog: {fileID: 1797900681}
+  isPaused: 0
 --- !u!4 &389010263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5493146397510214889, guid: acf3cbee60aa48c49a50ec2971482cb1, type: 3}
@@ -69603,6 +69604,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acf3cbee60aa48c49a50ec2971482cb1, type: 3}
+--- !u!137 &1497275826 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1470676236561151518, guid: 27c654105ee6d3a4a82e7f878dc075ab, type: 3}
+  m_PrefabInstance: {fileID: 8482722769039648638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1499571334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86176,6 +86182,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &2091032307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091032273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaa1b6e6d068ba48a1f25912fcb869e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAdventureController: {fileID: 2091032274}
+  skinnedMeshRenderer: {fileID: 1497275826}
+  normalMaterial: {fileID: 2100000, guid: 5e6d1f51ed8423a4487800ce422b31eb, type: 2}
+  deadMaterial: {fileID: 2100000, guid: 6c67b4f88c03eb64ebfa79cf7a5266d2, type: 2}
 --- !u!1 &2091329588 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0eb09f51df04b6e4a8b5f11e82d90ed9, type: 3}
@@ -89274,6 +89296,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8482722768962156975, guid: 27c654105ee6d3a4a82e7f878dc075ab, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2091032300}
+    - targetCorrespondingSourceObject: {fileID: 8482722768962156975, guid: 27c654105ee6d3a4a82e7f878dc075ab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2091032307}
     - targetCorrespondingSourceObject: {fileID: 8243465676738850196, guid: 27c654105ee6d3a4a82e7f878dc075ab, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1603301917}
