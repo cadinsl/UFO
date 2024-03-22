@@ -21,13 +21,17 @@ public class NeilController : MonoBehaviour
     {
         if(characterAdventureController.doll.status == Status.Dead && !Deaddone)
         {
-            skinnedMeshRenderer.material = deadMaterial;
+            Material[] mats = new Material[1];
+            mats[0] = deadMaterial;
+            skinnedMeshRenderer.materials = mats;
             Deaddone = true;
             NormalDone = false;
         }
         else if(characterAdventureController.doll.status == Status.Normal && !NormalDone)
         {
-            skinnedMeshRenderer.material = normalMaterial;
+            Material[] mats = new Material[1];
+            mats[0] = normalMaterial;
+            skinnedMeshRenderer.materials = mats;
             NormalDone = true;
             Deaddone = false;
         }
