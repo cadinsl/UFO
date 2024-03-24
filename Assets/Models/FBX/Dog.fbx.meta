@@ -186,7 +186,7 @@ ModelImporter:
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
-    normalSmoothAngle: 90
+    normalSmoothAngle: 156
     normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4

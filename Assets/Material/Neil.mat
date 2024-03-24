@@ -13,15 +13,14 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - DIFF_VERTEX
-  - SPEC_GOURAUD
+  - SPEC_PHONG
   - TRANSPARENT
-  - UNLIT
   - _EMISSION
   m_InvalidKeywords:
   - _ALPHABLEND_ON
   - _DIFFMODEL_VERTEX
   - _DRAWDIST_ON
-  - _SPECMODEL_GOURAUD
+  - _SPECMODEL_PHONG
   - _UNLIT_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
@@ -29,8 +28,7 @@ Material:
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
-  disabledShaderPasses:
-  - FORWARDADD
+  disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -114,12 +112,12 @@ Material:
     - _RenderMode: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SpecModel: 0
+    - _SpecModel: 1
     - _Specular: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
     - _UVSec: 0
-    - _Unlit: 1
+    - _Unlit: 0
     - _VertexInaccuracy: -1
     - _ZWrite: 1
     m_Colors:
